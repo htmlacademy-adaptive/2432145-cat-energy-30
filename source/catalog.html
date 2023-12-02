@@ -9,7 +9,7 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
+<body>
   <header class="main-header">
     <div class="main-header__wrapper">
       <div class="main-header__logo-wrapper">
@@ -40,125 +40,170 @@
       </nav>
     </div>
   </header>
-  <main class="main-form-page">
-    <div class="main-form-page__wrapper">
-      <h1 class="main-form__title">Подбор программы</h1>
-      <p class="main-form__description">Заполните анкету, и мы подберем<br>
-        программу питания для вашего кота</p>
-      <form class="main-form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="main-form__data">
-          <legend class="visually-hidden">Главные данные</legend>
-          <ul class="main-form__list">
-            <li class="main-form__item">
-              <label class="main-form__label">
-                <span class="label__description">Имя:*</span>
-                <input class="form-input input--data" type="text" placeholder="Барсик" required>
-              </label>
-            </li>
-            <li class="main-form__item">
-              <label class="main-form__label">
-                <span class="label__description">Вес(кг):*</span>
-                <input class="form-input input--data" type="number" value="7" required>
-              </label>
-            </li>
-            <li class="main-form__item">
-              <label class="main-form__label">
-                <span class="label__description">Возраст(лет):</span>
-                <input class="form-input input--data" type="number" value="7">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="main-form__services">
-          <legend class="visually-hidden">Выбор услуг</legend>
-          <ul class="main-form__services-list">
-            <li class="main-form__item">
-              <label class="main-form__label">
-                <input class="form-input input--services" type="radio" name="services-radio" value="weight loss">
-                <span class="label__description">Похудение</span>
-              </label>
-            </li>
-            <li class="main-form__item">
-              <label class="main-form__label">
-                <input class="form-input input--services" type="radio" name="services-radio" value="weight gain">
-                <span class="label__description">Набор массы</span>
-              </label>
-            </li>
-            <li class="main-form__item">
-              <label class="main-form__label">
-                <input class="form-input input--services" type="radio" name="services-radio" value="don't know, need advice">
-                <span class="label__description">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="main-form__contacts">
-          <legend class="main-form__title">Контактные данные<br>(владельца кота)</legend>
-          <ul class="main-form__contacts-list">
-            <li class="main-form__item">
-              <label class="main-form__label">
-                <span class="label__description">E-mail:*</span>
-                <input class="form-input input--contacts" type="email" placeholder="kuklachev@gmail.com" required>
-              </label>
-            </li>
-            <li class="main-form__item">
-              <label class="main-form__label">
-                <span class="label__description">Телефон:*</span>
-                <input class="form-input input--contacts" type="text" placeholder="8 (960) 900-60-90" required>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="main-form__comment">
-          <legend class="main-form__comment-title">Комментарий</legend>
-          <label class="main-form__label">
-            <textarea class="comment-area" cols="33" rows="10"
-              placeholder="Расскажите обо всех повадках кота"></textarea>
-          </label>
-        </fieldset>
-        <fieldset class="main-form__extra">
-          <legend class="main-form__title">Дополнительно</legend>
-          <ul class="main-form__list-extra">
-            <li class="main-form__item">
-              <label class="main-form_label">
-                <input class="form-input input--extra" type="checkbox" name="Sugar substitutes" checked>
-                <span class="label__description">Сахарозаменитель</span>
-              </label>
-            </li>
-            <li class="main-form__item">
-              <label class="main-form_label">
-                <input class="form-input input--extra" type="checkbox" name="water">
-                <span class="label__description">Питьевая вода</span>
-              </label>
-            </li>
-            <li class="main-form__item">
-              <label class="main-form_label">
-                <input class="form-input input--extra" type="checkbox" name="milk">
-                <span class="label__description">Молоко</span>
-              </label>
-            </li>
-            <li class="main-form__item">
-              <label class="main-form_label">
-                <input class="form-input input--extra" type="checkbox" name="vitamins">
-                <span class="label__description">Витамины</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <button class="button-form" type="submit">Отправить заявку</button>
-        <p class="main-form__note">* — Обязательные поля</p>
-      </form>
-      <section class="address">
-        <div class="address__wrapper">
-          <h2 class="visually-hidden">Адрес</h2>
-          <h3 class="address__title">Приглашаем<br>к сотрудничеству<br>дилеров!</h3>
-          <address class="address__description">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</address>
-          <!--  Карта -->
-          <div class="adress__map-wrapper"></div>
-          <!-- Карта End -->
-        </div>
-      </section>
-    </div>
+  <main class="main-catalog-page">
+    <!--  Каталог карточек -->
+    <section class="cards-catalog">
+      <div class="cards-catalog__wrapper">
+        <h1 class="catalog-title">Каталог продукции</h1>
+        <ul class="cards-catalog__list">
+          <li class="cards-catalog__item">
+            <img class="cards-catalog__image" src="images/catalog/catalog-1.jpg" width="68" height="86" alt="Cat Energy
+          PRO 500 г курица.">
+            <h3 class="cards-catalog__title">Cat Energy
+              PRO 500 г</h3>
+            <p class="cards-catalog__description">Масса</p>
+            <p class="cards-catalog__description">500 г</p>
+            <p class="cards-catalog__description">Вкус</p>
+            <p class="cards-catalog__description">Курица</p>
+            <p class="cards-catalog__description">Цена</p>
+            <p class="cards-catalog__description">700 ₽</p>
+            <button class="button button--order" type="button">Заказать</button>
+          </li>
+          <li class="cards-catalog__item">
+            <img class="cards-catalog__image" src="images/catalog/catalog-2.jpg" width="84" height="100" alt="Cat Energy
+          PRO 1000 г курица.">
+            <h3 class="cards-catalog__title">Cat Energy
+              PRO
+              1000 г</h3>
+            <p class="cards-catalog__description">Масса</p>
+            <p class="cards-catalog__description">1000 г</p>
+            <p class="cards-catalog__description">Вкус</p>
+            <p class="cards-catalog__description">Курица</p>
+            <p class="cards-catalog__description">Цена</p>
+            <p class="cards-catalog__description">1000 ₽</p>
+            <button class="button button--order" type="button">Заказать</button>
+          </li>
+          <li class="cards-catalog__item">
+            <img class="cards-catalog__image" src="images/catalog/catalog-3.jpg" width="68" height="78" alt="Cat Energy
+          PRO 500 г рыба.">
+            <h3 class="cards-catalog__title">Cat Energy
+              PRO
+              500 г</h3>
+            <p class="cards-catalog__description">Масса</p>
+            <p class="cards-catalog__description">500 г</p>
+            <p class="cards-catalog__description">Вкус</p>
+            <p class="cards-catalog__description">Рыба</p>
+            <p class="cards-catalog__description">Цена</p>
+            <p class="cards-catalog__description">700 ₽</p>
+            <button class="button button--order" type="button">Заказать</button>
+          </li>
+          <li class="cards-catalog__item">
+            <img class="cards-catalog__image" src="images/catalog/catalog-4.jpg" width="84" height="100" alt="Cat Energy
+          PRO 1000 г рыба.">
+            <h3 class="cards-catalog__title">Cat Energy
+              PRO
+              500 г</h3>
+            <p class="cards-catalog__description">Масса</p>
+            <p class="cards-catalog__description">1000 г</p>
+            <p class="cards-catalog__description">Вкус</p>
+            <p class="cards-catalog__description">Рыба</p>
+            <p class="cards-catalog__description">Цена</p>
+            <p class="cards-catalog__description">1000 ₽</p>
+            <button class="button button--order" type="button">Заказать</button>
+          </li>
+          <li class="cards-catalog__item">
+            <img class="cards-catalog__image" src="images/catalog/catalog-5.jpg" width="68" height="78" alt="Cat Energy
+          SLIM 500 г гречка.">
+            <h3 class="cards-catalog__title">Cat Energy
+              SLIM
+              500 г</h3>
+            <p class="cards-catalog__description">Масса</p>
+            <p class="cards-catalog__description">500 г</p>
+            <p class="cards-catalog__description">Вкус</p>
+            <p class="cards-catalog__description">Гречка</p>
+            <p class="cards-catalog__description">Цена</p>
+            <p class="cards-catalog__description">400 ₽</p>
+            <button class="button button--order" type="button">Заказать</button>
+          </li>
+          <li class="cards-catalog__item">
+            <img class="cards-catalog__image" src="images/catalog/catalog-6.jpg" width="84" height="100" alt="Cat Energy
+          SLIM 1000 г гречка.">
+            <h3 class="cards-catalog__title">Cat Energy
+              SLIM
+              1000 г</h3>
+            <p class="cards-catalog__description">Масса</p>
+            <p class="cards-catalog__description">1000 г</p>
+            <p class="cards-catalog__description">Вкус</p>
+            <p class="cards-catalog__description">Гречка</p>
+            <p class="cards-catalog__description">Цена</p>
+            <p class="cards-catalog__description">700 ₽</p>
+            <button class="button button--order" type="button">Заказать</button>
+          </li>
+          <li class="cards-catalog__item">
+            <img class="cards-catalog__image" src="images/catalog/catalog-7.jpg" width="72" height="84" alt="Cat Energy
+          SLIM 500 г рис.">
+            <h3 class="cards-catalog__title">Cat Energy
+              SLIM
+              500 г</h3>
+            <p class="cards-catalog__description">Масса</p>
+            <p class="cards-catalog__description">500 г</p>
+            <p class="cards-catalog__description">Вкус</p>
+            <p class="cards-catalog__description">Рис</p>
+            <p class="cards-catalog__description">Цена</p>
+            <p class="cards-catalog__description">500 ₽</p>
+            <button class="button button--order" type="button">Заказать</button>
+          </li>
+          <li class="cards-catalog__item catalog-item--more">
+            <div class="cards-catalog__plus"></div>
+            <h3 class="cards-catalog__title">Показать еще 100500 товаров</h3>
+            <p class="cards-catalog__description">На самом деле вкусов гораздо больше!</p>
+            <button class="button button--show-all" type="button">Показать все</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--   Каталог карточкек End -->
+    <!--   Дополнительные товары -->
+    <section class="main-catalog-extra">
+      <div class="catalog-exrta__wrapper">
+        <h2 class="catalog-title catalog-title--extra">Дополнительные товары</h2>
+        <ul class="cards-catalog__extra-list">
+          <li class="catalog-extra__item">
+            <h3 class="catalog-extra__title">Сахарозаменитель</h3>
+            <p class="catalog-extra__description">1 упаковка (100 г)</p>
+            <p class="catalog-extra__description">200 рублей</p>
+            <button class="button button--order" type="button">Заказать</button>
+          </li>
+          <li class="catalog-extra__item">
+            <h3 class="catalog-extra__title">Питьевая вода</h3>
+            <p class="catalog-extra__description">5 литров</p>
+            <p class="catalog-extra__description">50 рублей</p>
+            <button class="button button--order" type="button">Заказать</button>
+          </li>
+          <li class="catalog-extra__item">
+            <h3 class="catalog-extra__title">Молоко</h3>
+            <p class="catalog-extra__description">1 литр</p>
+            <p class="catalog-extra__description">100 рублей</p>
+            <button class="button button--order" type="button">Заказать</button>
+          </li>
+          <li class="catalog-extra__item">
+            <h3 class="catalog-extra__title">Витамины</h3>
+            <p class="catalog-extra__description">1 упаковка (30 г)</p>
+            <p class="catalog-extra__description">300 рублей</p>
+            <button class="button button--order" type="button">Заказать</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--  Дополнительные товары End -->
+    <section class="main-catalog__advantages">
+      <div class="catalog-advantages__wrapper">
+        <h2 class="visually-hidden">Акции.</h2>
+        <p class="catalog-advantages__description">Закажите все
+          и получите чехол для
+          кота в подарок!</p>
+      </div>
+    </section>
+    <section class="address">
+      <div class="address__wrapper">
+        <h2 class="visually-hidden">Адрес</h2>
+        <h3 class="address__title">Приглашаем<br>к сотрудничеству<br>дилеров!</h3>
+        <address class="address__description">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</address>
+        <!--  Карта -->
+        <div class="adress__map-wrapper"></div>
+        <!-- Карта End -->
+      </div>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="footer__wrapper">
