@@ -16,8 +16,11 @@
     <div class="main-header__wrapper">
       <div class="main-header__logo-wrapper">
         <a class="logo-link" href="index.html">
-          <img class="logo-image" src="images/logo-mobile.svg" width="33" height="38"
-            alt="Мобильный логотип Cat Energy.">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desctop" width="70" height="59">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet">
+            <img class="logo-image" src="images/logo-phone.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          </picture>
           <svg class="logo-text" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="101"
             height="18" fill="none" viewBox="0 0 101 18">
             <path fill="#111"
@@ -35,10 +38,10 @@
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--current">
+              <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">Главная</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--current">
                 <a class="main-nav__link" href="#">Каталог продукции</a>
               </li>
               <li class="main-nav__item">
