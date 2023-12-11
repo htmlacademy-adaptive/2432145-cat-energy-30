@@ -7,3 +7,29 @@
     src: $font-src;
   }
 }
+
+@mixin button ($font-size, $line-height) {
+  display: inline-block;
+  font-family: $secondary-font;
+  border: 1px solid transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #68B738;
+  cursor: pointer;
+}
+
+@mixin secondary-decoration ($font-size, $line-height) {
+  font-family: $secondary-font;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+@mixin background-image-set {
+  background-color: rgba(104, 183, 56, 0.85);
+  background-repeat: no-repeat;
+  object-fit: cover;
+}

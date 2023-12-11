@@ -1,11 +1,17 @@
 .services-item {}
 
-.services-item__title {}
+.services-item__title {
+  @include secondary-decoration (24px, 37px);
+}
 
 .services-item__description {}
 
-.services-item__link {}
+.services-item__link {
+  @include secondary-decoration (16px, 16px);
+}
 
-.services-item__link-text {}
+.services-item__link-text {
+  @include secondary-decoration (16px, 16px);
+}
 
 .services-item__icon {}

@@ -2,13 +2,17 @@
 
 .example__wrapper {}
 
-.example__title {}
+.example__title {
+  @include secondary-decoration (36px, 40px);
+}
 
 .example__description {}
 
 .example__list {}
 
-.example__item {}
+.example__item {
+  @include secondary-decoration (24px, 24px);
+}
 
 .example__item-title {}
 
@@ -16,8 +20,12 @@
 
 .example__total {}
 
-.example__total-text {}
+.example__total-text {
+  @include secondary-decoration (14px, 20px);
+}
 
-.example__total-price {}
+.example__total-price {
+  @include secondary-decoration (14px, 20px);
+}
 
 .example__slider {}

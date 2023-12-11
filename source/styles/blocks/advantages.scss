@@ -2,9 +2,13 @@
 
 .advantages__container {}
 
-.advantages__title {}
+.advantages__title {
+  @include secondary-decoration (36px, 40px);
+}
 
-.advantages__list {}
+.advantages__list {
+  list-style-type: none;
+}
 
 .advantages__item {}
 

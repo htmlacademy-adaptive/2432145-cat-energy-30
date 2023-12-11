@@ -1,4 +1,6 @@
-.button {}
+.button {
+  @include button (16px, 20px);
+}
 
 .button--pick-up {}
 

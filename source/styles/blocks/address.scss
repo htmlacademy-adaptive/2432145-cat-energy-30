@@ -2,8 +2,13 @@
 
 .address__wrapper {}
 
-.address__title {}
+.address__title {
+  @include secondary-decoration (16px, 20px);
+  color: #111111;
+}
 
-.address__description {}
+.address__description {
+  font-style: normal;
+}
 
 .address__map {}
