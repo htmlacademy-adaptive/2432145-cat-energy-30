@@ -19,6 +19,7 @@
   cursor: pointer;
 }
 
+/* Основные параметры для текста заголовка */
 @mixin secondary-decoration ($font-size, $line-height) {
   font-family: $secondary-font;
   font-size: $font-size;
@@ -28,8 +29,16 @@
   color: #000000;
 }
 
+/* Основные параметры для фоновых картинок */
 @mixin background-image-set {
   background-color: rgba(104, 183, 56, 0.85);
   background-repeat: no-repeat;
   object-fit: cover;
+}
+
+/* Обнуление стилей списков */
+@mixin list-normalize {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }

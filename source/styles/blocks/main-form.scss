@@ -2,8 +2,12 @@
 
 .main-form__wrapper {}
 
-.main-form__title {}
+.main-form__title {
+  @include secondary-decoration (36px, 36px);
+}
 
-.main-form__description {}
+.main-form__description {
+  @include secondary-decoration (14px, 18px);
+}
 
 .main-form__inputs {}

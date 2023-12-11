@@ -1,10 +1,18 @@
 .form {}
 
-.form-group {}
+.form__group {
+  @include secondary-decoration (24px, 26px);
+}
 
-.form__label {}
+.form__label {
+  @include secondary-decoration (16px, 18px);
+}
 
-.form__input {}
+.form__input {
+  &::placeholder {
+    @include secondary-decoration (16px, 18px);
+  }
+}
 
 .form__input--data {}
 
@@ -24,7 +32,9 @@
 
 .form__input-checkbox--extra {}
 
-.form__fieldset {}
+.form__fieldset {
+  border: none;
+}
 
 .form__fieldset--data {}
 
@@ -34,10 +44,25 @@
 
 .form__fieldset--extra {}
 
-.form__services-list {}
+.form__services-list {
+  @include list-normalize;
+}
 
 .form__item {}
 
-.form__comment-area {}
+.form__title {
+  @include secondary-decoration (24px, 26px);
+}
 
-.form__note {}
+.form__comment-area {
+  &::placeholder {
+    @include secondary-decoration (16px, 18px);
+    color: #444444;
+  }
+}
+
+.form__note {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
