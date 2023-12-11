@@ -1,7 +1,7 @@
 .services {}
 
 .services__list {
-  list-style-type: none;
+  @include list-normalize;
 }
 
 .services__item {}

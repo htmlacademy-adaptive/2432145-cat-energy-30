@@ -48,6 +48,14 @@
   @include list-normalize;
 }
 
+.form__contacts-list {
+  @include list-normalize;
+}
+
+.form__list-extra {
+  @include list-normalize;
+}
+
 .form__item {}
 
 .form__title {

@@ -2,8 +2,12 @@
 
 .cards-catalog__wrapper {}
 
-.cards-catalog__title {}
+.cards-catalog__title {
+  @include secondary-decoration (36px, 36px);
+}
 
-.cards-catalog__list {}
+.cards-catalog__list {
+  @include list-normalize;
+}
 
 .cards-catalog__item {}

@@ -9,7 +9,7 @@
 .nav__wrapper {}
 
 .nav__list {
-  list-style-type: none;
+  @include list-normalize;
 }
 
 .nav__item {}

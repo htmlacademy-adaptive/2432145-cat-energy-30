@@ -1,5 +1,5 @@
 .social-list {
-  list-style-type: none;
+  @include list-normalize;
 }
 
 .social-list__item {}

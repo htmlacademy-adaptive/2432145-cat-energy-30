@@ -2,12 +2,21 @@
 
 .catalog-extra__wrapper {}
 
-.catalog-extra__title {}
+.catalog-extra__title {
+  @include secondary-decoration (24px, 24px);
+}
 
-.catalog-extra__list {}
+.catalog-extra__list {
+  @include list-normalize;
+}
 
 .catalog-extra__item {}
 
-.catalog-extra__subtitle {}
+.catalog-extra__subtitle {
+  @include secondary-decoration (16px, 16px);
+}
 
-.catalog-extra__description {}
+.catalog-extra__description {
+  font-size: 14px;
+  line-height: 14px;
+}

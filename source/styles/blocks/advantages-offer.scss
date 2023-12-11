@@ -1,5 +1,11 @@
 .advantages-offer {}
 
-.advantages-offer__wrapper {}
+.advantages-offer__wrapper {
+  @include background-image-set;
+}
 
-.advantages-offer__description {}
+.advantages-offer__description {
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}

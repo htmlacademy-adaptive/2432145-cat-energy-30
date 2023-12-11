@@ -4,8 +4,13 @@
 
 .card-catalog__image {}
 
-.card-catalog__title {}
+.card-catalog__title {
+  @include secondary-decoration (16px, 20px);
+}
 
-.card-catalog__description {}
+.card-catalog__description {
+  font-size: 12px;
+  line-height: 16px;
+}
 
 .card-catalog-plus {}
