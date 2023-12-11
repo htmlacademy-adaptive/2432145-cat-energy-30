@@ -8,6 +8,7 @@
 
 .services-item__link {
   @include secondary-decoration (16px, 16px);
+  text-decoration: none;
 }
 
 .services-item__link-text {
