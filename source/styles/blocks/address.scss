@@ -5,10 +5,20 @@
 .address__title {
   @include secondary-decoration (16px, 20px);
   color: #111111;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .address__description {
   font-style: normal;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .address__map {}

@@ -4,6 +4,11 @@
 
 .advantages__title {
   @include secondary-decoration (36px, 40px);
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantages__list {
@@ -12,4 +17,9 @@
 
 .advantages__item {}
 
-.advantages__item-description {}
+.advantages__item-description {
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
