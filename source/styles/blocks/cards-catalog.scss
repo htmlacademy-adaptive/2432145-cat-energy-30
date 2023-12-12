@@ -4,6 +4,11 @@
 
 .cards-catalog__title {
   @include secondary-decoration (36px, 36px);
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .cards-catalog__list {
