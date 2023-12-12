@@ -1,5 +1,8 @@
-$primary-font: "Lato", sans-serif;
-$secondary-font: "Oswald", sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   font-family: $primary-font;
