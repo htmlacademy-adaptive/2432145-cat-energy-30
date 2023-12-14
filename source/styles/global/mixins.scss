@@ -20,7 +20,7 @@
 }
 
 /* Основные параметры для текста заголовка */
-@mixin secondary-decoration ($font-size, $line-height, $color: #000000) {
+@mixin secondary-decoration ($font-size, $line-height, $color: $secondary-text-color) {
   font-family: $secondary-font;
   font-size: $font-size;
   line-height: $line-height;
