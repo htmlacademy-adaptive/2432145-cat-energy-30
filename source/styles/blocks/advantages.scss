@@ -2,10 +2,24 @@
 
 .advantages__container {}
 
-.advantages__title {}
+.advantages__title {
+  @include secondary-decoration (36px, 40px);
 
-.advantages__list {}
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.advantages__list {
+  @include list-normalize;
+}
 
 .advantages__item {}
 
-.advantages__item-description {}
+.advantages__item-description {
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

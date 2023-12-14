@@ -1,0 +1,37 @@
+.catalog-extra {}
+
+.catalog-extra__wrapper {}
+
+.catalog-extra__title {
+  @include secondary-decoration (24px, 24px);
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.catalog-extra__list {
+  @include list-normalize;
+}
+
+.catalog-extra__item {}
+
+.catalog-extra__subtitle {
+  @include secondary-decoration (16px, 16px);
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.catalog-extra__description {
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

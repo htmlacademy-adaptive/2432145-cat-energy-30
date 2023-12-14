@@ -1,10 +1,30 @@
 .hero {}
 
-.hero__wrappe {}
+.hero__wrapper {
+  @include background-image-set;
+}
 
-.hero__title {}
+.hero__title {
+  @include secondary-decoration (36px, 36px);
+  color: #ffffff;
 
-.hero__description{}
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+  }
+}
+
+.hero__description {
+  @include secondary-decoration (14px, 14px);
+  color: #ffffff;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+  }
+}
 
 .hero__picture {}
 

@@ -1,11 +1,33 @@
 .services-item {}
 
-.services-item__title {}
+.services-item__title {
+  @include secondary-decoration (24px, 37px);
 
-.services-item__description {}
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
 
-.services-item__link {}
+.services-item__description {
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 
-.services-item__link-text {}
+.services-item__link {
+  @include secondary-decoration (16px, 16px);
+  text-decoration: none;
+}
+
+.services-item__link-text {
+  @include secondary-decoration (16px, 16px);
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;;
+  }
+}
 
 .services-item__icon {}

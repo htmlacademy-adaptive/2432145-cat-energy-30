@@ -1,5 +1,7 @@
 .services {}
 
-.services__list {}
+.services__list {
+  @include list-normalize;
+}
 
 .services__item {}

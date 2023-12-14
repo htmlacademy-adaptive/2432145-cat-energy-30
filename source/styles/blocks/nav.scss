@@ -2,16 +2,36 @@
 
 .nav__toggle {}
 
-.nav__toggle {}
-
 .nav__toggle--close {}
 
 .nav__wrapper {}
 
-.nav__list {}
+.nav__list {
+  @include list-normalize;
+}
+
+.nav__list--index-desktop {
+  @media (min-width: 1220px) {
+    background-color: rgba(104, 183, 56, 0.85);
+  }
+}
 
 .nav__item {}
 
-.nav__link {}
+.nav__link {
+  @include secondary-decoration (20px, 20px);
+  text-decoration: none;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.nav__link--index-desktop {
+  @media (min-width: 1220px) {
+    color: #ffffff;
+  }
+}
 
 .nav__link--current {}

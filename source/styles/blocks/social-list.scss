@@ -1,7 +1,11 @@
-.social-list {}
+.social-list {
+  @include list-normalize;
+}
 
 .social-list__item {}
 
-.social-list__link {}
+.social-list__link {
+
+}
 
 .social-list__icon {}

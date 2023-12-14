@@ -2,8 +2,22 @@
 
 .main-form__wrapper {}
 
-.main-form__title {}
+.main-form__title {
+  @include secondary-decoration (36px, 36px);
 
-.main-form__description {}
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.main-form__description {
+  @include secondary-decoration (14px, 18px);
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 
 .main-form__inputs {}
