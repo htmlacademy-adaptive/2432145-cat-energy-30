@@ -10,6 +10,12 @@
   @include list-normalize;
 }
 
+.nav__list--index-desktop {
+  @media (min-width: 1220px) {
+    background-color: rgba(104, 183, 56, 0.85);
+  }
+}
+
 .nav__item {}
 
 .nav__link {
@@ -20,16 +26,11 @@
     font-size: 18px;
     line-height: 24px;
   }
-
-  @media (min-width: 1440px) {
-    font-size: 20px;
-    color: #ffffff;
-  }
 }
 
-.nav__list--index {
-  @media (min-width: 1440px) {
-    background-color: rgba(104, 183, 56, 0.85);
+.nav__link--index-desktop {
+  @media (min-width: 1220px) {
+    color: #ffffff;
   }
 }
 

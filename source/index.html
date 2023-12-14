@@ -16,12 +16,11 @@
     <div class="header__wrapper">
       <a class="header__logo header-logo" href="index.html">
         <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70"
+          <source type="image/svg+xml" media="(min-width: 1220px)" srcset="images/logo-desktop.svg" width="70"
             height="59">
           <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60"
             height="50">
-          <img class="header-logo__image" src="images/logo-phone.svg" width="33" height="38"
-            alt="Логотип Cat Energy.">
+          <img class="header-logo__image" src="images/logo-phone.svg" width="33" height="38" alt="Логотип Cat Energy.">
         </picture>
         <svg class="header__logo-text" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
           width="101" height="18" fill="none" viewBox="0 0 101 18">
@@ -38,15 +37,16 @@
             <span class="visually-hidden">Закрыть меню.</span>
           </button>
           <div class="nav__wrapper">
-            <ul class="nav__list nav__list--index">
+            <ul class="nav__list nav__list--index-desktop">
               <li class="nav__item">
-                <a class="nav__link nav__link--current" href="index.html" aria-current="page">Главная</a>
+                <a class="nav__link nav__link--current nav__link--index-desktop" href="index.html"
+                  aria-current="page">Главная</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="catalog.html">Каталог продукции</a>
+                <a class="nav__link nav__link--index-desktop" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="form.html">Подбор программы</a>
+                <a class="nav__link nav__link--index-desktop" href="form.html">Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -61,7 +61,7 @@
         <p class="hero__description">Занялся собой? Займись котом!</p>
         <div class="hero__picture">
           <picture>
-            <source type="image/png" media="(min-width: 1440px)"
+            <source type="image/png" media="(min-width: 1220px)"
               srcset="images/supplies-hero-desktop@1x.png 1x, images/supplies-hero-desktop@1x.png 2x" width="552"
               height="499">
             <source type="image/jpeg" media="(min-width: 768px)"
@@ -79,7 +79,7 @@
         <a class="button button--pick-up" href="form.html">Подобрать программу</a>
         <ul class="services__list">
           <li class="services__item services-item">
-            <h3 class="services-item__title">Похудение</h3>
+            <p class="services-item__title title-h3">Похудение</p>
             <p class="services-item__description">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
               поможет вашему питомцу сбросить лишний вес.
@@ -94,7 +94,7 @@
             </a>
           </li>
           <li class="services__item services-item">
-            <h3 class="services-item__title">Набор массы</h3>
+            <p class="services-item__title title-h3">Набор массы</p>
             <p class="services-item__description">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
               необходимые мышцы!
@@ -114,7 +114,7 @@
     <section class="advantages">
       <div class="advantages__container">
         <h2 class="visually-hidden">Преимущества.</h2>
-        <h3 class="advantages__title">Как это работает?</h3>
+        <p class="advantages__title title-h3">Как это работает?</p>
         <ul class="advantages__list">
           <li class="advantages__item">
             <p class="advantages__item-description">Функциональное питание
@@ -140,16 +140,20 @@
     </section>
     <article class="example">
       <div class="example__wrapper">
-        <h2 class="visually-hidden">Классная история кота Бориса.</h2>
-        <h3 class="example__title">Живой пример</h3>
+        <p class="example__title title-h3">Живой пример</p>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
           Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
           16 часов в день.</p>
         <dl class="example__list">
-          <dt class="example__item">5 кг</dt>
-          <dd class="example__item-description">снижение веса</dd>
-          <dt class="example__item">60 дней</dt>
-          <dd class="example__item-description">затрачено времени</dd>
+          <!-- Вопрос! По поводу дивов для dt и dd -->
+          <div class="example__list-wrapper">
+            <dt class="example__item">5 кг</dt>
+            <dd class="example__item-description">снижение веса</dd>
+          </div>
+          <div class="example__list-wrapper">
+            <dt class="example__item">60 дней</dt>
+            <dd class="example__item-description">затрачено времени</dd>
+          </div>
         </dl>
         <div class="example__total">
           <p class="example__total-text">Затраты на питание:</p>
@@ -163,7 +167,7 @@
     <section class="address">
       <div class="address__wrapper">
         <h2 class="visually-hidden">Адрес</h2>
-        <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <p class="address__title title-h3">Приглашаем к сотрудничеству дилеров!</p>
         <address class="address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         <!--  Карта -->
         <div class="address__map"></div>

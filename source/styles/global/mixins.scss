@@ -8,24 +8,24 @@
   }
 }
 
-@mixin button ($font-size, $line-height) {
+@mixin button ($font-size, $line-height, $color: #ffffff, $background-color: #68b738) {
   display: inline-block;
   font-family: $secondary-font;
   border: 1px solid transparent;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #68b738;
+  background-color: $background-color;
+  color: $color;
   cursor: pointer;
 }
 
 /* Основные параметры для текста заголовка */
-@mixin secondary-decoration ($font-size, $line-height) {
+@mixin secondary-decoration ($font-size, $line-height, $color: #000000) {
   font-family: $secondary-font;
   font-size: $font-size;
   line-height: $line-height;
   text-transform: uppercase;
-  color: #000000;
+  color: $color;
 }
 
 /* Основные параметры для фоновых картинок */

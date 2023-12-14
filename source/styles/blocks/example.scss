@@ -20,6 +20,8 @@
 
 .example__list {}
 
+.example__list-wrapper {}
+
 .example__item {
   @include secondary-decoration (24px, 24px);
 
@@ -52,6 +54,11 @@
 
 .example__total-price {
   @include secondary-decoration (14px, 20px);
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .example__slider {}
