@@ -3,8 +3,25 @@
   line-height: 20px;
   color: #444444;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-within {
+    color: $basic-green;
+  }
 }
 
-.developer-logo__text {}
+.developer-logo__text {
+}
 
-.developer-logo__image {}
+.developer-logo__image {
+  &:hover {
+    color: $basic-green;
+  }
+}
+
+.developer-logo__text:hover ~ .developer-logo__image {
+  color: $basic-green;
+}

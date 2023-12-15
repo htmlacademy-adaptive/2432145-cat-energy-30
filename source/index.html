@@ -20,7 +20,7 @@
           <use href="images/sprite.svg#logo-phone"></use>
         </svg>
         <div class="header__logo-text-wrapper">
-          <svg class="header-logo__text" aria-hidden="true" focusable="false" width="101" height="18">
+          <svg class="logo-text" aria-hidden="true" focusable="false" width="101" height="18">
             <use href="images/sprite.svg#logo-text"></use>
           </svg>
         </div>
@@ -177,11 +177,12 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <div class="footer__logo-wrapper">
-        <svg class="logo__text" aria-hidden="true" focusable="false" width="101" height="18">
+      <a class="footer__logo-link" href="#" tabindex="-1">
+        <span class="visually-hidden">Текстовый логотип Cat Energy</span>
+        <svg class="logo-text" aria-hidden="true" focusable="false" width="101" height="18" tabindex="0">
           <use href="images/sprite.svg#logo-text"></use>
         </svg>
-      </div>
+      </a>
       <ul class="social-list">
         <li class="social-list__item">
           <a class="social-list__link" href="#">
@@ -209,6 +210,7 @@
         </li>
       </ul>
       <a class="developer-logo" href="#">
+        <!-- Вопрос! Разделение состояний для логотипа академии в футере -->
         <span class="developer-logo__text">HTML Academy</span>
         <svg class="developer-logo__image" aria-hidden="true" focusable="false" width="27" height="34">
           <use href="images/sprite.svg#developer-logo__image"></use>

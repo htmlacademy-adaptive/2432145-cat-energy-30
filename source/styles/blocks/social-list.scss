@@ -5,7 +5,19 @@
 .social-list__item {}
 
 .social-list__link {
+  color: #666666;
 
+  &:focus-visible {
+    color: $basic-green;
+  }
 }
 
-.social-list__icon {}
+.social-list__icon {
+  &:hover {
+    color: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
