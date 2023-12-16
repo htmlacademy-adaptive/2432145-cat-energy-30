@@ -4,12 +4,15 @@
   color: #444444;
   text-decoration: none;
 
-  &:active {
-    opacity: 0.3;
+  &:hover,
+  &:focus-visible {
+    .developer-logo__image {
+      color: $basic-green;
+    }
   }
 
-  &:focus-within {
-    color: $basic-green;
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -17,11 +20,4 @@
 }
 
 .developer-logo__image {
-  &:hover {
-    color: $basic-green;
-  }
-}
-
-.developer-logo__text:hover ~ .developer-logo__image {
-  color: $basic-green;
 }

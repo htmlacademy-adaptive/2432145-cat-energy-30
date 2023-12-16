@@ -7,7 +7,7 @@
 .card-catalog__title {
   @include secondary-decoration (16px, 20px);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
   }
@@ -17,7 +17,7 @@
   font-size: 12px;
   line-height: 16px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
   }

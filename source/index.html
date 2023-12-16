@@ -15,10 +15,13 @@
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo header-logo" href="index.html">
-        <span class="visually-hidden">Логотип Кэт Энерджи</span>
-        <svg class="header-logo__svg" aria-hidden="true" focusable="false" width="33" height="38">
-          <use href="images/sprite.svg#logo-phone"></use>
-        </svg>
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1220px)" srcset="images/logo-desktop.svg" width="70"
+            height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60"
+            height="50">
+          <img class="header-logo__image" src="images/logo-phone.svg" width="33" height="38" alt="Логотип Cat Energy.">
+        </picture>
         <div class="header__logo-text-wrapper">
           <svg class="logo-text" aria-hidden="true" focusable="false" width="101" height="18">
             <use href="images/sprite.svg#logo-text"></use>
@@ -79,7 +82,9 @@
     <section class="services">
       <div class="services__container">
         <h2 class="visually-hidden">Список программ.</h2>
-        <a class="button button--pick-up" href="form.html">Подобрать программу</a>
+        <a class="button button--pick-up" href="form.html">
+          <span class="button__text-mark">Подобрать программу</span>
+        </a>
         <ul class="services__list">
           <li class="services__item services-item">
             <p class="services-item__title title-h3">Похудение</p>
@@ -88,6 +93,7 @@
               поможет вашему питомцу сбросить лишний вес.
             </p>
             <a class="services-item__link" href="#">
+              <!-- Вопрос! Замена иконки стрелочки при хувере на Каталог slim -->
               <span class="services-item__link-text">Каталог slim</span>
               <svg class="services-item__icon" aria-hidden="true" focusable="false" width="24" height="12">
                 <use href="images/sprite.svg#services-item__icon"></use>
@@ -145,7 +151,6 @@
           Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
           16 часов в день.</p>
         <dl class="example__list">
-          <!-- Вопрос! По поводу дивов для dt и dd -->
           <div class="example__list-wrapper">
             <dt class="example__item">5 кг</dt>
             <dd class="example__item-description">снижение веса</dd>
@@ -210,7 +215,6 @@
         </li>
       </ul>
       <a class="developer-logo" href="#">
-        <!-- Вопрос! Разделение состояний для логотипа академии в футере -->
         <span class="developer-logo__text">HTML Academy</span>
         <svg class="developer-logo__image" aria-hidden="true" focusable="false" width="27" height="34">
           <use href="images/sprite.svg#developer-logo__image"></use>

@@ -5,14 +5,14 @@
 .example__title {
   @include secondary-decoration (36px, 40px);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
   }
 }
 
 .example__description {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
   }
@@ -25,7 +25,7 @@
 .example__item {
   @include secondary-decoration (24px, 24px);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
   }
@@ -35,7 +35,7 @@
   font-size: 12px;
   line-height: 12px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
   }
@@ -46,7 +46,7 @@
 .example__total-text {
   @include secondary-decoration (14px, 20px);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
   }
@@ -55,7 +55,7 @@
 .example__total-price {
   @include secondary-decoration (14px, 20px);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
   }

@@ -8,7 +8,7 @@
   }
 }
 
-@mixin button ($font-size, $line-height, $color: #ffffff, $background-color: #68b738) {
+@mixin button ($font-size, $line-height, $color: #ffffff, $background-color: $basic-green) {
   display: inline-block;
   font-family: $secondary-font;
   border: 1px solid transparent;
@@ -17,6 +17,19 @@
   background-color: $background-color;
   color: $color;
   cursor: pointer;
+}
+
+@mixin button-primary-states ($background-color: $basic-green-2) {
+  &:hover,
+  &:focus-visible {
+    background-color: $background-color;
+  }
+
+  &:active {
+    .button__text-mark {
+      opacity: 0.3;
+    }
+  }
 }
 
 /* Основные параметры для текста заголовка */
