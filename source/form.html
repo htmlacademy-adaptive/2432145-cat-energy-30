@@ -61,15 +61,15 @@
           <legend class="visually-hidden">Главные данные</legend>
           <label class="form__group">
             <span class="form__label">Имя:*</span>
-            <input class="form__input form__input--data" type="text" name="data-name" placeholder="Барсик" required>
+            <input class="form__input form__input-name form__input--data" type="text" name="data-name" placeholder="Барсик" required>
           </label>
           <label class="form__group">
             <span class="form__label">Вес(кг):*</span>
-            <input class="form__input form__input--data" type="number" name="data-weight" value="7" required>
+            <input class="form__input form__input-weight form__input--data" type="number" name="data-weight" value="7" required>
           </label>
           <label class="form__group">
             <span class="form__label">Возраст(лет):</span>
-            <input class="form__input form__input--data" type="number" name="data-age" value="7">
+            <input class="form__input form__input-age form__input--data" type="number" name="data-age" value="7">
           </label>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--services">
@@ -169,11 +169,12 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <div class="footer__logo-wrapper">
-        <svg class="logo-text" aria-hidden="true" focusable="false" width="101" height="18">
+      <a class="footer__logo-link" href="#" tabindex="-1">
+        <span class="visually-hidden">Текстовый логотип Cat Energy</span>
+        <svg class="logo-text" aria-hidden="true" focusable="false" width="101" height="18" tabindex="0">
           <use href="images/sprite.svg#logo-text"></use>
         </svg>
-      </div>
+      </a>
       <ul class="social-list">
         <li class="social-list__item">
           <a class="social-list__link" href="#">
