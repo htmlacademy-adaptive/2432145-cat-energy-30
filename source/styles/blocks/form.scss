@@ -27,10 +27,38 @@
 }
 
 .form__input {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 18px;
+
   &::placeholder {
     @include secondary-decoration (16px, 18px);
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
+
+
+.form__input--data {}
+
+.form__input--contacts {}
+
+.form__radio-label {}
+
+.form__input-radio {}
+
+.form__input-radio--services {}
+
+.form-checkbox {}
+
+.form__checkbox-label {}
+
+.form__input-checkbox {}
+
+.form__input-checkbox--extra {}
 
 .form__input-name {
   min-width: 228px;
@@ -83,23 +111,39 @@
   }
 }
 
-.form__input--data {}
+.form__input-email {
+  min-width: 217px;
+  min-height: 45px;
+  padding: 10px 20px;
+  border: 1px solid #e7e7e7;
 
-.form__input--contacts {}
+  @media (min-width: $tablet-width) {
+    min-width: 552px;
+    min-height: 52px;
+    padding: 20px 11px;
+  }
 
-.form__radio-label {}
+  @media (min-width: $desktop-width) {
+    min-width: 494px;
+  }
+}
 
-.form__input-radio {}
+.form__input-phone {
+  min-width: 200px;
+  min-height: 45px;
+  padding: 10px 20px;
+  border: 1px solid #e7e7e7;
 
-.form__input-radio--services {}
+  @media (min-width: $tablet-width) {
+    min-width: 530px;
+    min-height: 52px;
+    padding: 20px 11px;
+  }
 
-.form-checkbox {}
-
-.form__checkbox-label {}
-
-.form__input-checkbox {}
-
-.form__input-checkbox--extra {}
+  @media (min-width: $desktop-width) {
+    min-width: 472px;
+  }
+}
 
 .form__fieldset {
   border: none;
