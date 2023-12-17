@@ -61,15 +61,17 @@
           <legend class="visually-hidden">Главные данные</legend>
           <label class="form__group">
             <span class="form__label">Имя:*</span>
-            <input class="form__input form__input-name form__input--data" type="text" name="data-name" placeholder="Барсик" required>
+            <input class="form__input form__input-name form__input--text-states" type="text" name="data-name"
+              placeholder="Барсик" required>
           </label>
           <label class="form__group">
             <span class="form__label">Вес(кг):*</span>
-            <input class="form__input form__input-weight form__input--data" type="number" name="data-weight" value="7" required>
+            <input class="form__input form__input-weight form__input--text-states" type="number" name="data-weight"
+              value="7" required>
           </label>
           <label class="form__group">
             <span class="form__label">Возраст(лет):</span>
-            <input class="form__input form__input-age form__input--data" type="number" name="data-age" value="7">
+            <input class="form__input form__input-age form__input--text-states" type="number" name="data-age" value="7">
           </label>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--services">
@@ -103,15 +105,17 @@
           <ul class="form__contacts-list">
             <li class="form__item">
               <label class="form__group">
-                <span class="form__label">E-mail:*</span>
-                <input class="form__input form__input-email form__input--contacts" type="email" name="e-mail"
+                <!--  Вопрос! Не выходит вставить декоративные svg на фон через mask.
+                form__envelope-image и form__phone-image. Так же не выходит сделать им состояния(form__input--text-states) -->
+                <span class="form__label form__envelope-image">E-mail:*</span>
+                <input class="form__input form__input-email form__input--text-states" type="email" name="e-mail"
                   placeholder="kuklachev@gmail.com" required>
               </label>
             </li>
             <li class="form__item">
               <label class="form__group">
-                <span class="form__label">Телефон:*</span>
-                <input class="form__input form__input-phone form__input--contacts" type="text" name="phone"
+                <span class="form__label form__phone-image">Телефон:*</span>
+                <input class="form__input form__input-phone form__input--text-states" type="text" name="phone"
                   placeholder="8 (960) 900-60-90" required>
               </label>
             </li>
