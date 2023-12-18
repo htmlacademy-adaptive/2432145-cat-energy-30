@@ -51,7 +51,7 @@
 
 .button--show-all {
   @include button-primary-states (#ebebebeb);
-  background-color: #f2f2f2;
+  background-color: $basic-grey;
   color: inherit;
   min-width: 280px;
   min-height: 40px;

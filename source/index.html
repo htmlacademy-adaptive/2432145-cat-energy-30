@@ -86,7 +86,7 @@
           <span class="button__text-mark">Подобрать программу</span>
         </a>
         <ul class="services__list">
-          <li class="services__item services-item">
+          <li class="services__item services-item services-item--decoration">
             <div class="services-item__cat-slim"></div>
             <p class="services-item__title title-h3">Похудение</p>
             <p class="services-item__description">
@@ -101,7 +101,7 @@
               </svg>
             </a>
           </li>
-          <li class="services__item services-item">
+          <li class="services__item services-item services-item--decoration">
             <div class="services-item__cat-pro"></div>
             <p class="services-item__title title-h3">Набор массы</p>
             <p class="services-item__description">
@@ -170,7 +170,19 @@
           <p class="example__total-text">Затраты на питание:</p>
           <p class="example__total-price">15 000 РУБ.</p>
           <!--  Слайдер -->
-          <div class="example__slider"></div>
+          <div class="example__slider">
+            <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/slider/slider-tablet-cat-before@1x.webp 1x, images/slider/slider-tablet-cat-before@2x.webp 2x"
+                width="560" height="512">
+              <source type="image/png" media="(min-width: 768px)"
+                srcset="images/slider/slider-tablet-cat-before@1x.png 1x, images/slider/slider-tablet-cat-before@1x.png 2x"
+                width="560" height="512">
+              <img class="slider-cat-image" src="images/slider/slider-phone-cat-before@1x.png"
+                srcset="images/slider/slider-phone-cat-before@2x.png" width="280" height="256" alt="Cat Energy
+        SLIM 500 г рис.">
+            </picture>
+          </div>
           <!-- Слайдер End -->
         </div>
       </div>

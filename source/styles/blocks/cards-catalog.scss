@@ -16,3 +16,9 @@
 }
 
 .cards-catalog__item {}
+
+.card-catalog__item--product {
+  @media (min-width: $tablet-width) {
+    background-color: $basic-grey;
+  }
+}

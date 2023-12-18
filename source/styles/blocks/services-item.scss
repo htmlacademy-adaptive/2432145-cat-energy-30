@@ -1,5 +1,9 @@
 .services-item {}
 
+.services-item--decoration {
+  background-color: $basic-grey;
+}
+
 .services-item__cat-slim {
   background-image: url("/images/cat-back-slim.svg");
   background-size: 50px 51px;
