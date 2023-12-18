@@ -11,7 +11,7 @@
 
 .form__label {
   @include secondary-decoration (16px, 18px);
-  color: #444444;
+  color: $primary-text-color;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -19,7 +19,11 @@
   }
 }
 
-.form__envelope-image::after {
+.form__email-container {
+  position: relative;
+}
+
+.form__email-decoration::after {
   position: absolute;
   content: "";
   width: 17px;
@@ -27,10 +31,14 @@
   mask-image: url("../../images/icons/stack.svg#icon-envelope");
   mask-repeat: no-repeat;
   background-color: #000000;
-  transform: translate(465px, 200%);
+  transform: translate(-35px, 200%);
 }
 
-.form__phone-image::after {
+.form__phone-container {
+  position: relative;
+}
+
+.form__phone-decoration::after {
   position: absolute;
   content: "";
   width: 15px;
@@ -38,7 +46,7 @@
   mask-image: url("../../images/icons/stack.svg#icon-phone");
   mask-repeat: no-repeat;
   background-color: #000000;
-  transform: translate(450px, 200%);
+  transform: translate(-30px, 200%);
 }
 
 .form__input {
@@ -57,16 +65,16 @@
 }
 
 
-.form__input--text-states {
+.form__input--states {
   &:hover {
-    border: 1px solid #cdcdcd;
+    outline: 1px solid #cdcdcd;
   }
 
   &:focus,
   &:active {
-    .form__envelope-image::after,
-    .form__phone-image::after {
-      fill: $basic-green;
+    .form__email-decoration::after,
+    .form__phone-decoration::after {
+      background-color: $basic-green;
     }
   }
 }
@@ -124,6 +132,7 @@
   min-height: 45px;
   padding: 10px 20px;
   border: 1px solid #e7e7e7;
+  appearance: none;
 
   @media (min-width: $tablet-width) {
     min-width: 498px;
@@ -206,14 +215,25 @@
 }
 
 .form__comment-area {
+  resize: none;
+  min-width: 280px;
+  min-height: 150px;
+
   &::placeholder {
     @include secondary-decoration (16px, 18px);
-    color: #444444;
+    color: $primary-text-color;
+  }
 
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 30px;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    min-width: 628px;
+    min-height: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1220px;
+    min-height: 175px;
   }
 }
 

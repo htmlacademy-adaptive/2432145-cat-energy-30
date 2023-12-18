@@ -1,5 +1,5 @@
 .button {
-  @include button (16px, 20px);
+  @include button;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

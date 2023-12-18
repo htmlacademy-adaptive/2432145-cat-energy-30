@@ -61,17 +61,17 @@
           <legend class="visually-hidden">Главные данные</legend>
           <label class="form__group">
             <span class="form__label">Имя:*</span>
-            <input class="form__input form__input-name form__input--text-states" type="text" name="data-name"
+            <input class="form__input form__input-name form__input--states" type="text" name="data-name"
               placeholder="Барсик" required>
           </label>
           <label class="form__group">
             <span class="form__label">Вес(кг):*</span>
-            <input class="form__input form__input-weight form__input--text-states" type="number" name="data-weight"
+            <input class="form__input form__input-weight form__input--states" type="number" name="data-weight"
               value="7" required>
           </label>
           <label class="form__group">
             <span class="form__label">Возраст(лет):</span>
-            <input class="form__input form__input-age form__input--text-states" type="number" name="data-age" value="7">
+            <input class="form__input form__input-age form__input--states" type="number" name="data-age" value="7">
           </label>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--services">
@@ -104,25 +104,30 @@
           <legend class="form__title">Контактные данные<br>(владельца кота)</legend>
           <ul class="form__contacts-list">
             <li class="form__item">
-              <label class="form__group">
-                <!--  Вопрос! Не выходит вставить декоративные svg на фон через mask.
-                form__envelope-image и form__phone-image. Так же не выходит сделать им состояния(form__input--text-states) -->
-                <span class="form__label form__envelope-image">E-mail:*</span>
-                <input class="form__input form__input-email form__input--text-states" type="email" name="e-mail"
-                  placeholder="kuklachev@gmail.com" required>
-              </label>
+              <div class="form__email-container">
+                <label class="form__group form__email-decoration">
+                  <!--  Вопрос! Не выходит вставить декоративные svg на фон через mask.
+                form__envelope-image и form__phone-image. Так же не выходит сделать им состояния(form__input-states) -->
+                <!-- Можно ли перенести состояния инпутов в global? form__input-states. -->
+                <span class="form__label">E-mail:*</span>
+                  <input class="form__input form__input-email form__input--states" type="email" name="e-mail"
+                    placeholder="kuklachev@gmail.com" required>
+                </label>
+              </div>
             </li>
             <li class="form__item">
-              <label class="form__group">
-                <span class="form__label form__phone-image">Телефон:*</span>
-                <input class="form__input form__input-phone form__input--text-states" type="text" name="phone"
-                  placeholder="8 (960) 900-60-90" required>
-              </label>
+              <div class="form__phone-container">
+                <label class="form__group form__phone-decoration">
+                  <span class="form__label">Телефон:*</span>
+                  <input class="form__input form__input-phone form__input--states" type="text" name="phone"
+                    placeholder="8 (960) 900-60-90" required>
+                </label>
+              </div>
             </li>
           </ul>
         </fieldset>
         <label class="form__group" for="textarea-comment">Комментарий</label>
-        <textarea class="form__comment-area" cols="33" rows="10" name="comment" id="textarea-comment"
+        <textarea class="form-input form__comment-area" cols="33" rows="10" name="comment" id="textarea-comment"
           placeholder="Расскажите обо всех повадках кота"></textarea>
         <fieldset class="form__fieldset form__fieldset--extra">
           <legend class="form__title">Дополнительно</legend>

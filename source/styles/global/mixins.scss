@@ -8,7 +8,7 @@
   }
 }
 
-@mixin button ($font-size, $line-height, $color: #ffffff, $background-color: $basic-green) {
+@mixin button ($font-size: 16px, $line-height: 20px, $color: #ffffff, $background-color: $basic-green) {
   display: inline-block;
   font-family: $secondary-font;
   border: 1px solid transparent;
@@ -48,14 +48,15 @@
   object-fit: cover;
 }
 
-@mixin advantages-images ($background-image, $tablet-size-width, $tablet-size-height ) {
+/* Оформление для декоративных svg картинок в списке преимуществ. */
+@mixin advantages-images ($background-image, $background-size-width, $background-size-height) {
   background-image: $background-image;
   width: 60px;
   height: 60px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: $basic-green;
-  background-size: $tablet-size-width, $tablet-size-height;
+  background-size: $background-size-width, $background-size-height;
 
   @media (min-width: $tablet-width) {
     width: 80px;
