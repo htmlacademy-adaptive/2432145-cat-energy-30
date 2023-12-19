@@ -18,20 +18,19 @@
 .advantages__item {}
 
 .advantages__item-leaf-image {
-  @include advantages-images (url("/images/icons/stack.svg#leaf"), 25px, 28px);
-  background-size: 25px 28px;
+  @include advantages-images (url("../../images/icons/stack.svg#leaf"), 25px, 28px);
 }
 
 .advantages__item-boiling-water-image {
-  @include advantages-images (url("/images/icons/stack.svg#boiling-water"), 26px, 29px);
+  @include advantages-images (url("../../images/icons/stack.svg#boiling-water"), 26px, 29px);
 }
 
 .advantages__item-fork-and-knife-image {
-  @include advantages-images (url("/images/icons/stack.svg#fork-and-knife"), 25px, 30px);
+  @include advantages-images (url("../../images/icons/stack.svg#fork-and-knife"), 25px, 30px);
 }
 
 .advantages__item-clock-image {
-  @include advantages-images (url("/images/icons/stack.svg#clock"), 26px, 31px);
+  @include advantages-images (url("../../images/icons/stack.svg#clock"), 26px, 31px);
 }
 
 .advantages__item-description {
