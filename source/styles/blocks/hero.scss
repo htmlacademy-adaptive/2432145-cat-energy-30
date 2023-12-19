@@ -2,6 +2,7 @@
 
 .hero__wrapper {
   @include background-image-set;
+  background-color: rgba(104, 183, 56, 0.85);
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
@@ -13,7 +14,7 @@
 }
 
 .hero__title {
-  @include secondary-decoration (36px, 36px);
+  @include secondary-decoration-text (36px, 36px);
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
@@ -28,7 +29,7 @@
 }
 
 .hero__description {
-  @include secondary-decoration (14px, 14px);
+  @include secondary-decoration-text (14px, 14px);
   color: #ffffff;
 
   @media (min-width: $tablet-width) {

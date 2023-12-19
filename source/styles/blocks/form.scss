@@ -1,7 +1,7 @@
 .form {}
 
 .form__group {
-  @include secondary-decoration (24px, 26px);
+  @include secondary-decoration-text (24px, 26px);
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -10,7 +10,7 @@
 }
 
 .form__label {
-  @include secondary-decoration (16px, 18px);
+  @include secondary-decoration-text (16px, 18px);
   color: $primary-text-color;
 
   @media (min-width: $tablet-width) {
@@ -55,7 +55,7 @@
   line-height: 18px;
 
   &::placeholder {
-    @include secondary-decoration (16px, 18px);
+    @include secondary-decoration-text (16px, 18px);
   }
 
   @media (min-width: $tablet-width) {
@@ -206,7 +206,7 @@
 .form__item {}
 
 .form__title {
-  @include secondary-decoration (24px, 26px);
+  @include secondary-decoration-text (24px, 26px);
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -220,7 +220,7 @@
   min-height: 150px;
 
   &::placeholder {
-    @include secondary-decoration (16px, 18px);
+    @include secondary-decoration-text (16px, 18px);
     color: $primary-text-color;
   }
 

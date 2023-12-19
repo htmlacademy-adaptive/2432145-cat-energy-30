@@ -9,7 +9,7 @@
 }
 
 .example__title {
-  @include secondary-decoration (36px, 40px);
+  @include secondary-decoration-text (36px, 40px);
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -29,7 +29,7 @@
 .example__list-wrapper {}
 
 .example__item {
-  @include secondary-decoration (24px, 24px);
+  @include secondary-decoration-text (24px, 24px);
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -50,7 +50,7 @@
 .example__total {}
 
 .example__total-text {
-  @include secondary-decoration (14px, 20px);
+  @include secondary-decoration-text (14px, 20px);
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -59,7 +59,7 @@
 }
 
 .example__total-price {
-  @include secondary-decoration (14px, 20px);
+  @include secondary-decoration-text (14px, 20px);
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

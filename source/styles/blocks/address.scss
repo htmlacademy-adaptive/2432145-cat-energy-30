@@ -3,7 +3,7 @@
 .address__wrapper {}
 
 .address__title {
-  @include secondary-decoration (16px, 20px);
+  @include secondary-decoration-text (16px, 20px);
   color: #111111;
 
   @media (min-width: $tablet-width) {

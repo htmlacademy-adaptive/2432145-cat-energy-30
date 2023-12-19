@@ -19,7 +19,7 @@
 .nav__item {}
 
 .nav__link {
-  @include secondary-decoration (20px, 20px);
+  @include secondary-decoration-text (20px, 20px);
   text-decoration: none;
 
   &:hover {

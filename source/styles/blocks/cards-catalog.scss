@@ -3,7 +3,7 @@
 .cards-catalog__wrapper {}
 
 .cards-catalog__title {
-  @include secondary-decoration (36px, 36px);
+  @include secondary-decoration-text (36px, 36px);
 
   @media (min-width: $tablet-width) {
     font-size: 60px;

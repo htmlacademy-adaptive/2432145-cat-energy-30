@@ -41,7 +41,7 @@
 }
 
 .services-item__title {
-  @include secondary-decoration (24px, 37px);
+  @include secondary-decoration-text (24px, 37px);
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -57,7 +57,7 @@
 }
 
 .services-item__link {
-  @include secondary-decoration (16px, 16px);
+  @include secondary-decoration-text(16px, 16px);
   text-decoration: none;
 
   &:hover,
@@ -67,7 +67,7 @@
 }
 
 .services-item__link-text {
-  @include secondary-decoration (16px, 16px);
+  @include secondary-decoration-text (16px, 16px);
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

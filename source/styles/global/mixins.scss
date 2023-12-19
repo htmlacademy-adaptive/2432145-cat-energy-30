@@ -33,7 +33,7 @@
 }
 
 /* Основные параметры для текста заголовка */
-@mixin secondary-decoration ($font-size, $line-height, $color: $secondary-text-color) {
+@mixin secondary-decoration-text ($font-size, $line-height, $color: $secondary-text-color) {
   font-family: $secondary-font;
   font-size: $font-size;
   line-height: $line-height;
@@ -43,7 +43,6 @@
 
 /* Основные параметры для фоновых картинок */
 @mixin background-image-set {
-  background-color: rgba(104, 183, 56, 0.85);
   background-repeat: no-repeat;
   object-fit: cover;
 }
