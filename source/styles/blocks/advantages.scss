@@ -19,7 +19,7 @@
 
 .advantages__item-leaf-image {
   @include advantages-images (url("../../images/icons/stack.svg#leaf"), 25px, 28px);
-}
+  }
 
 .advantages__item-boiling-water-image {
   @include advantages-images (url("../../images/icons/stack.svg#boiling-water"), 26px, 29px);
