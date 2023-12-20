@@ -23,30 +23,34 @@
   position: relative;
 }
 
-.form__email-decoration::after {
-  position: absolute;
-  content: "";
-  width: 17px;
-  height: 13px;
-  mask-image: url("../../images/icons/stack.svg#icon-envelope");
-  mask-repeat: no-repeat;
-  background-color: #000000;
-  transform: translate(-35px, 200%);
+.form__email-decoration {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 13px;
+    mask-image: url("../../images/icons/stack.svg#icon-envelope");
+    mask-repeat: no-repeat;
+    background-color: #000000;
+    transform: translate(-35px, 200%);
+  }
 }
 
 .form__phone-container {
   position: relative;
 }
 
-.form__phone-decoration::after {
-  position: absolute;
-  content: "";
-  width: 15px;
-  height: 15px;
-  mask-image: url("../../images/icons/stack.svg#icon-phone");
-  mask-repeat: no-repeat;
-  background-color: #000000;
-  transform: translate(-30px, 200%);
+.form__phone-decoration {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    mask-image: url("../../images/icons/stack.svg#icon-phone");
+    mask-repeat: no-repeat;
+    background-color: #000000;
+    transform: translate(-30px, 200%);
+  }
 }
 
 .form__input {
