@@ -18,40 +18,44 @@
     line-height: 30px;
   }
 }
-
-.form__email-container {
+/* Состояния для svg иконок в инпутах формы(передаем через инпут в спан). */
+.form__input-email ~ .envelope-icon {
   position: relative;
-}
 
-.form__email-decoration {
   &::after {
     position: absolute;
     content: "";
     width: 17px;
     height: 13px;
-    mask-image: url("../../images/icons/stack.svg#icon-envelope");
+    mask-image: url("../../images/icons/stack.svg#envelope");
     mask-repeat: no-repeat;
     background-color: #000000;
     transform: translate(-35px, 200%);
   }
 }
 
-.form__phone-container {
+.form__input-phone ~ .phone-icon {
   position: relative;
-}
 
-.form__phone-decoration {
   &::after {
     position: absolute;
     content: "";
     width: 15px;
     height: 15px;
-    mask-image: url("../../images/icons/stack.svg#icon-phone");
+    mask-image: url("../../images/icons/stack.svg#phone");
     mask-repeat: no-repeat;
     background-color: #000000;
     transform: translate(-30px, 200%);
   }
 }
+
+.form__input-phone:focus-visible ~ .phone-icon,
+.form__input-email:focus-visible ~ .envelope-icon {
+  &::after {
+    background-color: $basic-green;
+  }
+}
+/* Состояния для svg иконок в инпутах формы(передаем через инпут в спан). End */
 
 .form__input {
   font-family: $secondary-font;
@@ -72,14 +76,6 @@
 .form__input--states {
   &:hover {
     outline: 1px solid #cdcdcd;
-  }
-
-  &:focus,
-  &:active {
-    .form__email-decoration::after,
-    .form__phone-decoration::after {
-      background-color: $basic-green;
-    }
   }
 }
 
