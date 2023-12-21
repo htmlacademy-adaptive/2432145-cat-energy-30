@@ -49,17 +49,21 @@
 
 /* Оформление для декоративных svg картинок в списке преимуществ. */
 @mixin advantages-images ($background-image, $background-size-width, $background-size-height) {
-  background-image: $background-image;
-  width: 60px;
-  height: 60px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: $basic-green;
-  background-size: $background-size-width, $background-size-height;
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: $background-image;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $basic-green;
+    background-size: $background-size-width, $background-size-height;
+    width: 60px;
+    height: 60px;
 
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 

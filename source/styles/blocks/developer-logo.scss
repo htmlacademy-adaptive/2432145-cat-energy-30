@@ -4,10 +4,22 @@
   color: #444444;
   text-decoration: none;
 
+  &::after {
+    position: absolute;
+    content: "";
+    mask-image: url("../../images/icons/stack.svg#dev-logo");
+    mask-repeat: no-repeat;
+    mask-size: 27px 34px;
+    mask-position: center;
+    background-color: $primary-text-color;
+    width: 27px;
+    height: 34px;
+  }
+
   &:hover,
   &:focus-visible {
-    .developer-logo__image {
-      color: $basic-green;
+    &::after {
+      background-color: $basic-green;
     }
   }
 
