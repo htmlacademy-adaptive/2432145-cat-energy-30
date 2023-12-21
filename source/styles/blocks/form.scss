@@ -79,6 +79,14 @@
   }
 }
 
+.form__input--error {
+  outline: 1px solid #ff8282;
+}
+
+.form__input--error ~ .input-icon::after {
+  background-color: $error-color;
+}
+
 .form__radio-label {}
 
 .form__input-radio {}
