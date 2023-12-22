@@ -3,9 +3,9 @@
 .catalog-extra__wrapper {}
 
 .catalog-extra__title {
-  @include secondary-decoration (24px, 24px);
+  @include secondary-decoration-text (24px, 24px);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
   }
@@ -18,9 +18,9 @@
 .catalog-extra__item {}
 
 .catalog-extra__subtitle {
-  @include secondary-decoration (16px, 16px);
+  @include secondary-decoration-text (16px, 16px);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
   }
@@ -30,7 +30,7 @@
   font-size: 14px;
   line-height: 14px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
   }

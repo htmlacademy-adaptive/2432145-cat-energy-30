@@ -3,18 +3,18 @@
 .main-form__wrapper {}
 
 .main-form__title {
-  @include secondary-decoration (36px, 36px);
+  @include secondary-decoration-text (36px, 36px);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
   }
 }
 
 .main-form__description {
-  @include secondary-decoration (14px, 18px);
+  @include secondary-decoration-text (14px, 18px);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }

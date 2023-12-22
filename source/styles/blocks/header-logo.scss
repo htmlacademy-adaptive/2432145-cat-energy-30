@@ -1,5 +1,14 @@
-.header-logo {}
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 192px;
 
-.header-logo__image {}
+  @media (min-width: $tablet-width) {
+    gap: 13px;
+    min-width: auto;
+  }
+}
 
-.header__logo-text {}
+.header-logo__image {
+}

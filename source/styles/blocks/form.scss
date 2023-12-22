@@ -1,33 +1,91 @@
 .form {}
 
 .form__group {
-  @include secondary-decoration (24px, 26px);
+  @include secondary-decoration-text (24px, 26px);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
   }
 }
 
 .form__label {
-  @include secondary-decoration (16px, 18px);
-  color: #444444;
+  @include secondary-decoration-text (16px, 18px);
+  color: $primary-text-color;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+/* Состояния для svg иконок в инпутах формы(передаем через инпут в спан). */
+.form__input-email ~ .envelope-icon {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 13px;
+    mask-image: url("../../images/icons/stack.svg#envelope");
+    mask-repeat: no-repeat;
+    background-color: #000000;
+    transform: translate(-35px, 200%);
+  }
+}
+
+.form__input-phone ~ .phone-icon {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    mask-image: url("../../images/icons/stack.svg#phone");
+    mask-repeat: no-repeat;
+    background-color: #000000;
+    transform: translate(-30px, 200%);
+  }
+}
+
+.form__input-phone:focus-visible ~ .phone-icon,
+.form__input-email:focus-visible ~ .envelope-icon {
+  &::after {
+    background-color: $basic-green;
+  }
+}
+/* Состояния для svg иконок в инпутах формы(передаем через инпут в спан). End */
+
+.form__input {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 18px;
+
+  &::placeholder {
+    @include secondary-decoration-text (16px, 18px);
+  }
+
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
 }
 
-.form__input {
-  &::placeholder {
-    @include secondary-decoration (16px, 18px);
+
+.form__input--states {
+  &:hover {
+    outline: 1px solid #cdcdcd;
   }
 }
 
-.form__input--data {}
+.form__input--error {
+  outline: 1px solid #ff8282;
+}
 
-.form__input--contacts {}
+.form__input--error ~ .input-icon::after {
+  background-color: $error-color;
+}
 
 .form__radio-label {}
 
@@ -42,6 +100,92 @@
 .form__input-checkbox {}
 
 .form__input-checkbox--extra {}
+
+.form__input-name {
+  min-width: 228px;
+  min-height: 45px;
+  padding: 15px 14px;
+  border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    min-width: 568px;
+    min-height: 52px;
+    padding: 20px 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 510px;
+  }
+}
+
+.form__input-weight {
+  min-width: 207px;
+  min-height: 45px;
+  padding: 15px 14px;
+  border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    min-width: 568px;
+    min-height: 52px;
+    padding: 20px 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 540px;
+  }
+}
+
+.form__input-age {
+  min-width: 173px;
+  min-height: 45px;
+  padding: 10px 20px;
+  border: 1px solid #e7e7e7;
+  appearance: none;
+
+  @media (min-width: $tablet-width) {
+    min-width: 498px;
+    min-height: 52px;
+    padding: 20px 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 440px;
+  }
+}
+
+.form__input-email {
+  min-width: 217px;
+  min-height: 45px;
+  padding: 10px 20px;
+  border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    min-width: 552px;
+    min-height: 52px;
+    padding: 20px 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 494px;
+  }
+}
+
+.form__input-phone {
+  min-width: 200px;
+  min-height: 45px;
+  padding: 10px 20px;
+  border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    min-width: 530px;
+    min-height: 52px;
+    padding: 20px 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 472px;
+  }
+}
 
 .form__fieldset {
   border: none;
@@ -70,23 +214,34 @@
 .form__item {}
 
 .form__title {
-  @include secondary-decoration (24px, 26px);
+  @include secondary-decoration-text (24px, 26px);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
   }
 }
 
 .form__comment-area {
-  &::placeholder {
-    @include secondary-decoration (16px, 18px);
-    color: #444444;
+  resize: none;
+  min-width: 280px;
+  min-height: 150px;
 
-    @media (min-width: 768px) {
-      font-size: 20px;
-      line-height: 30px;
-    }
+  &::placeholder {
+    @include secondary-decoration-text (16px, 18px);
+    color: $primary-text-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    min-width: 628px;
+    min-height: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1220px;
+    min-height: 175px;
   }
 }
 
@@ -95,7 +250,7 @@
   line-height: 16px;
   color: #000000;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
   }

@@ -8,7 +8,7 @@
   }
 }
 
-@mixin button ($font-size, $line-height, $color: #ffffff, $background-color: #68b738) {
+@mixin button ($font-size: 16px, $line-height: 20px, $color: #ffffff, $background-color: $basic-green) {
   display: inline-block;
   font-family: $secondary-font;
   border: 1px solid transparent;
@@ -19,8 +19,21 @@
   cursor: pointer;
 }
 
+@mixin button-primary-states ($background-color: $basic-green-2) {
+  &:hover,
+  &:focus-visible {
+    background-color: $background-color;
+  }
+
+  &:active {
+    .button__text-mark {
+      opacity: 0.3;
+    }
+  }
+}
+
 /* Основные параметры для текста заголовка */
-@mixin secondary-decoration ($font-size, $line-height, $color: $secondary-text-color) {
+@mixin secondary-decoration-text ($font-size, $line-height, $color: $secondary-text-color) {
   font-family: $secondary-font;
   font-size: $font-size;
   line-height: $line-height;
@@ -30,9 +43,28 @@
 
 /* Основные параметры для фоновых картинок */
 @mixin background-image-set {
-  background-color: rgba(104, 183, 56, 0.85);
   background-repeat: no-repeat;
   object-fit: cover;
+}
+
+/* Оформление для декоративных svg картинок в списке преимуществ. */
+@mixin advantages-images ($background-image, $background-size-width, $background-size-height) {
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: $background-image;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $basic-green;
+    background-size: $background-size-width, $background-size-height;
+    width: 60px;
+    height: 60px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
 }
 
 /* Обнуление стилей списков */

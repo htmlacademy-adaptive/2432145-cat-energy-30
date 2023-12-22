@@ -2,27 +2,44 @@
 
 .hero__wrapper {
   @include background-image-set;
+  background-color: rgba(104, 183, 56, 0.85);
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(104, 183, 56, 0.85);
+  }
 }
 
 .hero__title {
-  @include secondary-decoration (36px, 36px);
+  @include secondary-decoration-text (36px, 36px);
   color: #ffffff;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     color: #000000;
   }
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .hero__description {
-  @include secondary-decoration (14px, 14px);
+  @include secondary-decoration-text (14px, 14px);
   color: #ffffff;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
   }
 }
 
