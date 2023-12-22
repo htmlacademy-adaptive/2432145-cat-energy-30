@@ -2,14 +2,36 @@
 
 .hero__wrapper {
   @include background-image-set;
-  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url("../../images/index-background-phone@1x.webp");
+  background-size: 320px 302px;
+  min-width: 320px;
+
+  /* &::after {
+    position: absolute;
+    content: "";
+    background-size: cover;
+    width: 320px;
+    height: 302px;
+    background-color: rgba(104, 183, 56, 0.85);
+  } */
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/index-background-phone@2x.webp");
+  }
 
   @media (min-width: $tablet-width) {
+    background-image: none;
     background-color: #ffffff;
   }
 
   @media (min-width: $desktop-width) {
     background-color: rgba(104, 183, 56, 0.85);
+    background-image: url("../../images/index-background-desktop@1x.webp");
+    background-size: 720px 624px;
+    min-width: 720px;
+  }
+
+  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+    background-image: url("../../images/index-background-desktop@2x.webp");
   }
 }
 

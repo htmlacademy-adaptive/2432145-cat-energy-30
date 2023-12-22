@@ -6,6 +6,11 @@
   flex-direction: column;
   gap: 20px;
   padding: 0 20px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
 }
 
 .services__item {
@@ -17,11 +22,11 @@
     min-height: 372px;
     min-width: 708px;
     padding: 77px 316px 57px 52px;
+  }
 
-    @media (min-width: $desktop-width) {
-      min-height: 372px;
-      min-width: 708px;
-      padding: 77px 316px 57px 52px;
-    }
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+    min-height: 374px;
+    padding: 77px 316px 57px 52px;
   }
 }
