@@ -72,7 +72,9 @@
   @include secondary-decoration-text(16px, 16px);
   position: relative;
   text-decoration: none;
+}
 
+.services-item__link--states {
   &::after {
     content: "";
     position: absolute;
@@ -93,7 +95,6 @@
     opacity: 0.3;
   }
 }
-
 
 .services-item__link-text {
   @include secondary-decoration-text (16px, 16px);
