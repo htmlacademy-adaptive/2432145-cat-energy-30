@@ -1,13 +1,31 @@
 .nav {}
 
-.nav__toggle {}
+.nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
 
-.nav__toggle--close {}
+.nav__toggle--close {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
 
-.nav__wrapper {}
+.nav__wrapper {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
 
 .nav__list {
   @include list-normalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 33px;
 }
 
 .nav__list--index-desktop {

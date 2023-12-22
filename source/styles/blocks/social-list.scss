@@ -1,5 +1,9 @@
 .social-list {
   @include list-normalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 
 .social-list__item {}

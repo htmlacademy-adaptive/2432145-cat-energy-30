@@ -1,8 +1,29 @@
 .footer {}
 
 .footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   background-color: $basic-grey;
+  padding: 40px 20px;
+  min-width: 280px;
+  min-height: 160px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 61px 30px;
+    min-width: $tablet-width;
+    min-height: 147px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 72px 110px;
+  }
 }
 
 .footer__logo-link {
+  display: flex;
+  justify-content: center;
 }
