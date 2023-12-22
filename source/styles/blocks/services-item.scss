@@ -11,13 +11,15 @@
     background-image: url("../../images/cat-back-slim.svg");
     background-size: 50px 51px;
     background-repeat: no-repeat;
+    transform: translate(0, -5px);
     width: 50px;
-    height: 51px;
+    height: 53px;
 
     @media (min-width: $tablet-width) {
       background-size: 200px 205px;
       width: 200px;
       height: 205px;
+      transform: translate(400px);
     }
 
     @media (min-width: $desktop-width) {
@@ -35,6 +37,7 @@
     background-image: url("../../images/cat-back-pro.svg");
     background-size: 67px 50px;
     background-repeat: no-repeat;
+    transform: translate(-20px, -5px);
     width: 67px;
     height: 50px;
 
@@ -42,6 +45,7 @@
       background-size: 268px 200px;
       width: 268px;
       height: 200px;
+      transform: translate(400px);
     }
 
     @media (min-width: $desktop-width) {
@@ -54,14 +58,21 @@
 
 .services-item__title {
   @include secondary-decoration-text (24px, 37px);
+  margin: 0 0 29px 0;
+  text-align: center;
+  transform: translate(10px);
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    text-align: start;
+    transform: translate(0);
   }
 }
 
 .services-item__description {
+  margin: 0 0 38px 0;
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;

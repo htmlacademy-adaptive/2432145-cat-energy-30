@@ -2,6 +2,26 @@
 
 .services__list {
   @include list-normalize;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
 }
 
-.services__item {}
+.services__item {
+  min-height: 266px;
+  min-width: 280px;
+  padding: 30px 33px 18px 20px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 372px;
+    min-width: 708px;
+    padding: 77px 316px 57px 52px;
+
+    @media (min-width: $desktop-width) {
+      min-height: 372px;
+      min-width: 708px;
+      padding: 77px 316px 57px 52px;
+    }
+  }
+}

@@ -1,4 +1,6 @@
-.header {}
+.header {
+  min-width: 280px;
+}
 
 .header__wrapper {
   display: flex;
