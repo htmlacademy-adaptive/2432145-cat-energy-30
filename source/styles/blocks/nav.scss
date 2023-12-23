@@ -39,6 +39,7 @@
 .nav__link {
   @include secondary-decoration-text (20px, 20px);
   text-decoration: none;
+  transition: opacity 0.3s ease;
 
   &:hover {
     opacity: 0.6;

@@ -8,8 +8,10 @@
   gap: 40px;
   background-color: $basic-grey;
   padding: 40px 20px;
+  margin: 0 auto;
   min-width: 280px;
   min-height: 160px;
+  max-width: 1440px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;

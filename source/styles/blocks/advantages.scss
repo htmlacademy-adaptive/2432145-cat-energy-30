@@ -3,7 +3,10 @@
 .advantages__container {}
 
 .advantages__title {
-  @include secondary-decoration-text (36px, 40px);
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+  color: $secondary-text-color;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;

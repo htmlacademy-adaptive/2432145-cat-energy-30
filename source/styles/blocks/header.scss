@@ -1,12 +1,13 @@
-.header {
-  min-width: 280px;
-}
+.header {}
 
 .header__wrapper {
   display: flex;
-  padding: 13px 20px 0 20px;
   justify-content: space-between;
+  padding: 13px 20px 0 20px;
+  margin: 0 auto;
   align-items: center;
+  min-width: 320px;
+  max-width: 1220px;
 
   @media (min-width: $tablet-width) {
     padding: 25px 30px 0 30px;

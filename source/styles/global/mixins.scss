@@ -20,6 +20,8 @@
 }
 
 @mixin button-primary-states ($background-color: $basic-green-2) {
+  transition: background-color 0.3s ease;
+
   &:hover,
   &:focus-visible {
     background-color: $background-color;
@@ -39,12 +41,6 @@
   line-height: $line-height;
   text-transform: uppercase;
   color: $color;
-}
-
-/* Основные параметры для фоновых картинок */
-@mixin background-image-set {
-  background-repeat: no-repeat;
-  object-fit: cover;
 }
 
 /* Оформление для декоративных svg картинок в списке преимуществ. */

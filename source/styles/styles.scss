@@ -16,7 +16,6 @@
 
 /* BLOCKS */
 /* index.html */
-@import "./blocks/main-container.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/services.scss";
 @import "./blocks/services-item.scss";
@@ -38,6 +37,7 @@
 
 /* BLOCKS */
 /* secondary */
+@import "./blocks/main.scss";
 @import "./blocks/address.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/logo-text.scss";

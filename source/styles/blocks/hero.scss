@@ -1,19 +1,29 @@
-.hero {}
+.hero {
+}
 
 .hero__wrapper {
-  @include background-image-set;
   background-image: url("../../images/index-background-phone@1x.webp");
   background-size: 320px 302px;
-  min-width: 320px;
+  background-repeat: no-repeat;
 
-  /* &::after {
+  &::before {
     position: absolute;
     content: "";
-    background-size: cover;
-    width: 320px;
-    height: 302px;
+    min-height: 302px;
     background-color: rgba(104, 183, 56, 0.85);
-  } */
+
+    @media (min-width: $tablet-width) {
+      display: none;
+      min-width: 768px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      min-width: 720px;
+      min-height: 624px;
+    }
+  }
+
   @media (min-resolution: 2dppx) {
     background-image: url("../../images/index-background-phone@2x.webp");
   }
@@ -36,8 +46,11 @@
 }
 
 .hero__title {
-  @include secondary-decoration-text (36px, 36px);
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 36px;
   color: #ffffff;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -53,6 +66,7 @@
 .hero__description {
   @include secondary-decoration-text (14px, 14px);
   color: #ffffff;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
