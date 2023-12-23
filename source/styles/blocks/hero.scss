@@ -1,14 +1,14 @@
-.hero {
-}
+.hero {}
 
 .hero__wrapper {
   background-image: url("../../images/index-background-phone@1x.webp");
-  background-size: 320px 302px;
+  background-size: 100% 302px;
   background-repeat: no-repeat;
 
   &::before {
     position: absolute;
     content: "";
+    width: 100%;
     min-height: 302px;
     background-color: rgba(104, 183, 56, 0.85);
 
@@ -34,7 +34,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: rgba(104, 183, 56, 0.85);
     background-image: url("../../images/index-background-desktop@1x.webp");
     background-size: 720px 624px;
     min-width: 720px;
@@ -51,15 +50,14 @@
   line-height: 36px;
   color: #ffffff;
   text-align: center;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     color: #000000;
-  }
-
-  @media (min-width: $desktop-width) {
-    color: #ffffff;
+    text-align: start;
+    margin: 0 234px 40px 120px;
   }
 }
 
@@ -72,13 +70,15 @@
     font-size: 20px;
     line-height: 20px;
     color: #000000;
-  }
-
-  @media (min-width: $desktop-width) {
-    color: #ffffff;
+    text-align: start;
+    margin: 0 20px 50px 120px;
   }
 }
 
 .hero__picture {}
 
 .hero__image {}
+
+.hero__pick-up-container {
+  padding: 0 20px;
+}

@@ -3,7 +3,9 @@
 .main-form__wrapper {}
 
 .main-form__title {
-  @include secondary-decoration-text (36px, 36px);
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 36px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
