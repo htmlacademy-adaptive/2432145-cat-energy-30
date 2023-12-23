@@ -9,12 +9,11 @@
 
 .button--pick-up {
   @include button-primary-states;
-  width: 100%;
+  min-width: 100%;
   padding: 10px 44px;
   margin: 0 auto 20px auto;
 
   @media (min-width: $tablet-width) {
-    flex-grow: 0;
     min-width: 244px;
     min-height: 54px;
     padding: 14px 26px;

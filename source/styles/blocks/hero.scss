@@ -14,12 +14,11 @@
 
     @media (min-width: $tablet-width) {
       display: none;
-      min-width: 768px;
     }
 
     @media (min-width: $desktop-width) {
       display: block;
-      min-width: 720px;
+      min-width: 85%;
       min-height: 624px;
     }
   }
