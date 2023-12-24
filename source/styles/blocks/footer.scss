@@ -4,24 +4,20 @@
 
 .footer__wrapper {
   background-color: $basic-grey;
-  padding: 40px 20px;
-  margin: 0 auto;
-  /* min-width: 280px;
+  padding: 40px 0;
   min-height: 160px;
-  max-width: 1440px; */
+
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    padding: 61px 30px;
-    /* min-width: $tablet-width;
-    min-height: 147px; */
+    padding: 61px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 72px 110px;
+    padding: 72px 0;
   }
 }
 

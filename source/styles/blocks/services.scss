@@ -4,7 +4,6 @@
 
 .services__list {
   @include list-normalize;
-  padding: 0 20px;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -27,6 +26,5 @@
   @media (min-width: $desktop-width) {
     min-width: 570px;
     min-height: 374px;
-    padding: 77px 316px 57px 52px;
   }
 }
