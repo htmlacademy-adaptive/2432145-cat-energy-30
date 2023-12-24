@@ -4,7 +4,7 @@
 
 .footer__wrapper {
   background-color: $basic-grey;
-  padding: 40px 0;
+  padding: 40px 20px;
   min-height: 160px;
 
 
@@ -13,11 +13,11 @@
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    padding: 61px 0;
+    padding: 61px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 72px 0;
+    padding: 72px 110px;
   }
 }
 
