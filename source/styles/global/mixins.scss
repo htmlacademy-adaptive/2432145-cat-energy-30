@@ -47,7 +47,6 @@
 /* Оформление для декоративных svg картинок в списке преимуществ. */
 @mixin advantages-images ($background-image, $background-size-width, $background-size-height) {
   &::before {
-    position: absolute;
     content: "";
     background-image: $background-image;
     background-repeat: no-repeat;
