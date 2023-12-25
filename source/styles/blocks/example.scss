@@ -168,8 +168,17 @@
   @media (min-width: $desktop-width) {
     grid-column: 2/-1;
     grid-row: 1/-1;
-    transform: translateY(-230px);
     background-color: transparent;
     margin-bottom: 0;
+  }
+}
+
+.example__slider-cat-image {
+  @media (min-width: $tablet-width) {
+    transform: translateY(-99px);
+
+    @media (min-width: $desktop-width) {
+      transform: translateY(-230px);
+    }
   }
 }
