@@ -12,5 +12,15 @@ $basic-grey-2: #eaeaea;
 $error-color: #ff8282;
 
 /* Экран */
+$phone-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1220px;
+
+/* Контейнер */
+$min-width-container: 300px;
+$max-width-container: 1440px;
+
+/* Паддинги */
+$horizontal-phone-padding : 20px;
+$horizontal-tablet-padding: 30px;
+$horizontal-desktop-padding: 110px;

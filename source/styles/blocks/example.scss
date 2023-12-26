@@ -1,8 +1,11 @@
 .example {}
 
 .example__wrapper {
-  padding: 25px 20px 20px 40px;
+  padding: 25px $horizontal-phone-padding 20px 40px;
   background-color: $basic-grey-2;
+  min-width: $min-width-container;
+  max-width: $max-width-container;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -24,13 +27,15 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding: 0 30px 0 30px;
+    padding-left: $horizontal-tablet-padding;
+    padding-right: $horizontal-tablet-padding;
     margin: 0 0 60px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 0 146px;
-    padding: 0 110px 0 110px;
+    padding-left: $horizontal-desktop-padding;
+    padding-right: $horizontal-desktop-padding;
   }
 }
 
@@ -40,7 +45,8 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding: 0 30px 0 30px;
+    padding-left: $horizontal-tablet-padding;
+    padding-right: $horizontal-tablet-padding;
     margin: 0 0 55px;
   }
 
@@ -57,7 +63,7 @@
     grid-template-rows: 1fr 2fr;
     aspect-ratio: 240/77;
     background-color: $basic-grey;
-    padding: 70px 25px 75px 110px;
+    padding: 70px 25px 75px $horizontal-desktop-padding;
   }
 }
 
@@ -66,7 +72,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 30px 0 30px;
+    padding-left: $horizontal-tablet-padding;
+    padding-right: $horizontal-tablet-padding;
   }
 
   @media (min-width: $tablet-width) {

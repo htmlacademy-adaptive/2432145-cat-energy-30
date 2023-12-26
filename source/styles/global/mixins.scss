@@ -46,8 +46,9 @@
 
 /* Оформление для декоративных svg картинок в списке преимуществ. */
 @mixin advantages-images ($background-image, $background-size-width, $background-size-height) {
-  &::before {
+  &::after {
     content: "";
+    order: 1;
     background-image: $background-image;
     background-repeat: no-repeat;
     background-position: center;
@@ -62,6 +63,7 @@
     }
   }
 }
+
 
 /* Обнуление стилей списков */
 @mixin list-normalize {
