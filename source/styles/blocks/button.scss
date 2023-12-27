@@ -12,6 +12,10 @@
   min-width: 100%;
   padding: 10px 44px;
   margin: 0 auto 20px auto;
+
+  @media (min-width: $tablet-width) {
+    min-width: 244px;
+  }
 }
 
 .button--form {
