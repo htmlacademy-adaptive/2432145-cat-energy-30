@@ -12,102 +12,103 @@
 </head>
 
 <body class="page__body">
-  <div class="page__container">
-    <header class="header">
-      <div class="header__wrapper container">
-        <a class="header__logo header-logo" href="index.html">
-          <picture>
-            <source type="image/svg+xml" media="(min-width: 1220px)" srcset="images/logo-desktop.svg" width="70"
-              height="59">
-            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60"
-              height="50">
-            <img class="header-logo__image" src="images/logo-phone.svg" width="33" height="38"
-              alt="Логотип Cat Energy.">
-          </picture>
-          <svg class="logo-text" aria-hidden="true" focusable="false" width="101" height="18">
-            <use href="images/sprite.svg#logo-text"></use>
-          </svg>
-        </a>
-        <div class="header__nav-wrapper">
-          <nav class="nav">
-            <button class="nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню.</span>
-            </button>
-            <button class="nav__toggle nav__toggle--close" type="button">
-              <span class="visually-hidden">Закрыть меню.</span>
-            </button>
-            <div class="nav__wrapper">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link" href="index.html">Главная</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="catalog.html">Каталог продукции</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link nav__link--current" href="form.html" aria-current="page">Подбор программы</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <main class="main-form">
-      <div class="main-form__wrapper">
-        <h1 class="main-form__title">Подбор программы</h1>
-        <p class="main-form__description">Заполните анкету, и мы подберем<br>
-          программу питания для вашего кота</p>
-        <form class="main-form__inputs form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__fieldset form__fieldset--data">
-            <legend class="visually-hidden">Главные данные</legend>
-            <label class="form__group">
-              <span class="form__label">Имя:*</span>
-              <input class="form__input form__input-name form__input--states" type="text" name="data-name"
-                placeholder="Барсик" required>
-            </label>
-            <label class="form__group">
-              <span class="form__label">Вес(кг):*</span>
-              <input class="form__input form__input-weight form__input--states" type="number" name="data-weight"
-                value="7" required>
-            </label>
-            <label class="form__group">
-              <span class="form__label">Возраст(лет):</span>
-              <input class="form__input form__input-age form__input--states" type="number" name="data-age" value="7">
-            </label>
-          </fieldset>
-          <fieldset class="form__fieldset form__fieldset--services">
-            <legend class="visually-hidden">Выбор услуг</legend>
-            <ul class="form__services-list">
-              <li class="form__item">
-                <label class="form__group">
-                  <input class="form__input-radio form__input-radio--services" type="radio" name="services-radio"
-                    value="weight loss" checked>
-                  <span class="form__label">Похудение</span>
-                </label>
+  <header class="header">
+    <div class="header__wrapper container">
+      <a class="header__logo header-logo" href="index.html">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1220px)" srcset="images/logo-desktop.svg" width="70"
+            height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60"
+            height="50">
+          <img class="header-logo__image" src="images/logo-phone.svg" width="33" height="38" alt="Логотип Cat Energy.">
+        </picture>
+        <svg class="logo-text" aria-hidden="true" focusable="false" width="101" height="18">
+          <use href="images/sprite.svg#logo-text"></use>
+        </svg>
+      </a>
+      <div class="header__nav-wrapper">
+        <nav class="nav">
+          <button class="nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
+          <button class="nav__toggle nav__toggle--close" type="button">
+            <span class="visually-hidden">Закрыть меню.</span>
+          </button>
+          <div class="nav__wrapper">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="index.html">Главная</a>
               </li>
-              <li class="main-form__item">
-                <label class="form__group">
-                  <input class="form__input-radio form__input-radio--services" type="radio" name="services-radio"
-                    value="weight gain">
-                  <span class="form__label">Набор массы</span>
-                </label>
+              <li class="nav__item">
+                <a class="nav__link" href="catalog.html">Каталог продукции</a>
               </li>
-              <li class="form__item">
-                <label class="form__group">
-                  <input class="form__input-radio form__input-radio--services" type="radio" name="services-radio"
-                    value="don't know, need advice">
-                  <span class="form__label">Не знаю (Нужен ваш совет)</span>
-                </label>
+              <li class="nav__item">
+                <a class="nav__link nav__link--current" href="form.html" aria-current="page">Подбор программы</a>
               </li>
             </ul>
-          </fieldset>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="form">
+      <div class="form__wrapper container">
+        <h1 class="form__main-title">Подбор программы</h1>
+        <p class="form__main-description">Заполните анкету, и мы подберем<br>
+          программу питания для вашего кота</p>
+        <form class="form__inputs" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form__text-radio-container">
+            <fieldset class="form__fieldset form__fieldset--data">
+              <legend class="visually-hidden">Главные данные</legend>
+              <label class="form__group form__group--text">
+                <span class="form__label">Имя:*</span>
+                <input class="form__input form__input-name form__input--states" type="text" name="data-name"
+                  placeholder="Барсик" required>
+              </label>
+              <label class="form__group form__group--text">
+                <span class="form__label">Вес(кг):*</span>
+                <input class="form__input form__input-weight form__input--states" type="number" name="data-weight"
+                  value="7" required>
+              </label>
+              <label class="form__group form__group--text">
+                <span class="form__label">Возраст(лет):</span>
+                <input class="form__input form__input-age form__input--states" type="number" name="data-age" value="7">
+              </label>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--services">
+              <legend class="visually-hidden">Выбор услуг</legend>
+              <ul class="form__services-list">
+                <li class="form__item">
+                  <label class="form__group">
+                    <input class="form__input-radio form__input-radio--services" type="radio" name="services-radio"
+                      value="weight loss" checked>
+                    <span class="form__label">Похудение</span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__group">
+                    <input class="form__input-radio form__input-radio--services" type="radio" name="services-radio"
+                      value="weight gain">
+                    <span class="form__label">Набор массы</span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__group">
+                    <input class="form__input-radio form__input-radio--services" type="radio" name="services-radio"
+                      value="don't know, need advice">
+                    <span class="form__label">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="form__fieldset form__fieldset--contacts">
             <legend class="form__title">Контактные данные<br>(владельца кота)</legend>
             <ul class="form__contacts-list">
               <li class="form__item">
                 <div class="form__email-container">
-                  <label class="form__group">
+                  <label class="form__group form__group--text">
                     <span class="form__label">E-mail:*</span>
                     <input class="form__input form__input-email form__input--states" type="email" name="e-mail"
                       placeholder="kuklachev@gmail.com" required>
@@ -117,7 +118,7 @@
               </li>
               <li class="form__item">
                 <div class="form__phone-container">
-                  <label class="form__group">
+                  <label class="form__group form__group--text">
                     <span class="form__label">Телефон:*</span>
                     <input class="form__input form__input-phone form__input--states" type="text" name="phone"
                       placeholder="8 (960) 900-60-90" required>
@@ -166,48 +167,48 @@
           <p class="form__note">* — Обязательные поля</p>
         </form>
       </div>
-      <section class="address">
-        <div class="address__wrapper">
-          <h2 class="visually-hidden">Адрес</h2>
-          <p class="address__title title-h3">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-          <!--  Карта -->
-          <div class="address__map"></div>
-          <!-- Карта End -->
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <a class="footer__logo-link" href="#" tabindex="-1">
-          <span class="visually-hidden">Текстовый логотип Cat Energy</span>
-          <svg class="footer__logo logo-text" aria-hidden="true" focusable="false" width="101" height="18" tabindex="0">
-            <use href="images/sprite.svg#logo-text"></use>
-          </svg>
-        </a>
-        <ul class="footer__list social-list">
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--vk" href="#">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--youtube" href="#">
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--telegram" href="#">
-              <span class="visually-hidden">Telegram</span>
-            </a>
-          </li>
-        </ul>
-        <a class="developer-logo" href="#">
-          <span class="developer-logo__text">HTML Academy</span>
-        </a>
+    </section>
+    <section class="address">
+      <div class="address__wrapper">
+        <h2 class="visually-hidden">Адрес</h2>
+        <p class="address__title title-h3">Приглашаем к сотрудничеству дилеров!</p>
+        <address class="address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <!--  Карта -->
+        <div class="address__map"></div>
+        <!-- Карта End -->
       </div>
-    </footer>
-  </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <a class="footer__logo-link" href="#" tabindex="-1">
+        <span class="visually-hidden">Текстовый логотип Cat Energy</span>
+        <svg class="footer__logo logo-text" aria-hidden="true" focusable="false" width="101" height="18" tabindex="0">
+          <use href="images/sprite.svg#logo-text"></use>
+        </svg>
+      </a>
+      <ul class="footer__list social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--vk" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--youtube" href="#">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--telegram" href="#">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+      </ul>
+      <a class="developer-logo" href="#">
+        <span class="developer-logo__text">HTML Academy</span>
+      </a>
+    </div>
+  </footer>
 
 </body>
 
