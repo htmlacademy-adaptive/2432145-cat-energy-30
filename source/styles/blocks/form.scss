@@ -73,8 +73,8 @@
   &::after {
     position: absolute;
     content: "";
-    bottom: 16px;
-    left: 248px;
+    bottom: 28px;
+    left: 254px;
     width: 17px;
     height: 13px;
     mask-image: url("../../images/icons/stack.svg#envelope");
@@ -82,8 +82,13 @@
     background-color: #000000;
 
     @media (min-width: $tablet-width) {
+      bottom: 21px;
+      left: 595px;
+    }
+
+    @media (min-width: $desktop-width) {
       bottom: 31px;
-      left: 90%;
+      left: 539px;
     }
   }
 }
@@ -92,8 +97,8 @@
   &::after {
     position: absolute;
     content: "";
-    bottom: 16px;
-    left: 248px;
+    bottom: 28px;
+    left: 254px;
     width: 15px;
     height: 15px;
     mask-image: url("../../images/icons/stack.svg#phone");
@@ -101,8 +106,13 @@
     background-color: #000000;
 
     @media (min-width: $tablet-width) {
+      bottom: 21px;
+      left: 595px;
+    }
+
+    @media (min-width: $desktop-width) {
       bottom: 31px;
-      left: 90%;
+      left: 539px;
     }
   }
 }
@@ -218,14 +228,14 @@
 
 .form__input-email {
   min-width: 217px;
-  min-height: 45px;
+  height: 45px;
   padding: 10px 20px;
   border: 1px solid #e7e7e7;
 
   @media (min-width: $tablet-width) {
     min-width: 552px;
-    min-height: 52px;
-    padding: 20px 11px;
+    height: 52px;
+    padding: 11px 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -235,14 +245,14 @@
 
 .form__input-phone {
   min-width: 200px;
-  min-height: 45px;
+  height: 45px;
   padding: 10px 20px;
   border: 1px solid #e7e7e7;
 
   @media (min-width: $tablet-width) {
     min-width: 530px;
-    min-height: 52px;
-    padding: 20px 11px;
+    height: 52px;
+    padding: 11px 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -311,16 +321,29 @@
 
 .form__contacts-list {
   @include list-normalize;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    gap: 80px;
+    margin-bottom: 70px;
+  }
 }
 
 .form__email-container {
   position: relative;
-  width: 650px;
 }
 
 .form__phone-container {
   position: relative;
-  width: 650px;
 }
 
 .form__list-extra {
