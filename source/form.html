@@ -53,58 +53,56 @@
   </header>
   <main class="main">
     <section class="form">
-      <div class="form__wrapper container">
+      <div class="form__wrapper container-greater">
         <h1 class="form__main-title">Подбор программы</h1>
         <p class="form__main-description">Заполните анкету, и мы подберем<br>
           программу питания для вашего кота</p>
         <form class="form__inputs" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="form__text-radio-container">
-            <fieldset class="form__fieldset form__fieldset--data">
-              <legend class="visually-hidden">Главные данные</legend>
-              <label class="form__group form__group--text">
-                <span class="form__label">Имя:*</span>
-                <input class="form__input form__input-name form__input--states" type="text" name="data-name"
-                  placeholder="Барсик" required>
-              </label>
-              <label class="form__group form__group--text">
-                <span class="form__label">Вес(кг):*</span>
-                <input class="form__input form__input-weight form__input--states" type="number" name="data-weight"
-                  value="7" required>
-              </label>
-              <label class="form__group form__group--text">
-                <span class="form__label">Возраст(лет):</span>
-                <input class="form__input form__input-age form__input--states" type="number" name="data-age" value="7">
-              </label>
-            </fieldset>
-            <fieldset class="form__fieldset form__fieldset--services">
-              <legend class="visually-hidden">Выбор услуг</legend>
-              <ul class="form__services-list">
-                <li class="form__item">
-                  <label class="form__group">
-                    <input class="form__input-radio form__input-radio--services" type="radio" name="services-radio"
-                      value="weight loss" checked>
-                    <span class="form__label">Похудение</span>
-                  </label>
-                </li>
-                <li class="form__item">
-                  <label class="form__group">
-                    <input class="form__input-radio form__input-radio--services" type="radio" name="services-radio"
-                      value="weight gain">
-                    <span class="form__label">Набор массы</span>
-                  </label>
-                </li>
-                <li class="form__item">
-                  <label class="form__group">
-                    <input class="form__input-radio form__input-radio--services" type="radio" name="services-radio"
-                      value="don't know, need advice">
-                    <span class="form__label">Не знаю (Нужен ваш совет)</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
+          <fieldset class="form__fieldset form__fieldset--data">
+            <legend class="visually-hidden">Главные данные</legend>
+            <label class="form__group form__group--text">
+              <span class="form__label">Имя:*</span>
+              <input class="form__input form__input-name form__input--states" type="text" name="data-name"
+                placeholder="Барсик" required>
+            </label>
+            <label class="form__group form__group--text">
+              <span class="form__label">Вес(кг):*</span>
+              <input class="form__input form__input-weight form__input--states" type="number" name="data-weight"
+                value="7" required>
+            </label>
+            <label class="form__group form__group--text">
+              <span class="form__label">Возраст(лет):</span>
+              <input class="form__input form__input-age form__input--states" type="number" name="data-age" value="7">
+            </label>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--services">
+            <legend class="visually-hidden">Выбор услуг</legend>
+            <ul class="form__services-list">
+              <li class="form__item">
+                <label class="form__group">
+                  <input class="form__input-radio form__input-radio--services" type="radio" name="services-radio"
+                    value="weight loss" checked>
+                  <span class="form__label">Похудение</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__group">
+                  <input class="form__input-radio form__input-radio--services" type="radio" name="services-radio"
+                    value="weight gain">
+                  <span class="form__label">Набор массы</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__group">
+                  <input class="form__input-radio form__input-radio--services" type="radio" name="services-radio"
+                    value="don't know, need advice">
+                  <span class="form__label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
           <fieldset class="form__fieldset form__fieldset--contacts">
-            <legend class="form__title">Контактные данные<br>(владельца кота)</legend>
+            <legend class="form__title form__title--contacts">Контактные данные<br>(владельца кота)</legend>
             <ul class="form__contacts-list">
               <li class="form__item">
                 <div class="form__email-container">
@@ -128,26 +126,28 @@
               </li>
             </ul>
           </fieldset>
-          <label class="form__group" for="textarea-comment">Комментарий</label>
-          <textarea class="form-input form__comment-area" cols="33" rows="10" name="comment" id="textarea-comment"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
+          <div class="form__textarea-wrapper">
+            <label class="form__group form__group--textarea" for="textarea-comment">Комментарий</label>
+            <textarea class="form-input form__comment-area" cols="33" rows="10" name="comment" id="textarea-comment"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
           <fieldset class="form__fieldset form__fieldset--extra">
-            <legend class="form__title">Дополнительно</legend>
+            <legend class="form__title form__title--extra">Дополнительно</legend>
             <ul class="form__list-extra">
-              <li class="form__item">
+              <li class="form__item form__item--sweetener">
                 <label class="form__group">
                   <input class="form__input-checkbox form__input-checkbox--extra" type="checkbox"
                     name="sugar-substitutes" checked>
                   <span class="form__label">Сахарозаменитель</span>
                 </label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--water">
                 <label class="form__group">
                   <input class="form__input-checkbox form__input-checkbox--extra" type="checkbox" name="water">
                   <span class="form__label">Питьевая вода</span>
                 </label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--milk">
                 <label class="form__group">
                   <input class="form__input-checkbox form__input-checkbox--extra" type="checkbox" name="milk">
                   <span class="form__label">Молоко</span>
@@ -161,26 +161,32 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button button--form" type="submit">
-            <span class="button__text-mark">Отправить заявку</span>
-          </button>
-          <p class="form__note">* — Обязательные поля</p>
+          <div class="form__button-note-container">
+            <button class="button button--form" type="submit">
+              <span class="button__text-mark">Отправить заявку</span>
+            </button>
+            <p class="form__note">* — Обязательные поля</p>
+          </div>
         </form>
       </div>
     </section>
     <section class="address">
-      <div class="address__wrapper">
+      <div class="address__invite-wrapper container-greater">
         <h2 class="visually-hidden">Адрес</h2>
-        <p class="address__title title-h3">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <!--  Карта -->
-        <div class="address__map"></div>
-        <!-- Карта End -->
+        <p class="address__title title-h3">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
+        <address class="address__description">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</address>
       </div>
+      <!--  Карта -->
+      <div class="address__map-wrapper">
+        <iframe class="adress__map"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Adca516ac240b64172494a206f76ca188a9072a7dbe88e24936ac2b327371f711&amp;source=constructor"
+          width="320" height="362" allowfullscreen=""></iframe>
+      </div>
+      <!-- Карта End -->
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__wrapper">
+    <div class="footer__wrapper container">
       <a class="footer__logo-link" href="#" tabindex="-1">
         <span class="visually-hidden">Текстовый логотип Cat Energy</span>
         <svg class="footer__logo logo-text" aria-hidden="true" focusable="false" width="101" height="18" tabindex="0">

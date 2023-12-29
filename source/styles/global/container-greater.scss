@@ -1,0 +1,17 @@
+.container-greater {
+  margin: 0 auto;
+  min-width: $min-width-container;
+  max-width: $max-width-container;
+  padding-left: $horizontal-phone-padding;
+  padding-right: $horizontal-phone-padding;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $horizontal-tablet-padding-greater;
+    padding-right: $horizontal-tablet-padding-greater;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $horizontal-desktop-padding-greater;
+    padding-right: $horizontal-desktop-padding-greater;
+  }
+}

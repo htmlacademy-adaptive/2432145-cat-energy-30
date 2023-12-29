@@ -23,11 +23,14 @@
   min-width: 280px;
   min-height: 40px;
   padding: 10px 44px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
+    grid-column: 1/2;
     min-width: 284px;
     min-height: 54px;
     padding: 14px 45px;
+    margin-bottom: 0;
   }
 }
 
