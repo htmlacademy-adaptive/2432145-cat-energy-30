@@ -1,9 +1,9 @@
 .footer {
   min-width: 280px;
+  background-color: $basic-grey;
 }
 
 .footer__wrapper {
-  background-color: $basic-grey;
   padding: 40px 20px;
   min-height: 160px;
 
@@ -14,10 +14,6 @@
     align-items: center;
     gap: 40px;
     padding: 61px $horizontal-tablet-padding;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 72px $horizontal-desktop-padding;
   }
 }
 
