@@ -9,9 +9,4 @@
     padding-left: $horizontal-tablet-padding-greater;
     padding-right: $horizontal-tablet-padding-greater;
   }
-
-  @media (min-width: $desktop-width) {
-    padding-left: $horizontal-desktop-padding-greater;
-    padding-right: $horizontal-desktop-padding-greater;
-  }
 }
