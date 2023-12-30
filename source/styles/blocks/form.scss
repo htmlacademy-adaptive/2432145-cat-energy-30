@@ -94,62 +94,56 @@
   }
 }
 /* Состояния для svg иконок в инпутах формы(передаем через инпут в спан). */
-.form__input-email ~ .envelope-icon {
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: 28px;
-    left: 254px;
-    width: 17px;
-    height: 13px;
-    mask-image: url("../../images/icons/stack.svg#envelope");
-    mask-repeat: no-repeat;
-    background-color: #000000;
+.form__input ~ .envelope-icon {
+  position: absolute;
+  bottom: 28px;
+  left: 254px;
+  width: 17px;
+  height: 13px;
+  mask-image: url("../../images/icons/stack.svg#envelope");
+  mask-repeat: no-repeat;
+  background-color: #000000;
 
-    @media (min-width: $tablet-width) {
-      bottom: 21px;
-      left: 595px;
-    }
+  @media (min-width: $tablet-width) {
+    bottom: 21px;
+    left: 595px;
+  }
 
-    @media (min-width: $desktop-width) {
-      bottom: 31px;
-      left: 539px;
-    }
+  @media (min-width: $desktop-width) {
+    bottom: 31px;
+    left: 539px;
   }
 }
 
-.form__input-phone ~ .phone-icon {
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: 28px;
-    left: 254px;
-    width: 15px;
-    height: 15px;
-    mask-image: url("../../images/icons/stack.svg#phone");
-    mask-repeat: no-repeat;
-    background-color: #000000;
+.form__input ~ .phone-icon {
+  position: absolute;
+  bottom: 28px;
+  left: 254px;
+  width: 15px;
+  height: 15px;
+  mask-image: url("../../images/icons/stack.svg#phone");
+  mask-repeat: no-repeat;
+  background-color: #000000;
 
-    @media (min-width: $tablet-width) {
-      bottom: 21px;
-      left: 595px;
-    }
+  @media (min-width: $tablet-width) {
+    bottom: 21px;
+    left: 595px;
+  }
 
-    @media (min-width: $desktop-width) {
-      bottom: 31px;
-      left: 539px;
-    }
+  @media (min-width: $desktop-width) {
+    bottom: 31px;
+    left: 539px;
   }
 }
 
-.form__input-phone:focus-visible ~ .phone-icon,
-.form__input-email:focus-visible ~ .envelope-icon {
-  &::after {
-    background-color: $basic-green;
-    transition: background-color 0.3s ease;
-  }
+.form__input:focus-visible ~ .phone-icon,
+.form__input:focus-visible ~ .envelope-icon {
+  background-color: $basic-green;
+  transition: background-color 0.3s ease;
 }
 /* Состояния для svg иконок в инпутах формы(передаем через инпут в спан). End */
+
+.form__input-icon {}
 
 .form__input {
   font-family: $secondary-font;
@@ -181,7 +175,7 @@
   outline: 1px solid #ff8282;
 }
 
-.form__input--error ~ .input-icon::after {
+.form__input--error ~ .form__input-icon::after {
   background-color: $error-color;
 }
 
