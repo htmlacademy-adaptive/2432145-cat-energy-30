@@ -1,6 +1,11 @@
 .form {}
 
 .form__wrapper {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1280px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
@@ -68,8 +73,17 @@
   }
 }
 
-.form__group--textarea {
-  grid-row: 1/2;
+.form__title--textarea {
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1/2;
+    margin-bottom: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 78px;
+  }
 }
 
 .form__textarea-wrapper {
@@ -237,7 +251,7 @@
 
 .form__input-email {
   min-width: 217px;
-  min-height: 45px;
+  height: 45px;
   padding-top: 10px;
   padding-right: 38px;
   padding-bottom: 10px;
@@ -246,7 +260,7 @@
 
   @media (min-width: $tablet-width) {
     min-width: 552px;
-    min-height: 52px;
+    height: 52px;
     padding-top: 11px;
     padding-right: 38px;
     padding-bottom: 11px;
@@ -446,7 +460,6 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 76px;
   }
 }
 
@@ -472,7 +485,6 @@
   min-width: 280px;
   height: 150px;
   padding: 15px;
-  margin-top: 38px; //Невышло повесить margin-bottom на form__group--textarea
 
   &::placeholder {
     @include secondary-decoration-text (16px, 18px);
@@ -484,15 +496,17 @@
     line-height: 30px;
     min-width: 628px;
     height: 175px;
-    padding: 11px 20px;
-    margin-top: 87px;
+    padding-top: 11px;
+    padding-right: 20px;
+    padding-bottom: 11px;
+    padding-left: 20px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 1220px;
     height: 175px;
-    padding: 9px 20px;
-    margin-top: 78px;
+    padding-top: 9px;
+    padding-bottom: 9px;
   }
 }
 
