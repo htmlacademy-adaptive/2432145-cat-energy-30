@@ -1,15 +1,20 @@
 .form {}
 
 .form__wrapper {
-  margin: 0 auto;
   min-width: 320px;
   max-width: 1280px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 27px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding-top: 65px;
+    padding-left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
   }
 }
 
@@ -70,19 +75,6 @@
 
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
-  }
-}
-
-.form__title--textarea {
-  margin-bottom: 38px;
-
-  @media (min-width: $tablet-width) {
-    grid-row: 1/2;
-    margin-bottom: 87px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 78px;
   }
 }
 
@@ -468,6 +460,19 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
+  }
+}
+
+.form__title--textarea {
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1/2;
+    margin-bottom: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 78px;
   }
 }
 

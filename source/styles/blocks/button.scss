@@ -36,9 +36,12 @@
 
 .button--order {
   @include button-primary-states;
+  grid-column: 1/-1;
+  grid-row: 5/-1;
   min-width: 280px;
   min-height: 40px;
   padding: 10px 20px;
+  margin-top: 21px;
 
   @media (min-width: $tablet-width) {
     min-width: 250px;
@@ -52,6 +55,8 @@
 
 .button--show-all {
   @include button-primary-states (#ebebebeb);
+  grid-column: 1/-1;
+  grid-row: -2/-1;
   background-color: $basic-grey;
   color: inherit;
   min-width: 280px;

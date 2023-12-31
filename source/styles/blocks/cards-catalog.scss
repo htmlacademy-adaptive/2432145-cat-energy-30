@@ -6,6 +6,9 @@
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
+  padding-top: 27px;
+  margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -17,7 +20,9 @@
   @include list-normalize;
 }
 
-.cards-catalog__item {}
+.cards-catalog__item:last-child {
+  margin-bottom: 26px;
+}
 
 .cards-catalog__item--product {
   @media (min-width: $tablet-width) {
