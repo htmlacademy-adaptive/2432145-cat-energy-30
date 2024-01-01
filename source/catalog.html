@@ -82,12 +82,18 @@
                 </div>
                 <p class="card-catalog__title">Cat Energy
                   PRO 500 г</p>
-                <p class="card-catalog__description card-catalog__description--weight">Масса</p>
-                <p class="card-catalog__description card-catalog__description--weight-value">500 г</p>
-                <p class="card-catalog__description card-catalog__description--taste">Вкус</p>
-                <p class="card-catalog__description card-catalog__description--taste-value">Курица</p>
-                <p class="card-catalog__description card-catalog__description--price">Цена</p>
-                <p class="card-catalog__description card-catalog__description--price-value">700 ₽</p>
+                <div class="card-catalog__weight-wrapper">
+                  <p class="card-catalog__description card-catalog__description--weight">Масса</p>
+                  <p class="card-catalog__description card-catalog__description--weight-value">500 г</p>
+                </div>
+                <div class="card-catalog__taste-wrapper">
+                  <p class="card-catalog__description card-catalog__description--taste">Вкус</p>
+                  <p class="card-catalog__description card-catalog__description--taste-value">Курица</p>
+                </div>
+                <div class="card-catalog__price-wrapper">
+                  <p class="card-catalog__description card-catalog__description--price">Цена</p>
+                  <p class="card-catalog__description card-catalog__description--price-value">700 ₽</p>
+                </div>
                 <button class="button button--order" type="button">
                   <span class="button__text-mark">Заказать</span>
                 </button>
@@ -307,14 +313,15 @@
               <div class="card-catalog card-catalog--more">
                 <a class="card-catalog__plus" href="#">
                   <picture>
-                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/catalog/catalog-plus.svg" width="60"
-                      height="60">
+                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/catalog/catalog-plus.svg"
+                      width="60" height="60">
                     <img class="card-catalog__plus-image" src="images/catalog/catalog-plus.svg" width="30" height="30"
                       alt="Ссылка на расширенный каталог.">
                   </picture>
                 </a>
                 <p class="card-catalog__title card-catalog__title--more">Показать еще 100500 товаров</p>
-                <p class="card-catalog__description card-catalog__description--more">На самом деле вкусов гораздо больше!</p>
+                <p class="card-catalog__description card-catalog__description--more">На самом деле вкусов гораздо
+                  больше!</p>
                 <button class="button button--show-all" type="button">Показать все</button>
               </div>
             </li>

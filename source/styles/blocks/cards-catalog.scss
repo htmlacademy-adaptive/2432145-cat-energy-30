@@ -18,6 +18,12 @@
 
 .cards-catalog__list {
   @include list-normalize;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
 }
 
 .cards-catalog__item:last-child {
