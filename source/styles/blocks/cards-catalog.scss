@@ -13,6 +13,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 113px;
   }
 }
 
@@ -22,6 +23,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: start;
     gap: 60px;
   }
 }
@@ -32,6 +34,6 @@
 
 .cards-catalog__item--product {
   @media (min-width: $tablet-width) {
-    background-color: $basic-grey;
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 13%, $basic-grey 0%, $basic-grey 100%);
   }
 }
