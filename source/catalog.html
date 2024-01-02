@@ -374,32 +374,40 @@
           <ul class="catalog-extra__list">
             <li class="catalog-extra__item">
               <p class="catalog-extra__subtitle">Сахарозаменитель</p>
-              <p class="catalog-extra__description">1 упаковка (100 г)</p>
-              <p class="catalog-extra__description">200 рублей</p>
+              <div class="catalog-extra__description-wrapper">
+                <p class="catalog-extra__description">1 упаковка (100 г)</p>
+                <p class="catalog-extra__description">200 рублей</p>
+              </div>
               <button class="button button--extra" type="button">
                 <span class="button__text-mark">Заказать</span>
               </button>
             </li>
             <li class="catalog-extra__item">
               <p class="catalog-extra__subtitle">Питьевая вода</p>
-              <p class="catalog-extra__description">5 литров</p>
-              <p class="catalog-extra__description">50 рублей</p>
+              <div class="catalog-extra__description-wrapper">
+                <p class="catalog-extra__description">5 литров</p>
+                <p class="catalog-extra__description">50 рублей</p>
+              </div>
               <button class="button button--extra" type="button">
                 <span class="button__text-mark">Заказать</span>
               </button>
             </li>
             <li class="catalog-extra__item">
               <p class="catalog-extra__subtitle">Молоко</p>
-              <p class="catalog-extra__description">1 литр</p>
-              <p class="catalog-extra__description">100 рублей</p>
+              <div class="catalog-extra__description-wrapper">
+                <p class="catalog-extra__description">1 литр</p>
+                <p class="catalog-extra__description">100 рублей</p>
+              </div>
               <button class="button button--extra" type="button">
                 <span class="button__text-mark">Заказать</span>
               </button>
             </li>
             <li class="catalog-extra__item">
               <p class="catalog-extra__subtitle">Витамины</p>
-              <p class="catalog-extra__description">1 упаковка (30 г)</p>
-              <p class="catalog-extra__description">300 рублей</p>
+              <div class="catalog-extra__description-wrapper">
+                <p class="catalog-extra__description">1 упаковка (30 г)</p>
+                <p class="catalog-extra__description">300 рублей</p>
+              </div>
               <button class="button button--extra" type="button">
                 <span class="button__text-mark">Заказать</span>
               </button>
@@ -408,12 +416,10 @@
         </div>
       </section>
       <!--  Дополнительные товары End -->
-      <section class="advantages-offer">
+      <section class="advantages-offer container">
         <div class="advantages-offer__wrapper">
           <h2 class="visually-hidden">Акции.</h2>
-          <p class="advantages-offer__description">Закажите все
-            и получите чехол для
-            кота в подарок!</p>
+          <p class="advantages-offer__description">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
         </div>
       </section>
       <section class="address">
@@ -423,7 +429,11 @@
           <address class="address__description">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</address>
         </div>
         <!--  Карта -->
-        <div class="address__map"></div>
+        <div class="address__map-wrapper">
+          <iframe class="address__map"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Adca516ac240b64172494a206f76ca188a9072a7dbe88e24936ac2b327371f711&amp;source=constructor"
+            width="320" height="362" allowfullscreen=""></iframe>
+        </div>
         <!-- Карта End -->
       </section>
     </main>

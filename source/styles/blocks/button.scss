@@ -87,6 +87,7 @@
   min-width: 280px;
   min-height: 40px;
   padding: 10px 20px;
+  flex-grow: 1;
 
   @media (min-width: $tablet-width) {
     min-width: 632px;

@@ -2,10 +2,20 @@
 
 .advantages-offer__wrapper {
   background-color: rgba(104, 183, 56, 0.85);
+  background-size: 280px 290px;
+  min-width: 280px;
+  min-height: 290px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .advantages-offer__description {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  text-align: center;
+  margin: 0;
 }

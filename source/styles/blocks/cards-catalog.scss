@@ -19,6 +19,7 @@
 
 .cards-catalog__list {
   @include list-normalize;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     display: grid;
