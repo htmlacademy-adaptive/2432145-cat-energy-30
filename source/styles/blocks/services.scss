@@ -7,13 +7,14 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     gap: 80px;
   }
 }
 
 .services__item {
+  max-width: 280px;
   min-height: 266px;
-  min-width: 280px;
   padding: 30px 33px 18px $horizontal-phone-padding;
   margin-bottom: 20px;
 

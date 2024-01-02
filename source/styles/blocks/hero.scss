@@ -24,8 +24,9 @@
       display: block;
       position: absolute;
       top: -115px;
-      right: -19px;
+      right: 0;
       background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/index-background-desktop@1x.webp");
+      background-position-x: 14px;
       background-size: 720px 694px;
       min-width: 50%;
       min-height: calc(100% + 169px);
