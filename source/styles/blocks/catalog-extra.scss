@@ -27,9 +27,7 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 26px;
     padding-right: $horizontal-tablet-padding;
-    padding-bottom: 28px;
     padding-left: $horizontal-tablet-padding;
     margin-bottom: 70px;
   }
@@ -42,6 +40,17 @@
   padding-top: 13px;
   padding-bottom: 19px;
   border-top: 1px solid $special-grey;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    padding-top: 26px;
+    padding-right: 40px;
+    padding-bottom: 28px;
+    padding-left: 38px;
+    gap: 25px 0;
+    border: 1px solid $special-grey;
+    border-bottom: 1px solid transparent;
+  }
 }
 
 .catalog-extra__item:last-child {
@@ -56,6 +65,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    width: auto;
   }
 }
 
@@ -64,6 +74,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    gap: 49px;
+    width: auto;
+  }
 }
 
 .catalog-extra__description {
