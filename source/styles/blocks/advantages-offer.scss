@@ -10,7 +10,6 @@
 }
 
 .advantages-offer__wrapper {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -25,7 +24,6 @@
   padding-bottom: 43px;
   margin: 0 auto;
   margin-bottom: 35px;
-  z-index: -1;
 
   @media (min-width: $tablet-width) {
     justify-content: end;
