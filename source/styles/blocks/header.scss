@@ -30,4 +30,8 @@
 .header__logo-text-wrapper {
 }
 
-.header__nav-wrapper {}
+.header__nav-wrapper {
+  @media (min-width: $desktop-width) {
+    background-color: rgba(104, 183, 56, 0.85);
+  }
+}

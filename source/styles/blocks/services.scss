@@ -13,7 +13,6 @@
 }
 
 .services__item {
-  max-width: 280px;
   min-height: 266px;
   padding: 30px 33px 18px $horizontal-phone-padding;
   margin-bottom: 20px;
@@ -28,6 +27,7 @@
 
   @media (min-width: $desktop-width) {
     min-width: 570px;
+    max-width: 570px;
     min-height: 374px;
   }
 }
