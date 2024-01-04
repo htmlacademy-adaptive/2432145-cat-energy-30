@@ -56,3 +56,15 @@
 .address__map {
   width: 100%;
 }
+
+.address__image-wrapper {
+  display: none;
+}
+
+.address__image-wrapper--no-js {
+  display: block;
+}
+
+.address__map-image {
+  object-fit: cover;
+}

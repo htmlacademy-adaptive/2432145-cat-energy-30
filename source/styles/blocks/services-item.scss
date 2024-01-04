@@ -120,6 +120,7 @@
   &::after {
     content: "";
     position: absolute;
+    top: 50%;
     mask-image: url("../../images/icons/stack.svg#arrow-right");
     mask-repeat: no-repeat;
     mask-position: -8px;
@@ -127,7 +128,7 @@
     width: 32px;
     height: 10px;
     transition: 0.3s ease-in-out;
-    transform: translate(10px, 10px);
+    transform: translate(10px, -50%);
   }
 
   &:hover::after {

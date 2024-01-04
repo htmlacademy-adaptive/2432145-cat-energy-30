@@ -30,10 +30,10 @@
       </a>
       <div class="header__nav-wrapper header__nav-wrapper--substrate">
         <nav class="nav">
-          <button class="nav__toggle nav__toggle--close-burger" type="button">
+          <button class="nav__toggle nav__toggle--open-burger" type="button">
             <span class="visually-hidden">Открыть меню или закрыть меню.</span>
           </button>
-          <!--  Поменять модификатор с nav__toggle--open-burger на nav__toggle--close-burger для отображения кнопки закрытия меню -->
+          <!--  Поменять модификатор с nav__toggle--open-burger на nav__toggle--close-burger для отображения кнопки закрытия меню. -->
           <div class="nav__wrapper">
             <!-- Для открытия мобильной версии меню навигации поставить класс nav__wrapper--phone-menu-open на div nav__wrapper. -->
             <ul class="nav__list nav__list--index-desktop">
@@ -206,6 +206,21 @@
         <iframe class="address__map"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Adca516ac240b64172494a206f76ca188a9072a7dbe88e24936ac2b327371f711&amp;source=constructor"
           width="320" height="362" allowfullscreen=""></iframe>
+      </div>
+      <div class="address__image-wrapper">
+        <!-- Для включения отображения изображения-подложки в случае не рабочего js-повесить класс address__image-wrapper--no-js. -->
+        <picture>
+          <source type="image/webp" media="(min-width: 1220px)"
+            srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="1440" height="400">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x" width="768" height="400">
+          <source type="image/png" media="(min-width: 1220px)"
+            srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="1440" height="400">
+          <source type="image/png" media="(min-width: 768px)"
+            srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="768" height="400">
+          <img class="address__map-image" src="images/map/map-phone@1x.png" srcset="images/map/map-phone@2.png 2x"
+            width="320" height="362" alt="Карта с адресом Cat Energy.">
+        </picture>
       </div>
       <!-- Карта End -->
     </section>

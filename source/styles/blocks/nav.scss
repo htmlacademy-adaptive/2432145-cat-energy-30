@@ -5,10 +5,6 @@
 }
 
 .nav__toggle {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -16,48 +12,68 @@
   text-decoration: none;
   background-color: transparent;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.nav__toggle--open-burger::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  mask-image: url("../../images/icons/stack.svg#burger-open");
-  mask-repeat: no-repeat;
-  mask-size: 24px 24px;
-  background-color: #000000;
-  width: 24px;
-  height: 24px;
+.nav__toggle--open-burger {
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    mask-image: url("../../images/icons/stack.svg#burger-open");
+    mask-repeat: no-repeat;
+    mask-size: 24px 24px;
+    background-color: #000000;
+    width: 24px;
+    height: 24px;
+  }
 
   &:hover {
-    opacity: 0.8;
+    &::before {
+      background-color: $basic-green;
+    }
   }
 
   &:active {
-    opacity: 0.5;
+    &::before {
+      background-color: $basic-green;
+    }
   }
 }
 
-.nav__toggle--close-burger::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  mask-image: url("../../images/icons/stack.svg#burger-close");
-  mask-repeat: no-repeat;
-  mask-size: 18px 18px;
-  background-color: #000000;
-  width: 18px;
-  height: 18px;
+.nav__toggle--close-burger {
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    mask-image: url("../../images/icons/stack.svg#burger-close");
+    mask-repeat: no-repeat;
+    mask-size: 18px 18px;
+    background-color: #000000;
+    width: 18px;
+    height: 18px;
+  }
+
+  &:hover {
+    &::before {
+      background-color: $basic-green;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: $basic-green;
+    }
+  }
 }
 
 .nav__wrapper {
-  position: relative;
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -77,6 +93,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 33px;
+  width: 100%;
   z-index: 3;
 
   @media (min-width: $tablet-width) {
