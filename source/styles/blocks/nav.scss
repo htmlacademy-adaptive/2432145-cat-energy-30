@@ -56,14 +56,18 @@
   height: 18px;
 }
 
-.nav__wrapper {}
-
-.nav__wrapper--close {
+.nav__wrapper {
+  position: relative;
   display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
   }
+}
+
+
+.nav__wrapper--phone-menu-open {
+  display: block;
 }
 
 .nav__list {
