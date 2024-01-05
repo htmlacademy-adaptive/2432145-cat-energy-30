@@ -91,7 +91,8 @@
 }
 
 .services-item__description {
-  margin: 0 0 38px 0;
+  margin: 0;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/3;
@@ -114,13 +115,18 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
   }
+
+  @media (max-width: 767px) {
+    border-top: 1px solid #d9d9d9;
+    padding-top: 19px;
+  }
 }
 
 .services-item__link--states {
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 72%;
     mask-image: url("../../images/icons/stack.svg#arrow-right");
     mask-repeat: no-repeat;
     mask-position: -8px;
