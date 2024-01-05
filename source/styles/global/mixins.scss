@@ -14,12 +14,15 @@
   border: 1px solid transparent;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   background-color: $background-color;
   color: $color;
   cursor: pointer;
 }
 
 @mixin button-primary-states ($background-color: $basic-green-2) {
+  transition: background-color 0.3s ease;
+
   &:hover,
   &:focus-visible {
     background-color: $background-color;
@@ -41,17 +44,11 @@
   color: $color;
 }
 
-/* Основные параметры для фоновых картинок */
-@mixin background-image-set {
-  background-repeat: no-repeat;
-  object-fit: cover;
-}
-
 /* Оформление для декоративных svg картинок в списке преимуществ. */
 @mixin advantages-images ($background-image, $background-size-width, $background-size-height) {
-  &::before {
-    position: absolute;
+  &::after {
     content: "";
+    order: 1;
     background-image: $background-image;
     background-repeat: no-repeat;
     background-position: center;
@@ -66,6 +63,7 @@
     }
   }
 }
+
 
 /* Обнуление стилей списков */
 @mixin list-normalize {

@@ -1,24 +1,66 @@
 .cards-catalog {}
 
-.cards-catalog__wrapper {}
+.cards-catalog__wrapper {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; */
+}
+//Вопрос! Про выравнивание контейнера основного блока карточек.
 
 .cards-catalog__title {
-  @include secondary-decoration-text (36px, 36px);
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  padding-top: 27px;
+  margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+    margin-bottom: 113px;
   }
 }
 
 .cards-catalog__list {
   @include list-normalize;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 60px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin-bottom: 76px;
+  }
 }
 
-.cards-catalog__item {}
+.cards-catalog__item {
+  @media (min-width: $tablet-width) {
+    max-width: 324px;
+    min-height: 511px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 245px;
+  }
+}
 
 .cards-catalog__item--product {
   @media (min-width: $tablet-width) {
-    background-color: $basic-grey;
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 13%, $basic-grey 0%, $basic-grey 100%);
   }
 }

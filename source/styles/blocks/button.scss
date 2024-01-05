@@ -1,22 +1,17 @@
 .button {
   @include button;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 26px;
-  }
 }
 
 .button--pick-up {
   @include button-primary-states;
-  min-width: 240px;
-  min-height: 40px;
+  min-width: 100%;
   padding: 10px 44px;
+  margin: 0 auto 20px auto;
 
   @media (min-width: $tablet-width) {
     min-width: 244px;
-    min-height: 54px;
-    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -25,22 +20,36 @@
   min-width: 280px;
   min-height: 40px;
   padding: 10px 44px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    font-size: 20px;
+    line-height: 26px;
     min-width: 284px;
     min-height: 54px;
     padding: 14px 45px;
+    margin-bottom: 0;
   }
 }
 
 .button--order {
   @include button-primary-states;
+  grid-column: 1/-1;
+  grid-row: 5/-1;
+  font-size: 16px;
+  line-height: 20px;
   min-width: 280px;
   min-height: 40px;
   padding: 10px 20px;
+  margin-top: 21px;
+  /* Вопрос! Про шрифт */
 
   @media (min-width: $tablet-width) {
+    grid-column: 1/4;
+    grid-row: 6/7;
     min-width: 250px;
+    margin-top: 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,6 +60,11 @@
 
 .button--show-all {
   @include button-primary-states (#ebebebeb);
+  grid-column: 1/-1;
+  grid-row: -2/-1;
+  font-size: 16px;
+  line-height: 20px;
+  white-space: nowrap;
   background-color: $basic-grey;
   color: inherit;
   min-width: 280px;
@@ -70,6 +84,9 @@
 
 .button--extra {
   @include button-primary-states;
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 20px;
   min-width: 280px;
   min-height: 40px;
   padding: 10px 20px;
@@ -79,6 +96,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    flex-grow: 0;
     min-width: 244px;
   }
 }

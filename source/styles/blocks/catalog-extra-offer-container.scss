@@ -1,0 +1,9 @@
+.catalog-extra-offer-container {
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 0 81px;
+    margin-bottom: 87px;
+  }
+}

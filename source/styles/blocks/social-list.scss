@@ -9,6 +9,9 @@
 .social-list__item {}
 
 .social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   color: #666666;
@@ -35,6 +38,7 @@
     background-color: #666666;
     width: 28px;
     height: 22px;
+    transition: background-color 0.3s ease;
   }
 
   &:hover,
@@ -59,6 +63,7 @@
     background-color: #666666;
     width: 28px;
     height: 22px;
+    transition: background-color 0.3s ease;
   }
 }
 
@@ -72,9 +77,6 @@
     background-color: #666666;
     width: 28px;
     height: 22px;
+    transition: background-color 0.3s ease;
   }
-}
-
-
-.social-list__icon {
 }
