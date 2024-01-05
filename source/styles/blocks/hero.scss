@@ -125,7 +125,7 @@
 .hero__image {}
 
 .hero_button-container {
-  @media (max-width: 767px) {
+  @media (max-width: $pre-tablet) {
     padding-left: 20px;
     padding-right: 20px;
   }

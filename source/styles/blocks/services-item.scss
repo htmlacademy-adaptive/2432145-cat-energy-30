@@ -116,7 +116,7 @@
     grid-column: 1/2;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $pre-tablet) {
     border-top: 1px solid #d9d9d9;
     padding-top: 19px;
   }

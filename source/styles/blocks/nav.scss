@@ -1,5 +1,5 @@
 .nav {
-  @media (max-width: 767px) {
+  @media (max-width: $pre-tablet) {
     position: relative;
   }
 }
@@ -106,7 +106,7 @@
     max-width: 475px;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $pre-tablet) {
     position: absolute;
     flex-direction: column;
     justify-content: start;
@@ -122,7 +122,7 @@
 .nav__list--index-desktop {}
 
 .nav__item {
-  @media (max-width: 767px) {
+  @media (max-width: $pre-tablet) {
     display: flex;
     justify-content: center;
     border-top: 1px solid #e6e6e6;
@@ -133,7 +133,7 @@
 }
 
 .nav__item:last-child {
-  @media (max-width: 767px) {
+  @media (max-width: $pre-tablet) {
     border-bottom: 1px solid #e6e6e6;
   }
 }
