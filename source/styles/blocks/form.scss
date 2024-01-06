@@ -78,6 +78,24 @@
   }
 }
 
+.form__group--custom-radio {
+  position: relative;
+  padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
+}
+
+.form__group--custom-checkbox {
+  position: relative;
+  padding-left: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 59px;
+  }
+}
+
 .form__textarea-wrapper {
   display: grid;
   grid-template-rows: min-content 1fr;
@@ -177,7 +195,25 @@
 
 .form__radio-label {}
 
-.form__input-radio {}
+.form__input-radio {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $basic-grey;
+  border-radius: 50%;
+  background-color: transparent;
+  transform: translateY(7px);
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    transform: translateY(12px);
+  }
+}
 
 .form__input-radio--services {}
 
@@ -185,7 +221,65 @@
 
 .form__checkbox-label {}
 
-.form__input-checkbox {}
+.form__input-checkbox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $basic-grey;
+  background-color: transparent;
+  transform: translateY(7px);
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    transform: translateY(12px);
+  }
+}
+
+
+.form__input-mark[type="radio"]:checked ~ .form__input-radio {
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 13px;
+    height: 13px;
+    background-color: $basic-green;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    transform: translateY(-50%) translateX(-50%);
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.form__input-mark[type="checkbox"]:checked ~ .form__input-checkbox,
+.form__input-mark[type="checkbox"]:hover ~ .form__input-checkbox {
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 14px;
+    background-image: url("../../images/icons/stack.svg#icon-checkmark");
+    background-repeat: no-repeat;
+    transform: translateY(-50%) translateX(-50%);
+
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 19px;
+    }
+  }
+}
 
 .form__input-checkbox--extra {}
 
