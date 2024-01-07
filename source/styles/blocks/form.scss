@@ -170,6 +170,11 @@
     line-height: 18px;
     text-transform: uppercase;
     color: $secondary-text-color;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -553,6 +558,12 @@
 .form__title--contacts {
   margin-bottom: 35px;
 
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
   }
@@ -586,11 +597,6 @@
   height: 150px;
   padding: 15px;
   border: 1px solid $basic-grey-2;
-
-  &::placeholder {
-    @include secondary-decoration-text (16px, 18px);
-    color: $primary-text-color;
-  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
