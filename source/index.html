@@ -40,7 +40,7 @@
               <li class="nav__item">
                 <a class="nav__link nav__link--current nav__link--index-desktop" href="index.html"
                   aria-current="page">Главная</a>
-                  <!-- Вопрос! Про вложенность для условия покраски псевдоэлемента. -->
+                <!-- Вопрос! Про вложенность для условия покраски псевдоэлемента. -->
               </li>
               <li class="nav__item">
                 <a class="nav__link nav__link--index-desktop" href="catalog.html">Каталог продукции</a>
@@ -77,7 +77,7 @@
               srcset="images/supplies-hero-phone@2x.png 2x" width="280" height="270" alt="Cat Energy со вкусом курицы.">
           </picture>
         </div>
-        <div class="hero_button-container">
+        <div class="hero__button-container">
           <a class="button button--pick-up" href="form.html">
             <span class="button__text-mark">Подобрать программу</span>
           </a>
@@ -170,28 +170,36 @@
         </div>
         <!--  Слайдер -->
         <div class="example__slider">
-          <picture>
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="images/slider/slider-tablet-cat-before@1x.webp 1x, images/slider/slider-tablet-cat-before@2x.webp 2x"
-              width="560" height="512">
-            <source type="image/png" media="(min-width: 768px)"
-              srcset="images/slider/slider-tablet-cat-before@1x.png 1x, images/slider/slider-tablet-cat-before@1x.png 2x"
-              width="560" height="512">
-            <img class="example__slider-cat-image" src="images/slider/slider-phone-cat-before@1x.png"
-              srcset="images/slider/slider-phone-cat-before@2x.png 2x" width="280" height="256"
-              alt="Кот Борис до программы.">
-          </picture>
-          <!-- <picture>
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="images/slider/slider-tablet-cat-after@1x.webp 1x, images/slider/slider-tablet-cat-after@2x.webp 2x"
-                    width="560" height="512">
-                  <source type="image/png" media="(min-width: 768px)"
-                    srcset="images/slider/slider-tablet-cat-after@1x.png 1x, images/slider/slider-tablet-cat-after@1x.png 2x"
-                    width="560" height="512">
-                  <img class="example__slider-cat-image" src="images/slider/slider-phone-cat-before@1x.png"
-                    srcset="images/slider/slider-phone-cat-after@2x.png 2x" width="280" height="256"
-                    alt="Кот Борис после программы.">
-                </picture> -->
+          <div class="example__cat-before">
+            <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/slider/slider-tablet-cat-before@1x.webp 1x, images/slider/slider-tablet-cat-before@2x.webp 2x"
+                width="560" height="512">
+              <source type="image/png" media="(min-width: 768px)"
+                srcset="images/slider/slider-tablet-cat-before@1x.png 1x, images/slider/slider-tablet-cat-before@1x.png 2x"
+                width="560" height="512">
+              <img class="example__slider-cat-image" src="images/slider/slider-phone-cat-before@1x.png"
+                srcset="images/slider/slider-phone-cat-before@2x.png 2x" width="280" height="256"
+                alt="Кот Борис до программы.">
+            </picture>
+          </div>
+          <div class="example__cat-after">
+            <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/slider/slider-tablet-cat-after@1x.webp 1x, images/slider/slider-tablet-cat-after@2x.webp 2x"
+                width="560" height="512">
+              <source type="image/png" media="(min-width: 768px)"
+                srcset="images/slider/slider-tablet-cat-after@1x.png 1x, images/slider/slider-tablet-cat-after@1x.png 2x"
+                width="560" height="512">
+              <img class="example__slider-cat-image" src="images/slider/slider-phone-cat-before@1x.png"
+                srcset="images/slider/slider-phone-cat-after@2x.png 2x" width="280" height="256"
+                alt="Кот Борис после программы.">
+            </picture>
+          </div>
+          <div class="example__slider-toggle"></div>
+          <svg class="slider-mark-image" width="40" height="40" aria-hidden="true" focusable="false" tabindex="0">
+            <use href="images/icons/stack.svg#slider-mark"></use>
+          </svg>
         </div>
         <!-- Слайдер End -->
       </div>

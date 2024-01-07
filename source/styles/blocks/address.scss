@@ -8,7 +8,6 @@
   gap: 10px;
   padding-top: 26px;
   padding-bottom: 26px;
-  background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
     gap: 0;
@@ -24,10 +23,6 @@
     max-width: 565px;
     min-height: 199px;
   }
-}
-
-.adress__invite-wrapper--index {
-  background-color: #ffffff;
 }
 
 .address__title {
