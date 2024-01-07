@@ -210,24 +210,54 @@
 .example__slider-toggle-wrapper {
   position: absolute;
   top: 50%;
+  left: 0;
+  transform: rotate(90deg) translate(-4px, -13px);
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(90deg) translate(-4px, -22px);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: rotate(90deg) translate(-65px, -25px);
+  }
 }
 
 .example__slider-toggle {
   position: relative;
-  top: 50%;
-  left: 13px;
   width: 256px;
   height: 4px;
-  transform: rotate(90deg);
   background-color: $special-grey-2;
+  transition: background-color 0.3 ease;
+  cursor: grab;
+
+  &:hover {
+    background-color: $basic-green;
+
+    .example__slider-button {
+      border: 2px solid $basic-green;
+    }
+
+    .slider-mark-image {
+      color: $basic-green;
+      //Покраска стрелочек кнопки слайдера при hover.
+    }
+  }
+
+  &:active {
+    background-color: $basic-green-2;
+
+    .example__slider-button {
+      border: 2px solid $basic-green-2;
+    }
+
+    .slider-mark-image {
+      color: $basic-green-2;
+      //Покраска стрелочек кнопки слайдера при hover.
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 512px;
-    left: 23px;
-  }
-
-  @media (min-width: $desktop-width) {
-    transform: rotate(90deg) translateX(-45px);
   }
 }
 
@@ -236,8 +266,23 @@
   bottom: 50%;
   left: 50%;
   transform: translate(-50%, 50%) rotate(90deg);
-  display: inline-block;
-  border: 1px solid transparent;
-  cursor: pointer;
-  background-color: transparent;
+  display: flex;
+  align-items: center;
+  border: 2px solid $special-grey-2;
+  border-radius: 50%;
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  cursor: grab;
+
+  /* &::before {
+    position: absolute;
+    content: "";
+    mask-image: url("../../images/icons/stack.svg#slider-mark");
+    mask-repeat: no-repeat;
+    mask-size: 24px 18px;
+    background-color: $special-grey-2;
+    width: 24px;
+    height: 18px;
+  } */
 }
