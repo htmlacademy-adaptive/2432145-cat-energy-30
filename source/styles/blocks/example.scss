@@ -207,8 +207,13 @@
   max-width: none;
 }
 
-.example__slider-toggle {
+.example__slider-toggle-wrapper {
   position: absolute;
+  top: 50%;
+}
+
+.example__slider-toggle {
+  position: relative;
   top: 50%;
   left: 13px;
   width: 256px;
@@ -224,4 +229,15 @@
   @media (min-width: $desktop-width) {
     transform: rotate(90deg) translateX(-45px);
   }
+}
+
+.example__slider-button {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%) rotate(90deg);
+  display: inline-block;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-color: transparent;
 }
