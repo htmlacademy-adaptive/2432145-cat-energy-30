@@ -144,6 +144,12 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      top: 50%;
+    }
+  }
 }
 
 .services-item__link-text {
