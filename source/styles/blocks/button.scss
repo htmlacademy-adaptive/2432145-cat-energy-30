@@ -4,6 +4,8 @@
 
 .button--pick-up {
   @include button-primary-states;
+  font-size: 16px;
+  line-height: 20px;
   min-width: 100%;
   padding: 10px 44px;
 

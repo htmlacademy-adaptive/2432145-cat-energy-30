@@ -7,8 +7,9 @@
 
   &::after {
     position: absolute;
-    content: "";
+    top: -9px;
     right: 0;
+    content: "";
     mask-image: url("../../images/icons/stack.svg#dev-logo");
     mask-repeat: no-repeat;
     mask-size: 27px 34px;

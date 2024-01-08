@@ -1,13 +1,20 @@
-.services-item {}
+.services-item {
+  &:nth-child(2) .services-item__title {
+    margin-left: 51px;
+  }
+}
 
 .services-item--decoration {
   background-color: $basic-grey;
 }
 
 .services-item__cat-slim {
+  position: relative;
+
   &::before {
     position: absolute;
     content: "";
+    top: -10px;
     background-image: url("../../images/cat-back-slim.svg");
     background-size: 50px 51px;
     background-repeat: no-repeat;
@@ -38,8 +45,12 @@
 }
 
 .services-item__cat-pro {
+  position: relative;
+
   &::before {
     position: absolute;
+    top: -3px;
+    left: 13px;
     content: "";
     background-image: url("../../images/cat-back-pro.svg");
     background-size: 67px 50px;
@@ -73,7 +84,9 @@
 
 .services-item__title {
   @include secondary-decoration-text (24px, 37px);
-  margin: 0 0 29px 0;
+  margin: 0;
+  margin-left: 20px;
+  margin-bottom: 29px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -92,7 +105,7 @@
 
 .services-item__description {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/3;
@@ -117,16 +130,25 @@
   }
 
   @media (max-width: $pre-tablet) {
-    border-top: 1px solid #d9d9d9;
-    padding-top: 19px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: -18px;
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: $decoration-border-color;
+    }
   }
 }
 
 .services-item__link--states {
   &::after {
-    content: "";
     position: absolute;
-    top: 72%;
+    top: 10px;
+    left: 97px;
+    content: "";
     mask-image: url("../../images/icons/stack.svg#arrow-right");
     mask-repeat: no-repeat;
     mask-position: -8px;

@@ -7,7 +7,7 @@
     content: "";
     background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/index-background-phone@1x.webp");
     background-repeat: no-repeat;
-    background-size: 100% 302px, contain;
+    background-size: 100% 302px;
     background-position-x: center;
     min-width: 100%;
     min-height: 302px;
@@ -76,6 +76,7 @@
   color: #ffffff;
   text-align: center;
   margin: 0;
+  margin-bottom: 25px;
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
@@ -93,6 +94,7 @@
   @include secondary-decoration-text (14px, 14px);
   color: #ffffff;
   text-align: center;
+  margin: 0;
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
@@ -112,6 +114,7 @@
 .hero__picture {
   z-index: 1;
   width: 100%;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
