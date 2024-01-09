@@ -38,10 +38,11 @@
 
     &::after {
       display: block;
-      transform: translate(0, -10px);
+      transform: translate(18px, -5px);
     }
   }
 }
 
 .developer-logo__text {
+  transform: translate(22px, -7px);
 }

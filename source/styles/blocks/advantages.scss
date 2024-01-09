@@ -1,5 +1,7 @@
 .advantages {
   @media (min-width: $tablet-width) and (max-width: 1219px) {
+    position: relative;
+
     &::after {
       position: absolute;
       content: "";
@@ -17,7 +19,7 @@
   margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 149px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,6 +38,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 72px;
   }
 }
 
@@ -45,8 +48,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 134px;
-    margin-bottom: 149px;
+    gap: 38px 76px;
   }
 
   @media (min-width: $desktop-width) {

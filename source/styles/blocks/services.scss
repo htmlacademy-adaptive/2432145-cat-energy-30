@@ -5,6 +5,10 @@
 .services__list {
   @include list-normalize;
 
+  @media (min-width: $tablet-width) {
+    margin-top: -13px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     gap: 80px;
@@ -12,22 +16,13 @@
 }
 
 .services__item {
-  min-height: 266px;
-  padding: 30px 33px 18px $horizontal-phone-padding;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    min-height: 372px;
-    min-width: 708px;
-    padding: 77px 20px 57px 52px;
     margin-bottom: 30px;
-  }
 
-  @media (min-width: $desktop-width) {
-    min-width: 570px;
-    max-width: 570px;
-    min-height: 374px;
+    &:nth-child(2) {
+      margin-bottom: 40px;
+    }
   }
 }

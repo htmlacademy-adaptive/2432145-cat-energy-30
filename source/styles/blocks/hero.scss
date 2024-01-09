@@ -55,7 +55,7 @@
     flex-direction: column;
     align-items: start;
     padding-top: 65px;
-    padding-left: 110px;
+    padding-left: 30px;
     background-image: none;
     background-color: #ffffff;
   }
@@ -85,6 +85,7 @@
     color: #000000;
     text-align: start;
     padding-top: 0;
+    margin-left: 89px;
     margin-bottom: 40px;
     z-index: 1;
   }
@@ -103,6 +104,7 @@
     margin-bottom: 50px;
     color: #000000;
     text-align: start;
+    margin-left: 89px;
     z-index: 1;
   }
 
@@ -118,9 +120,11 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 290px;
-    left: 38px;
+    top: 266px;
+    left: 30px;
+    width: 92.3%;
     min-width: 709px;
+    margin-bottom: 0;
     z-index: 0;
   }
 
@@ -142,6 +146,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    margin-left: 89px;
     margin-bottom: 539px;
     z-index: 1;
   }
