@@ -43,6 +43,10 @@
     transform: translateY(-6px);
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    transform: translateY(3px);
+  }
 }
 
 .footer__list {
@@ -51,6 +55,10 @@
   @media (min-width: $tablet-width) {
     transform: translateX(29px);
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(21px, 8px);
   }
 
   @media (max-width: $pre-tablet) {

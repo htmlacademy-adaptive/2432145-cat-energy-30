@@ -23,7 +23,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 126px;
+    margin-bottom: 30px;
   }
 }
 
@@ -55,7 +55,6 @@
     grid-template-columns: repeat(4, 1fr);
     align-items: baseline;
     gap: 0;
-    margin-bottom: 126px;
   }
 }
 
@@ -88,10 +87,15 @@
 
     &:nth-child(2) {
       margin-right: 80px;
+      transform: translateX(8px);
     }
 
     &:nth-child(3) {
       margin-right: 78px;
+    }
+
+    &:nth-child(4) {
+      transform: translateX(-4px);
     }
   }
 }

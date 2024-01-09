@@ -16,8 +16,8 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 22%;
-    left: 5%;
+    top: calc(22% - -5px);
+    left: calc(8% - 2px);
     gap: 87px;
     background-color: #ffffff;
     max-width: 565px;
@@ -44,6 +44,10 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(10px, -9px);
+  }
 }
 
 .address__map-wrapper {}
@@ -52,7 +56,10 @@
   display: block;
   border: none;
   width: 100%;
-  height: 400px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .address__image-wrapper {
@@ -60,7 +67,9 @@
 }
 
 .address__image-wrapper--no-js {
-  display: block;
+  @media (max-width: $pre-tablet) {
+    display: block;
+  }
 }
 
 .address__map-image {

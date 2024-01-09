@@ -41,8 +41,19 @@
       transform: translate(18px, -5px);
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      transform: translate(1px, 5px);
+    }
+  }
 }
+
 
 .developer-logo__text {
   transform: translate(22px, -7px);
+
+  @media (min-width: $desktop-width) {
+    transform: translate(6px, 3px);
+  }
 }

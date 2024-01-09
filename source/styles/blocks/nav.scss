@@ -80,6 +80,10 @@
     display: block;
     margin-right: -11px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
 }
 
 
@@ -100,11 +104,6 @@
   @media (min-width: $tablet-width) {
     justify-content: start;
     flex-wrap: wrap;
-    max-width: 436px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 475px;
   }
 
   @media (max-width: $pre-tablet) {
@@ -152,6 +151,11 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
