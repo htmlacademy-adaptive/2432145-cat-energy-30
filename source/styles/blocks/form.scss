@@ -14,7 +14,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 20px;
+    padding-left: 30px;
+    padding-top: 74px;
   }
 }
 
@@ -51,7 +52,7 @@
 .form__inputs {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 53% 47%;
   }
 }
 
@@ -138,7 +139,7 @@
 
   @media (min-width: $desktop-width) {
     top: 50%;
-    right: 15px;
+    right: 12px;
   }
 }
 
@@ -469,11 +470,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 25px;
+    padding-top: 22px;
     padding-right: 28px;
     padding-bottom: 25px;
     padding-left: 28px;
-    min-width: 570px;
+    min-width: auto;
+    max-width: 570px;
   }
 }
 
@@ -526,7 +528,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 80px;
+    margin-right: 109px;
   }
 }
 
@@ -636,8 +638,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 80px;
-    margin-bottom: 79px;
+    gap: 32px;
+    margin-bottom: 82px;
   }
 }
 

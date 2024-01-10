@@ -37,6 +37,10 @@
     padding: 14px 45px;
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
+  }
 }
 
 .button--order {
