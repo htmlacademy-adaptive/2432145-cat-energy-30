@@ -30,7 +30,6 @@
     grid-template-rows: min-content 1fr 2fr;
     aspect-ratio: 240/77;
     padding-bottom: 0;
-    margin-bottom: -19px;
   }
 }
 
@@ -56,7 +55,7 @@
 
 .example__description {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 17px;
   word-wrap: break-word;
 
   & br {
@@ -66,13 +65,13 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 67px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
     grid-row: 2/3;
-    margin-bottom: 84px;
+    margin-bottom: 66px;
     padding: 0;
 
     & br {
@@ -104,54 +103,72 @@
 
 .example__list {
   display: flex;
-  gap: 87px;
+  gap: 31px;
   margin: 0;
-  margin-bottom: 20px;
-  margin-left: 34px;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    gap: 94px;
+    gap: 43px;
     margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1/2;
-    grid-row: 3/4;
+    margin-bottom: 59px;
   }
 }
 
 .example__list-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid $special-grey;
+  border-radius: 2px;
+  min-width: 124px;
+  min-height: 56px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+    min-height: 77px;
+  }
 }
 
 .example__item {
   @include secondary-decoration-text (24px, 24px);
   text-align: center;
-  margin-bottom: 8px;
-  position: relative;
+  margin: auto;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    margin-bottom: 11px;
   }
 }
 
 .example__item-description {
+  position: absolute;
+  bottom: -17px;
   font-size: 12px;
   line-height: 12px;
-  margin: 0;
   text-align: center;
+  margin: 0;
+  background-color: $basic-grey-2;
+  box-shadow: 25px 0 0 0 $basic-grey-2, -25px 0 0 0 $basic-grey-2;
 
   @media (min-width: $tablet-width) {
+    bottom: -6px;
     font-size: 14px;
     line-height: 14px;
+    background-color: #ffffff;
+    box-shadow: 5px 0 0 0 #ffffff, -5px 0 0 0#ffffff;
 
     & br {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+    box-shadow: 5px 0 0 0 $basic-grey, -5px 0 0 0 $basic-grey;
   }
 }
 
@@ -167,14 +184,15 @@
     justify-content: start;
     align-items: end;
     gap: 9px;
+    margin: 0;
+    transform: translate(15px, 14px);
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1/2;
-    grid-row: 4/-1;
     flex-direction: row;
     align-items: stretch;
-    gap: 63px;
+    gap: 66px;
+    transform: translate(0, 0);
   }
 }
 
@@ -186,10 +204,6 @@
     font-size: 20px;
     line-height: 20px;
   }
-
-  @media (min-width: $tablet-width) and (max-width: 1219px) {
-    transform: translate(23px, -1px);
-  }
 }
 
 .example__total-price {
@@ -199,10 +213,6 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-  }
-
-  @media (min-width: $tablet-width) and (max-width: 1219px) {
-    transform: translate(23px, -1px);
   }
 }
 
@@ -243,7 +253,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    transform: rotate(90deg) translate(-56px, -25px);
+    transform: rotate(90deg) translate(-45px, -25px);
   }
 }
 

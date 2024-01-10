@@ -43,10 +43,19 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    text-align: end;
+    transform: translate(17px, -7px);
   }
 
   @media (min-width: $desktop-width) {
+    text-align: initial;
     transform: translate(10px, -9px);
+  }
+}
+
+.adress__description-city {
+  @media (min-width: $tablet-width) {
+    transform: translateY(19px);
   }
 }
 
