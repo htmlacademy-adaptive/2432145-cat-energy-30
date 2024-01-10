@@ -49,6 +49,16 @@
   }
 }
 
+.developer-logo--catalog {
+  @media (max-width: $pre-tablet) {
+    transform: translateX(-4px);
+
+    &::after {
+      right: -13px;
+    }
+  }
+}
+
 
 .developer-logo__text {
   transform: translate(22px, -7px);

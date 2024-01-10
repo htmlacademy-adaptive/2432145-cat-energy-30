@@ -1,22 +1,43 @@
 .cards-catalog {}
 
 .cards-catalog__wrapper {
+  margin: 0 auto;
+  min-width: $min-width-container;
+  max-width: $max-width-container;
   padding-top: 40px;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column; */
 
   @media (min-width: $desktop-width) {
     padding-top: 74px;
   }
+
+  @media (max-width: $pre-tablet) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 14px;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $basic-grey-2;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 4px;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $basic-grey-2;
+    }
+  }
 }
-//Вопрос! Про выравнивание контейнера основного блока карточек.
 
 .cards-catalog__title {
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
+  padding-left: 20px;
   margin: 0;
   margin-bottom: 41px;
 
@@ -33,7 +54,7 @@
 
 .cards-catalog__list {
   @include list-normalize;
-  margin-bottom: 25px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -71,6 +92,19 @@
 
   @media (min-width: $desktop-width) {
     max-width: 245px;
+  }
+
+  @media (max-width: $pre-tablet) {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $basic-grey-2;
+    }
   }
 }
 
