@@ -72,7 +72,6 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 13px;
-  white-space: nowrap;
 
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
@@ -120,6 +119,10 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    white-space: nowrap;
+  }
 }
 
 .form__input-icon {
@@ -159,6 +162,10 @@
 }
 /* Состояния для svg иконок в инпутах формы(передаем через инпут в спан). End */
 
+.form__input-wrapper {
+  position: relative;
+  display: block;
+}
 
 .form__input {
   font-family: $secondary-font;
@@ -199,6 +206,7 @@
 .form__input--error ~ .form__input-icon::after {
   background-color: $error-color;
 }
+
 
 .form__radio-label {}
 
@@ -293,40 +301,47 @@
 .form__input-name {
   min-width: 228px;
   min-height: 45px;
+  width: calc(228px / 320px * 100%);
   padding: 15px 14px;
   border: 1px solid #e7e7e7;
 
   @media (min-width: $tablet-width) {
     min-width: 568px;
     min-height: 52px;
+    width: calc(568px / 768px * 100%);
     padding: 11px 20px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 510px;
+    width: calc(510px / 1440px * 100%);
   }
 }
 
 .form__input-weight {
   min-width: 207px;
   min-height: 45px;
+  width: calc(207px / 320px * 100%);
   padding: 15px 14px;
   border: 1px solid #e7e7e7;
 
   @media (min-width: $tablet-width) {
     min-width: 540px;
     min-height: 52px;
+    width: calc(540px / 768px * 100%);
     padding: 11px 20px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 482px;
+    width: calc(482px / 1440px * 100%);
   }
 }
 
 .form__input-age {
-  width: 173px;
+  min-width: 173px;
   min-height: 45px;
+  width: calc(173px / 320px * 100%);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
@@ -337,17 +352,19 @@
   @media (min-width: $tablet-width) {
     min-width: 498px;
     min-height: 52px;
+    width: calc(498px / 768px * 100%);
     padding: 11px 20px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 440px;
+    width: calc(440px / 1440px * 100%);
   }
 }
 
 .form__input-email {
   min-width: 217px;
-  height: 45px;
+  min-height: 45px;
   padding-top: 10px;
   padding-right: 38px;
   padding-bottom: 10px;
@@ -493,14 +510,6 @@
     flex-direction: row;
     gap: 80px;
   }
-}
-
-.form__email-container {
-  position: relative;
-}
-
-.form__phone-container {
-  position: relative;
 }
 
 .form__list-extra {
