@@ -54,7 +54,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 113px;
+    margin-bottom: 103px;
   }
 }
 
@@ -73,8 +73,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 80px;
-    margin-bottom: 76px;
+    gap: 66px 80px;
+    margin-bottom: 54px;
   }
 }
 
@@ -132,11 +132,5 @@
     &:nth-child(6) .card-catalog__picture {
       transform: translateY(13px);
     }
-  }
-}
-
-.cards-catalog__item--product {
-  @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to bottom, transparent 0%, transparent 13%, $basic-grey 0%, $basic-grey 97%, transparent 0%);
   }
 }

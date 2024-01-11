@@ -10,9 +10,14 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 135px 1fr;
     grid-template-rows: 206px max-content min-content min-content min-content max-content;
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 13%, $basic-grey 0%, $basic-grey 97%, transparent 0%);
     padding-right: 37px;
     padding-left: 37px;
-    padding-bottom: 40px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 8px;
   }
 }
 
@@ -26,6 +31,10 @@
     grid-row: 1/2;
     margin-bottom: 41px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 27px;
+  }
 }
 
 .card-catalog--more {
@@ -33,6 +42,7 @@
 
   @media (min-width: $tablet-width) {
     border: 2px solid $basic-grey;
+    background-image: linear-gradient(#ffffff, transparent);
   }
 }
 

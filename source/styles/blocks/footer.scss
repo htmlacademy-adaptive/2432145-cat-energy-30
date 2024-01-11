@@ -17,12 +17,6 @@
   }
 }
 
-.footer__wrapper--catalog {
-  @media (max-width: $pre-tablet) {
-    transform: translateX(7px);
-  }
-}
-
 .footer__logo-link {
   display: flex;
   justify-content: center;

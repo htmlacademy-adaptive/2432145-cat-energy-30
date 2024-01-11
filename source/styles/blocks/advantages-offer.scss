@@ -50,12 +50,13 @@
     align-items: end;
     background-image: url("../../images/catalog/offer-decoration.svg"), linear-gradient(to top, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), image-set(url("../../images/catalog/catalog-background-extra-desktop@1x.webp") type("image/webp") 1x, url("../../images/catalog/catalog-background-extra-desktop@2x.webp") type("image/webp") 2x, url("../../images/catalog/catalog-background-extra-desktop@1x.jpg") type("image/jpeg") 1x, url("../../images/catalog/catalog-background-extra-desktop@2x.jpg") type("image/jpeg") 2x);
     background-size: 80px 83px, 100% 100%, 100% 100%;
-    background-position: 50% 59px, center, center;
-    max-width: 245px;
-    min-height: 288px;
+    background-position: 50% 53px, center, center;
+    min-width: auto;
+    max-width: 248px;
+    min-height: 292px;
     padding-top: 132px;
     padding-bottom: 43px;
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 

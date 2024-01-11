@@ -4,7 +4,11 @@
   }
 }
 
-.catalog-extra__wrapper {}
+.catalog-extra__wrapper {
+  @media (min-width: $desktop-width) {
+    padding-left: 30px;
+  }
+}
 
 .catalog-extra__title {
   font-family: $secondary-font;
@@ -68,7 +72,7 @@
   @media (min-width: $desktop-width) {
     align-items: center;
     padding: 0;
-    padding-top: 15px;
+    padding-top: 12px;
     padding-bottom: 17px;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
@@ -112,6 +116,7 @@
     flex-grow: 0;
     min-width: 297px;
     margin-right: 40px;
+    transform: translate(14px, 3px);
   }
 }
 
@@ -123,5 +128,11 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+
+.catalog-extra__description-value {
+  @media (min-width: $desktop-width) {
+    transform: translate(-18px, -1px);
   }
 }
