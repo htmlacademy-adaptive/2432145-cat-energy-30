@@ -61,17 +61,15 @@
             <legend class="visually-hidden">Главные данные</legend>
             <label class="form__group form__group--text">
               <span class="form__label">Имя:*</span>
-              <input class="form__input form__input-name form__input--states" type="text" name="data-name"
-                placeholder="Барсик" required>
+              <input class="form__input form__input--name" type="text" name="data-name" placeholder="Барсик" required>
             </label>
             <label class="form__group form__group--text">
               <span class="form__label">Вес (кг):*</span>
-              <input class="form__input form__input-weight form__input--states" type="number" name="data-weight"
-                value="7" required>
+              <input class="form__input form__input--weight" type="number" name="data-weight" value="7" required>
             </label>
             <label class="form__group form__group--text">
               <span class="form__label">Возраст (лет):</span>
-              <input class="form__input form__input-age form__input--states" type="number" name="data-age" value="7">
+              <input class="form__input form__input--age" type="number" name="data-age" value="7">
             </label>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--services">
@@ -111,7 +109,7 @@
                 <label class="form__group form__group--text">
                   <span class="form__label">E-mail:*</span>
                   <span class="form__input-wrapper">
-                    <input class="form__input form__input-email form__input--states" type="email" name="e-mail"
+                    <input class="form__input form__input--email" type="email" name="e-mail"
                       placeholder="kuklachev@gmail.com" required>
                     <span class="envelope-icon form__input-icon"></span>
                   </span>
@@ -121,7 +119,7 @@
                 <label class="form__group form__group--text">
                   <span class="form__label">Телефон:*</span>
                   <span class="form__input-wrapper">
-                    <input class="form__input form__input-phone form__input--states" type="text" name="phone"
+                    <input class="form__input form__input--phone" type="text" name="phone"
                       placeholder="8 (960) 900-60-90" required>
                     <span class="phone-icon form__input-icon"></span>
                   </span>
@@ -180,7 +178,9 @@
       <div class="address__invite-wrapper container-greater">
         <h2 class="visually-hidden">Адрес</h2>
         <p class="address__title title-h3">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
-        <address class="address__description">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</address>
+        <address class="address__description">ул. Большая<br>Конюшенная, д. 19/8
+          <div class="adress__description-city">Санкт-Петербург</div>
+        </address>
       </div>
       <!--  Карта -->
       <div class="address__map-wrapper">
