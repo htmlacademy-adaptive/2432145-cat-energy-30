@@ -79,6 +79,10 @@
 }
 
 .cards-catalog__item {
+  &:nth-child(2) .card-catalog__picture {
+    transform: translateY(3px);
+  }
+
   &:nth-child(3) .card-catalog__picture {
     transform: translateY(-8px);
   }
@@ -113,7 +117,7 @@
     }
   }
 
-  @media (max-width: 1219px) {
+  @media (min-width: $tablet-width) and (max-width: 1219px) {
     &:nth-child(2) .card-catalog__picture {
       transform: translateY(16px);
     }

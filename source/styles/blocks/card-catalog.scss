@@ -67,50 +67,14 @@
 }
 
 .card-catalog__wrapper-decoration {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-column: 2/-1;
+
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $special-grey;
     margin-bottom: 12px;
-  }
-}
-
-
-.card-catalog__weight-wrapper {
-  display: flex;
-  justify-content: space-between;
-  grid-column: 2/-1;
-  grid-row: 2/3;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-column: 1/-1;
-    grid-row: 3/4;
-  }
-}
-
-.card-catalog__taste-wrapper {
-  display: flex;
-  justify-content: space-between;
-  grid-column: 2/-1;
-  grid-row: 3/4;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-column: 1/-1;
-    grid-row: 4/5;
-  }
-}
-
-.card-catalog__price-wrapper {
-  display: flex;
-  justify-content: space-between;
-  grid-column: 2/-1;
-  grid-row: 4/5;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-column: 1/-1;
-    grid-row: 5/6;
-    margin-bottom: 0;
   }
 }
 
@@ -126,77 +90,22 @@
   }
 }
 
-.card-catalog__description--weight {
-  grid-column: 2/3;
-  grid-row: 2/3;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-}
-
-.card-catalog__description--weight-value {
-  grid-column: 3/4;
-  grid-row: 2/3;
-  justify-self: end;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 3/-1;
-    grid-row: 3/4;
-  }
-}
-
-.card-catalog__description--taste {
-  grid-column: 2/3;
-  grid-row: 3/4;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 1/2;
-    grid-row: 4/5;
-  }
-}
-
-.card-catalog__description--taste-value {
-  grid-column: 3/4;
-  grid-row: 3/4;
-  justify-self: end;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 3/4;
-    grid-row: 4/5;
-  }
-}
-
-.card-catalog__description--price {
-  grid-column: 2/3;
-  grid-row: 4/5;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 1/2;
-    grid-row: 5/6;
-  }
-}
-
-.card-catalog__description--price-value {
-  grid-column: 3/4;
-  grid-row: 4/-2;
-  justify-self: end;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 3/4;
-    grid-row: 5/6;
-  }
-}
-
 .card-catalog__description--more {
   grid-column: 1/-1;
   grid-row: 3/4;
   margin-bottom: 23px;
 
+  & br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     text-align: center;
     margin-bottom: 82px;
+
+    & br {
+      display: block;
+    }
   }
 }
 
