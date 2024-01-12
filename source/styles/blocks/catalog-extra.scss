@@ -38,7 +38,7 @@
   margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
-    padding-right: $horizontal-tablet-padding;
+    padding-right: 14px;
     padding-left: $horizontal-tablet-padding;
     margin-bottom: 67px;
   }
@@ -61,12 +61,12 @@
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     padding-top: 23px;
-    padding-right: 40px;
+    padding-right: 36px;
     padding-bottom: 28px;
     padding-left: 38px;
     gap: 25px 0;
     border: 1px solid $special-grey;
-    border-bottom: 1px solid transparent;
+    border-bottom-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,16 +107,14 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    gap: 49px;
+    gap: 50px;
     width: auto;
-    transform: translate(17px, 5px);
   }
 
   @media (min-width: $desktop-width) {
     flex-grow: 0;
     min-width: 297px;
     margin-right: 40px;
-    transform: translate(14px, 3px);
   }
 }
 
@@ -128,11 +126,13 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    min-width: 42px;
+    text-align: right;
   }
 }
 
 .catalog-extra__description-value {
   @media (min-width: $desktop-width) {
-    transform: translate(-18px, -1px);
+    min-width: 42px;
   }
 }
