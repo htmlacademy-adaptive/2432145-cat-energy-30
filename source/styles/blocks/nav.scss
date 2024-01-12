@@ -92,11 +92,12 @@
 }
 
 .nav__wrapper--phone-menu-nojs {
-  display: block;
+  @media (max-width: $pre-tablet) {
+    display: block;
 
-  & .nav__list {
-    position: static;
-    margin-bottom: 10px;
+    & .nav__list {
+      position: static;
+    }
   }
 }
 

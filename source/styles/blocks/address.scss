@@ -77,9 +77,7 @@
 }
 
 .address__image-wrapper--no-js {
-  @media (max-width: $pre-tablet) {
-    display: block;
-  }
+  display: block;
 }
 
 .address__map-image {
