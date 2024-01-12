@@ -34,6 +34,7 @@
           <!--  Поменять модификатор с nav__toggle-open-burger на nav__toggle-close-burger для отображения кнопки закрытия меню -->
           <div class="nav__wrapper">
             <!-- Для открытия мобильной версии меню навигации поставить модификатор nav__wrapper-phone-menu-open на div nav__wrapper. -->
+            <!-- За нерабочий js отвечает класс nav__wrapper-phone-menu-nojs. -->
             <ul class="nav__list">
               <li class="nav__item">
                 <a class="nav__link" href="index.html">Главная</a>
@@ -137,7 +138,8 @@
             <ul class="form__list-extra">
               <li class="form__item form__item--sweetener">
                 <label class="form__group form__group--custom-checkbox">
-                  <input class="visually-hidden form__input-mark" type="checkbox" name="sugar-substitutes" tabindex="-1" checked>
+                  <input class="visually-hidden form__input-mark" type="checkbox" name="sugar-substitutes" tabindex="-1"
+                    checked>
                   <span class="form__input-checkbox" tabindex="0"></span>
                   <span class="form__label">Сахарозаменитель</span>
                 </label>

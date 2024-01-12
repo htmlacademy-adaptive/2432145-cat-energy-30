@@ -91,6 +91,15 @@
   display: block;
 }
 
+.nav__wrapper--phone-menu-nojs {
+  display: block;
+
+  & .nav__list {
+    position: static;
+    margin-bottom: 10px;
+  }
+}
+
 .nav__list {
   @include list-normalize;
   position: relative;
