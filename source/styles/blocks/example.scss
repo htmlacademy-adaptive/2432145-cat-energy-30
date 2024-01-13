@@ -2,24 +2,24 @@
   background-color: $basic-grey-2;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to bottom, #ffffff 53%, #ffffff 150px, $basic-grey-2 150px);
+    background-image: linear-gradient(to bottom, #ffffff calc(62% + 2px), #ffffff 48%, #eaeaea 150px);
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to bottom, transparent 150px, transparent 150px, $basic-grey 150px);
+    background-image: linear-gradient(to bottom, transparent 135px, transparent 135px, $basic-grey 135px);
     background-color: transparent;
   }
 }
 
 .example__wrapper {
-  padding-top: 25px;
+  padding-top: 12px;
   padding-right: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 41px;
   padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 85px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -29,6 +29,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content 1fr 2fr;
     aspect-ratio: 240/77;
+    padding-bottom: 0;
   }
 }
 
@@ -53,19 +54,29 @@
 }
 
 .example__description {
-  margin: 0 0 20px;
+  margin: 0;
+  margin-bottom: 17px;
+  word-wrap: break-word;
+
+  & br {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin: 0 0 55px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
     grid-row: 2/3;
-    margin: 0 0 69px;
+    margin-bottom: 66px;
     padding: 0;
+
+    & br {
+      display: block;
+    }
   }
 }
 
@@ -74,12 +85,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: $horizontal-tablet-padding;
-    padding-right: $horizontal-tablet-padding;
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 99px;
+    margin-bottom: 61px;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,47 +97,80 @@
     align-items: flex-start;
     grid-column: 1/2;
     padding: 0;
+    margin-bottom: 75px;
   }
 }
 
 .example__list {
   display: flex;
-  justify-content: space-between;
-  gap: 130px;
-  margin: 0 0 20px;
+  flex-wrap: wrap;
+  gap: 31px;
+  margin: 0;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
+    gap: 43px;
     margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1/2;
-    grid-row: 3/4;
+    margin-bottom: 59px;
   }
 }
 
-.example__list-wrapper {}
+.example__list-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $special-grey;
+  border-radius: 2px;
+  min-width: 124px;
+  min-height: 56px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+    min-height: 77px;
+  }
+}
 
 .example__item {
   @include secondary-decoration-text (24px, 24px);
   text-align: center;
-  margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    margin-bottom: 11px;
   }
 }
 
 .example__item-description {
+  position: absolute;
+  bottom: -17px;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
   margin: 0;
+  background-color: $basic-grey-2;
+  box-shadow: 25px 0 0 0 $basic-grey-2, -25px 0 0 0 $basic-grey-2;
 
   @media (min-width: $tablet-width) {
+    bottom: -6px;
     font-size: 14px;
     line-height: 14px;
+    background-color: #ffffff;
+    box-shadow: 5px 0 0 0 #ffffff, -5px 0 0 0#ffffff;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+    box-shadow: 5px 0 0 0 $basic-grey, -5px 0 0 0 $basic-grey;
   }
 }
 
@@ -137,20 +179,22 @@
   justify-content: center;
   gap: 3px;
   margin-bottom: 20px;
+  margin-right: 9px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     justify-content: start;
     align-items: end;
     gap: 9px;
+    margin: 0;
+    transform: translate(15px, 14px);
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1/2;
-    grid-row: 4/-1;
     flex-direction: row;
     align-items: stretch;
-    gap: 63px;
+    gap: 66px;
+    transform: translate(0, 0);
   }
 }
 
@@ -175,25 +219,107 @@
 }
 
 .example__slider {
-  margin-bottom: 26px;
-
   @media (min-width: $tablet-width) {
-    margin-bottom: 61px;
+    transform: translate(74px, -16px);
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2/-1;
-    grid-row: 1/-1;
-    margin-bottom: 0;
+    transform: translate(49px, 3px);
   }
 }
 
-.example__slider-cat-image {
-  @media (min-width: $tablet-width) {
-    transform: translateY(-99px);
+.example__cat-before {
+  display: flex;
+  overflow-x: hidden;
+}
 
-    @media (min-width: $desktop-width) {
-      transform: translateY(0);
+.example__cat-after {
+  display: flex;
+  justify-content: end;
+  overflow-x: hidden;
+}
+
+.example__slider-cat-image {
+  min-width: auto;
+  max-width: none;
+}
+
+.example__slider-toggle-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: rotate(90deg) translate(-4px, -13px);
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(90deg) translate(-4px, -22px);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: rotate(90deg) translate(-45px, -25px);
+  }
+}
+
+.example__slider-toggle {
+  position: relative;
+  width: 256px;
+  height: 4px;
+  background-color: $special-grey-2;
+  transition: background-color 0.3 ease;
+  cursor: grab;
+
+  &:hover {
+    background-color: $basic-green;
+
+    .example__slider-button {
+      border: 2px solid $basic-green;
+    }
+
+    .slider-mark-image {
+      color: $basic-green;
+      //Покраска стрелочек кнопки слайдера при hover.
     }
   }
+
+  &:active {
+    background-color: $basic-green-2;
+
+    .example__slider-button {
+      border: 2px solid $basic-green-2;
+    }
+
+    .slider-mark-image {
+      color: $basic-green-2;
+      //Покраска стрелочек кнопки слайдера при hover.
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 512px;
+  }
+}
+
+.example__slider-button {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%) rotate(90deg);
+  display: flex;
+  align-items: center;
+  border: 2px solid $special-grey-2;
+  border-radius: 50%;
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  cursor: grab;
+
+  /* &::before {
+    position: absolute;
+    content: "";
+    mask-image: url("../../images/icons/stack.svg#slider-mark");
+    mask-repeat: no-repeat;
+    mask-size: 24px 18px;
+    background-color: $special-grey-2;
+    width: 24px;
+    height: 18px;
+  } */
 }

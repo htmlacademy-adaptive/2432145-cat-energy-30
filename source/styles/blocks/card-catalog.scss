@@ -1,16 +1,23 @@
 .card-catalog {
   display: grid;
-  grid-template-columns: max-content 76px min-content;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(5, min-content);
   padding-top: 20px;
   padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 135px 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 206px max-content min-content min-content min-content max-content;
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 13%, $basic-grey 0%, $basic-grey 97%, transparent 0%);
     padding-right: 37px;
     padding-left: 37px;
-    padding-bottom: 40px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 8px;
   }
 }
 
@@ -24,6 +31,10 @@
     grid-row: 1/2;
     margin-bottom: 41px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 27px;
+  }
 }
 
 .card-catalog--more {
@@ -31,6 +42,7 @@
 
   @media (min-width: $tablet-width) {
     border: 2px solid $basic-grey;
+    background-image: linear-gradient(#ffffff, transparent);
   }
 }
 
@@ -40,15 +52,18 @@
   @include secondary-decoration-text (16px, 20px);
   grid-column: 2/3;
   grid-row: 1/2;
+  max-width: 76px;
   margin: 0;
   margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    grid-column: 2/3;
+    grid-column: 1/-1;
     grid-row: 2/3;
+    justify-self: center;
     text-align: center;
     font-size: 20px;
     line-height: 24px;
+    max-width: 135px;
     margin-bottom: 20px;
   }
 }
@@ -56,58 +71,35 @@
 .card-catalog__title--more {
   grid-column: 1/-1;
   grid-row: 2/3;
+  max-width: none;
   margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
+    grid-column: 1/-1;
+    max-width: 135px;
+    margin-top: -6px;
+    margin-bottom: 24px;
+  }
+}
+
+.card-catalog__value-group {
+  grid-column: 2/-1;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
   }
 }
 
 .card-catalog__wrapper-decoration {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-column: 2/-1;
+
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $special-grey;
     margin-bottom: 12px;
-  }
-}
-
-
-.card-catalog__weight-wrapper {
-  display: flex;
-  justify-content: space-between;
-  grid-column: 2/-1;
-  grid-row: 2/3;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
     grid-column: 1/-1;
-    grid-row: 3/4;
-  }
-}
-
-.card-catalog__taste-wrapper {
-  display: flex;
-  justify-content: space-between;
-  grid-column: 2/-1;
-  grid-row: 3/4;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-column: 1/-1;
-    grid-row: 4/5;
-  }
-}
-
-.card-catalog__price-wrapper {
-  display: flex;
-  justify-content: space-between;
-  grid-column: 2/-1;
-  grid-row: 4/5;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-column: 1/-1;
-    grid-row: 5/6;
-    margin-bottom: 0;
   }
 }
 
@@ -123,77 +115,22 @@
   }
 }
 
-.card-catalog__description--weight {
-  grid-column: 2/3;
-  grid-row: 2/3;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-}
-
-.card-catalog__description--weight-value {
-  grid-column: 3/4;
-  grid-row: 2/3;
-  justify-self: end;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 3/-1;
-    grid-row: 3/4;
-  }
-}
-
-.card-catalog__description--taste {
-  grid-column: 2/3;
-  grid-row: 3/4;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 1/2;
-    grid-row: 4/5;
-  }
-}
-
-.card-catalog__description--taste-value {
-  grid-column: 3/4;
-  grid-row: 3/4;
-  justify-self: end;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 3/4;
-    grid-row: 4/5;
-  }
-}
-
-.card-catalog__description--price {
-  grid-column: 2/3;
-  grid-row: 4/5;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 1/2;
-    grid-row: 5/6;
-  }
-}
-
-.card-catalog__description--price-value {
-  grid-column: 3/4;
-  grid-row: 4/-2;
-  justify-self: end;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 3/4;
-    grid-row: 5/6;
-  }
-}
-
 .card-catalog__description--more {
   grid-column: 1/-1;
   grid-row: 3/4;
   margin-bottom: 23px;
 
+  & br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     text-align: center;
     margin-bottom: 82px;
+
+    & br {
+      display: block;
+    }
   }
 }
 

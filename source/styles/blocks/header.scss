@@ -3,6 +3,7 @@
 .header__wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   padding-top: 13px;
 
@@ -28,6 +29,18 @@
 }
 
 .header__logo-text-wrapper {
+  @media (max-width: $pre-tablet){
+    position: absolute;
+    left: 50vw;
+    transform: translate(-50%, -28px);
+  }
+}
+
+.header__logo-text {
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
 }
 
 .header__nav-wrapper {}

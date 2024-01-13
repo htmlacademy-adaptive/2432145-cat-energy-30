@@ -7,8 +7,9 @@
 
   &::after {
     position: absolute;
-    content: "";
+    top: -9px;
     right: 0;
+    content: "";
     mask-image: url("../../images/icons/stack.svg#dev-logo");
     mask-repeat: no-repeat;
     mask-size: 27px 34px;
@@ -37,10 +38,32 @@
 
     &::after {
       display: block;
-      transform: translate(0, -10px);
+      transform: translate(18px, -5px);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      transform: translate(1px, 5px);
     }
   }
 }
 
+.developer-logo--catalog {
+  @media (max-width: $pre-tablet) {
+    transform: translateX(-4px);
+
+    &::after {
+      right: -13px;
+    }
+  }
+}
+
+
 .developer-logo__text {
+  transform: translate(22px, -7px);
+
+  @media (min-width: $desktop-width) {
+    transform: translate(6px, 3px);
+  }
 }

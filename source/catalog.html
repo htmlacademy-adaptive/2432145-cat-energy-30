@@ -24,18 +24,21 @@
             <img class="header-logo__image" src="images/logo-phone.svg" width="33" height="38"
               alt="Логотип Cat Energy.">
           </picture>
-          <svg class="logo-text" aria-hidden="true" focusable="false" width="101" height="18">
-            <use href="images/sprite.svg#logo-text"></use>
-          </svg>
+          <div class="header__logo-text-wrapper">
+            <svg class="header__logo-text logo-text" aria-hidden="true" focusable="false" width="101" height="18">
+              <use href="images/sprite.svg#logo-text"></use>
+            </svg>
+          </div>
         </a>
         <div class="header__nav-wrapper">
           <nav class="nav">
-            <button class="nav__toggle nav__toggle--open-burger" type="button">
+            <button class="nav__toggle nav__toggle--close-burger nav__toggle--nojs" type="button">
               <span class="visually-hidden">Открыть меню или закрыть меню.</span>
             </button>
             <!--  Поменять модификатор с nav__toggle-open-burger на nav__toggle-close-burger для отображения кнопки закрытия меню -->
-            <div class="nav__wrapper">
+            <div class="nav__wrapper nav__wrapper--phone-menu-nojs">
               <!-- Для открытия мобильной версии меню навигации поставить  модификатор nav__wrapper-phone-menu-open на div nav__wrapper. -->
+              <!-- За нерабочий js отвечает класс nav__wrapper-phone-menu-nojs. -->
               <ul class="nav__list">
                 <li class="nav__item">
                   <a class="nav__link" href="index.html">Главная</a>
@@ -55,10 +58,10 @@
     <main class="main-catalog-page">
       <!--  Каталог карточек -->
       <section class="cards-catalog">
-        <div class="cards-catalog__wrapper container">
+        <div class="cards-catalog__wrapper">
           <h1 class="cards-catalog__title">Каталог продукции</h1>
           <ul class="cards-catalog__list">
-            <li class="cards-catalog__item cards-catalog__item--product">
+            <li class="cards-catalog__item">
               <div class="card-catalog">
                 <div class="card-catalog__picture">
                   <picture>
@@ -81,24 +84,26 @@
                 </div>
                 <p class="card-catalog__title">Cat Energy
                   PRO 500 г</p>
-                <div class="card-catalog__wrapper-decoration card-catalog__weight-wrapper">
-                  <p class="card-catalog__description card-catalog__description--weight">Масса</p>
-                  <p class="card-catalog__description card-catalog__description--weight-value">500 г</p>
-                </div>
-                <div class="card-catalog__wrapper-decoration card-catalog__taste-wrapper">
-                  <p class="card-catalog__description card-catalog__description--taste">Вкус</p>
-                  <p class="card-catalog__description card-catalog__description--taste-value">Курица</p>
-                </div>
-                <div class="card-catalog__wrapper-decoration card-catalog__price-wrapper">
-                  <p class="card-catalog__description card-catalog__description--price">Цена</p>
-                  <p class="card-catalog__description card-catalog__description--price-value">700 ₽</p>
+                <div class="card-catalog__value-group">
+                  <div class="card-catalog__wrapper-decoration">
+                    <p class="card-catalog__description">Масса</p>
+                    <p class="card-catalog__description">500 г</p>
+                  </div>
+                  <div class="card-catalog__wrapper-decoration">
+                    <p class="card-catalog__description">Вкус</p>
+                    <p class="card-catalog__description">Курица</p>
+                  </div>
+                  <div class="card-catalog__wrapper-decoration">
+                    <p class="card-catalog__description">Цена</p>
+                    <p class="card-catalog__description">700 ₽</p>
+                  </div>
                 </div>
                 <button class="button button--order" type="button">
                   <span class="button__text-mark">Заказать</span>
                 </button>
               </div>
             </li>
-            <li class="cards-catalog__item cards-catalog__item--product">
+            <li class="cards-catalog__item">
               <div class="card-catalog">
                 <div class="card-catalog__picture">
                   <picture>
@@ -122,24 +127,26 @@
                 <p class="card-catalog__title">Cat Energy
                   PRO
                   1000 г</p>
-                <div class="card-catalog__wrapper-decoration card-catalog__weight-wrapper">
-                  <p class="card-catalog__description card-catalog__description--weight">Масса</p>
-                  <p class="card-catalog__description card-catalog__description--weight-value">1000 г</p>
-                </div>
-                <div class="card-catalog__wrapper-decoration card-catalog__taste-wrapper">
-                  <p class="card-catalog__description card-catalog__description--taste">Вкус</p>
-                  <p class="card-catalog__description card-catalog__description--taste-value">Курица</p>
-                </div>
-                <div class="card-catalog__wrapper-decoration card-catalog__price-wrapper">
-                  <p class="card-catalog__description card-catalog__description--price">Цена</p>
-                  <p class="card-catalog__description card-catalog__description--price-value">1000 ₽</p>
+                <div class="card-catalog__value-group">
+                  <div class="card-catalog__wrapper-decoration">
+                    <p class="card-catalog__description">Масса</p>
+                    <p class="card-catalog__description">1000 г</p>
+                  </div>
+                  <div class="card-catalog__wrapper-decoration">
+                    <p class="card-catalog__description">Вкус</p>
+                    <p class="card-catalog__description">Курица</p>
+                  </div>
+                  <div class="card-catalog__wrapper-decoration">
+                    <p class="card-catalog__description">Цена</p>
+                    <p class="card-catalog__description">1000 ₽</p>
+                  </div>
                 </div>
                 <button class="button button--order" type="button">
                   <span class="button__text-mark">Заказать</span>
                 </button>
               </div>
             </li>
-            <li class="cards-catalog__item cards-catalog__item--product">
+            <li class="cards-catalog__item">
               <div class="card-catalog">
                 <div class="card-catalog__picture">
                   <picture>
@@ -163,24 +170,26 @@
                 <p class="card-catalog__title">Cat Energy
                   PRO
                   500 г</p>
-                <div class="card-catalog__wrapper-decoration card-catalog__weight-wrapper">
-                  <p class="card-catalog__description card-catalog__description--weight">Масса</p>
-                  <p class="card-catalog__description card-catalog__description--weight-value">500 г</p>
-                </div>
-                <div class="card-catalog__wrapper-decoration card-catalog__taste-wrapper">
-                  <p class="card-catalog__description card-catalog__description--taste">Вкус</p>
-                  <p class="card-catalog__description card-catalog__description--taste-value">Рыба</p>
-                </div>
-                <div class="card-catalog__wrapper-decoration card-catalog__price-wrapper">
-                  <p class="card-catalog__description card-catalog__description--price">Цена</p>
-                  <p class="card-catalog__description card-catalog__description--price-value">700 ₽</p>
+                <div class="card-catalog__value-group">
+                  <div class="card-catalog__wrapper-decoration">
+                    <p class="card-catalog__description">Масса</p>
+                    <p class="card-catalog__description">500 г</p>
+                  </div>
+                  <div class="card-catalog__wrapper-decoration">
+                    <p class="card-catalog__description">Вкус</p>
+                    <p class="card-catalog__description">Рыба</p>
+                  </div>
+                  <div class="card-catalog__wrapper-decoration">
+                    <p class="card-catalog__description">Цена</p>
+                    <p class="card-catalog__description">700 ₽</p>
+                  </div>
                 </div>
                 <button class="button button--order" type="button">
                   <span class="button__text-mark">Заказать</span>
                 </button>
               </div>
             </li>
-            <li class="cards-catalog__item cards-catalog__item--product">
+            <li class="cards-catalog__item">
               <div class="card-catalog">
                 <div class="card-catalog__picture">
                   <picture>
@@ -204,24 +213,26 @@
                 <p class="card-catalog__title">Cat Energy
                   PRO
                   500 г</p>
-                <div class="card-catalog__wrapper-decoration card-catalog__weight-wrapper">
-                  <p class="card-catalog__description card-catalog__description--weight">Масса</p>
-                  <p class="card-catalog__description card-catalog__description--weight-value">1000 г</p>
+                  <div class="card-catalog__value-group">
+                <div class="card-catalog__wrapper-decoration">
+                  <p class="card-catalog__description">Масса</p>
+                  <p class="card-catalog__description">1000 г</p>
                 </div>
-                <div class="card-catalog__wrapper-decoration card-catalog__taste-wrapper">
-                  <p class="card-catalog__description card-catalog__description--taste">Вкус</p>
-                  <p class="card-catalog__description card-catalog__description--taste-value">Рыба</p>
+                <div class="card-catalog__wrapper-decoration">
+                  <p class="card-catalog__description">Вкус</p>
+                  <p class="card-catalog__description">Рыба</p>
                 </div>
-                <div class="card-catalog__wrapper-decoration card-catalog__price-wrapper">
-                  <p class="card-catalog__description card-catalog__description--price">Цена</p>
-                  <p class="card-catalog__description card-catalog__description--price-value">1000 ₽</p>
+                <div class="card-catalog__wrapper-decoration">
+                  <p class="card-catalog__description">Цена</p>
+                  <p class="card-catalog__description">1000 ₽</p>
                 </div>
+              </div>
                 <button class="button button--order" type="button">
                   <span class="button__text-mark">Заказать</span>
                 </button>
               </div>
             </li>
-            <li class="cards-catalog__item cards-catalog__item--product">
+            <li class="cards-catalog__item">
               <div class="card-catalog">
                 <div class="card-catalog__picture">
                   <picture>
@@ -245,24 +256,26 @@
                 <p class="card-catalog__title">Cat Energy
                   SLIM
                   500 г</p>
-                <div class="card-catalog__wrapper-decoration card-catalog__weight-wrapper">
-                  <p class="card-catalog__description card-catalog__description--weight">Масса</p>
-                  <p class="card-catalog__description card-catalog__description--weight-value">500 г</p>
+                  <div class="card-catalog__value-group">
+                <div class="card-catalog__wrapper-decoration">
+                  <p class="card-catalog__description">Масса</p>
+                  <p class="card-catalog__description">500 г</p>
                 </div>
-                <div class="card-catalog__wrapper-decoration card-catalog__taste-wrapper">
-                  <p class="card-catalog__description card-catalog__description--taste">Вкус</p>
-                  <p class="card-catalog__description card-catalog__description--taste-value">Гречка</p>
+                <div class="card-catalog__wrapper-decoration">
+                  <p class="card-catalog__description">Вкус</p>
+                  <p class="card-catalog__description">Гречка</p>
                 </div>
-                <div class="card-catalog__wrapper-decoration card-catalog__price-wrapper">
-                  <p class="card-catalog__description card-catalog__description--price">Цена</p>
-                  <p class="card-catalog__description card-catalog__description--price-value">400 ₽</p>
+                <div class="card-catalog__wrapper-decoration">
+                  <p class="card-catalog__description">Цена</p>
+                  <p class="card-catalog__description">400 ₽</p>
                 </div>
+              </div>
                 <button class="button button--order" type="button">
                   <span class="button__text-mark">Заказать</span>
                 </button>
               </div>
             </li>
-            <li class="cards-catalog__item cards-catalog__item--product">
+            <li class="cards-catalog__item">
               <div class="card-catalog">
                 <div class="card-catalog__picture">
                   <picture>
@@ -286,24 +299,26 @@
                 <p class="card-catalog__title">Cat Energy
                   SLIM
                   1000 г</p>
-                <div class="card-catalog__wrapper-decoration card-catalog__weight-wrapper">
-                  <p class="card-catalog__description card-catalog__description--weight">Масса</p>
-                  <p class="card-catalog__description card-catalog__description--weight-value">1000 г</p>
+                  <div class="card-catalog__value-group">
+                <div class="card-catalog__wrapper-decoration">
+                  <p class="card-catalog__description">Масса</p>
+                  <p class="card-catalog__description">1000 г</p>
                 </div>
-                <div class="card-catalog__wrapper-decoration card-catalog__taste-wrapper">
-                  <p class="card-catalog__description card-catalog__description--taste">Вкус</p>
-                  <p class="card-catalog__description card-catalog__description--taste-value">Гречка</p>
+                <div class="card-catalog__wrapper-decoration">
+                  <p class="card-catalog__description">Вкус</p>
+                  <p class="card-catalog__description">Гречка</p>
                 </div>
-                <div class="card-catalog__wrapper-decoration card-catalog__price-wrapper">
-                  <p class="card-catalog__description card-catalog__description--price">Цена</p>
-                  <p class="card-catalog__description card-catalog__description--price-value">700 ₽</p>
+                <div class="card-catalog__wrapper-decoration">
+                  <p class="card-catalog__description">Цена</p>
+                  <p class="card-catalog__description">700 ₽</p>
                 </div>
+              </div>
                 <button class="button button--order" type="button">
                   <span class="button__text-mark">Заказать</span>
                 </button>
               </div>
             </li>
-            <li class="cards-catalog__item cards-catalog__item--product">
+            <li class="cards-catalog__item">
               <div class="card-catalog">
                 <div class="card-catalog__picture">
                   <picture>
@@ -327,18 +342,20 @@
                 <p class="card-catalog__title">Cat Energy
                   SLIM
                   500 г</p>
-                <div class="card-catalog__wrapper-decoration card-catalog__weight-wrapper">
-                  <p class="card-catalog__description card-catalog__description--weight">Масса</p>
-                  <p class="card-catalog__description card-catalog__description--weight-value">500 г</p>
+                  <div class="card-catalog__value-group">
+                <div class="card-catalog__wrapper-decoration">
+                  <p class="card-catalog__description">Масса</p>
+                  <p class="card-catalog__description">500 г</p>
                 </div>
-                <div class="card-catalog__wrapper-decoration card-catalog__taste-wrapper">
-                  <p class="card-catalog__description card-catalog__description--taste">Вкус</p>
-                  <p class="card-catalog__description card-catalog__description--taste-value">Рис</p>
+                <div class="card-catalog__wrapper-decoration">
+                  <p class="card-catalog__description">Вкус</p>
+                  <p class="card-catalog__description">Рис</p>
                 </div>
-                <div class="card-catalog__wrapper-decoration card-catalog__price-wrapper">
-                  <p class="card-catalog__description card-catalog__description--price">Цена</p>
-                  <p class="card-catalog__description card-catalog__description--price-value">500 ₽</p>
+                <div class="card-catalog__wrapper-decoration">
+                  <p class="card-catalog__description">Цена</p>
+                  <p class="card-catalog__description">500 ₽</p>
                 </div>
+              </div>
                 <button class="button button--order" type="button">
                   <span class="button__text-mark">Заказать</span>
                 </button>
@@ -355,7 +372,7 @@
                   </picture>
                 </a>
                 <p class="card-catalog__title card-catalog__title--more">Показать еще 100500 товаров</p>
-                <p class="card-catalog__description card-catalog__description--more">На самом деле вкусов гораздо
+                <p class="card-catalog__description card-catalog__description--more">На самом деле вкусов <br>гораздо
                   больше!</p>
                 <button class="button button--show-all" type="button">
                   <span class="button__text-mark">Показать все</span>
@@ -370,13 +387,13 @@
       <div class="catalog-extra-offer-container container">
         <section class="catalog-extra">
           <div class="catalog-extra__wrapper">
-            <h2 class="catalog-extra__title">Дополнительные товары</h2>
+            <h2 class="catalog-extra__title title-decoration">Дополнительные товары</h2>
             <ul class="catalog-extra__list">
               <li class="catalog-extra__item">
                 <p class="catalog-extra__subtitle">Сахарозаменитель</p>
                 <div class="catalog-extra__description-wrapper">
                   <p class="catalog-extra__description">1 упаковка (100 г)</p>
-                  <p class="catalog-extra__description">200 рублей</p>
+                  <p class="catalog-extra__description catalog-extra__description-value">200 ₽</p>
                 </div>
                 <button class="button button--extra" type="button">
                   <span class="button__text-mark">Заказать</span>
@@ -386,7 +403,7 @@
                 <p class="catalog-extra__subtitle">Питьевая вода</p>
                 <div class="catalog-extra__description-wrapper">
                   <p class="catalog-extra__description">5 литров</p>
-                  <p class="catalog-extra__description">50 рублей</p>
+                  <p class="catalog-extra__description catalog-extra__description-value">50 ₽</p>
                 </div>
                 <button class="button button--extra" type="button">
                   <span class="button__text-mark">Заказать</span>
@@ -396,7 +413,7 @@
                 <p class="catalog-extra__subtitle">Молоко</p>
                 <div class="catalog-extra__description-wrapper">
                   <p class="catalog-extra__description">1 литр</p>
-                  <p class="catalog-extra__description">100 рублей</p>
+                  <p class="catalog-extra__description catalog-extra__description-value">100 ₽</p>
                 </div>
                 <button class="button button--extra" type="button">
                   <span class="button__text-mark">Заказать</span>
@@ -406,7 +423,7 @@
                 <p class="catalog-extra__subtitle">Витамины</p>
                 <div class="catalog-extra__description-wrapper">
                   <p class="catalog-extra__description">1 упаковка (30 г)</p>
-                  <p class="catalog-extra__description">300 рублей</p>
+                  <p class="catalog-extra__description catalog-extra__description-value">300 ₽</p>
                 </div>
                 <button class="button button--extra" type="button">
                   <span class="button__text-mark">Заказать</span>
@@ -416,7 +433,7 @@
           </div>
         </section>
         <!--  Дополнительные товары End -->
-        <section class="advantages-offer container">
+        <section class="advantages-offer">
           <div class="advantages-offer__wrapper">
             <h2 class="visually-hidden">Акции.</h2>
             <p class="advantages-offer__description">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
@@ -427,7 +444,9 @@
         <div class="address__invite-wrapper container-greater">
           <h2 class="visually-hidden">Адрес</h2>
           <p class="address__title title-h3">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
-          <address class="address__description">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</address>
+          <address class="address__description">ул. Большая<br>Конюшенная, д. 19/8
+            <div class="address__description-city">Санкт-Петербург</div>
+          </address>
         </div>
         <!--  Карта -->
         <div class="address__map-wrapper">
@@ -435,7 +454,7 @@
             src="https://yandex.ru/map-widget/v1/?um=constructor%3Adca516ac240b64172494a206f76ca188a9072a7dbe88e24936ac2b327371f711&amp;source=constructor"
             width="320" height="362" allowfullscreen=""></iframe>
         </div>
-        <div class="address__image-wrapper">
+        <div class="address__image-wrapper address__image-wrapper--no-js">
           <!-- Для включения отображения изображения-подложки в случае не рабочего js-повесить модификатор address__image-wrapper-no-js. -->
           <picture>
             <source type="image/webp" media="(min-width: 1220px)"
@@ -454,7 +473,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__wrapper">
+      <div class="footer__wrapper container">
         <a class="footer__logo-link" href="#" tabindex="-1">
           <span class="visually-hidden">Текстовый логотип Cat Energy</span>
           <svg class="footer__logo logo-text" aria-hidden="true" focusable="false" width="101" height="18" tabindex="0">
@@ -478,7 +497,7 @@
             </a>
           </li>
         </ul>
-        <a class="developer-logo" href="#">
+        <a class="developer-logo developer-logo--catalog" href="#">
           <span class="developer-logo__text">HTML Academy</span>
         </a>
       </div>
