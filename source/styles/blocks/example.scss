@@ -103,6 +103,7 @@
 
 .example__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 31px;
   margin: 0;
   margin-bottom: 36px;
@@ -121,7 +122,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   border: 1px solid $special-grey;
   border-radius: 2px;
   min-width: 124px;
@@ -136,7 +139,6 @@
 .example__item {
   @include secondary-decoration-text (24px, 24px);
   text-align: center;
-  margin: auto;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
