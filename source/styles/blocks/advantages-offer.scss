@@ -1,13 +1,6 @@
 .advantages-offer {
-  min-width: 320px;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-left: $horizontal-phone-padding;
-  padding-right: $horizontal-phone-padding;
-
   @media (min-width: $tablet-width) {
-    padding-left: 31px;
-    padding-right: 13px;
+    padding-right: 14px;
   }
 
   @media (min-width: $desktop-width) {

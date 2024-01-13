@@ -71,10 +71,12 @@
 .card-catalog__title--more {
   grid-column: 1/-1;
   grid-row: 2/3;
+  max-width: none;
   margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
+    max-width: 135px;
     margin-top: -6px;
     margin-bottom: 24px;
   }
