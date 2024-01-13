@@ -73,6 +73,15 @@
   }
 }
 
+.nav__toggle--nojs {
+  @media (max-width: $pre-tablet) {
+    position: absolute;
+    top: -31px;
+    right: 0;
+    z-index: 4;
+  }
+}
+
 .nav__wrapper {
   display: none;
 
