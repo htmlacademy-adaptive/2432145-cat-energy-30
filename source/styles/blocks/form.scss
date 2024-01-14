@@ -121,7 +121,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    white-space: nowrap;
+    .form__fieldset--contacts & {
+      white-space: nowrap;
+    }
   }
 }
 
