@@ -48,7 +48,6 @@
 @mixin advantages-images ($background-image, $background-size-width, $background-size-height) {
   &::after {
     content: "";
-    order: 1;
     background-image: $background-image;
     background-repeat: no-repeat;
     background-position: center;
