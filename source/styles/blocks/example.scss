@@ -294,6 +294,10 @@
     .slider-mark-image {
       color: $basic-green-2;
       //Покраска стрелочек кнопки слайдера при hover.
+
+      &:focus {
+        outline: 1px solid transparent;
+      }
     }
   }
 
