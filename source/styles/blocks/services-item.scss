@@ -191,6 +191,7 @@
   @include secondary-decoration-text(16px, 16px);
   position: relative;
   text-decoration: none;
+  margin-top: auto;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
