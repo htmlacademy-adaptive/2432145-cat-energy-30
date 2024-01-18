@@ -633,6 +633,26 @@
   }
 }
 
+.form__button {
+  min-width: 100%;
+  min-height: 40px;
+  padding: 10px 44px;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    min-width: auto;
+    max-width: 284px;
+    min-height: 54px;
+    padding: 14px 45px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
+  }
+}
+
 .form__note {
   font-size: 14px;
   line-height: 16px;

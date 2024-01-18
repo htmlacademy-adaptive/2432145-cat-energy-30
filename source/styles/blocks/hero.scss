@@ -162,3 +162,15 @@
     z-index: 0;
   }
 }
+
+.hero__button {
+  min-width: 100%;
+  padding: 10px 26px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 244px;
+    min-width: auto;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}

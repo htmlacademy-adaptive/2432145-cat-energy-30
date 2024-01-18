@@ -136,3 +136,22 @@
     min-width: 42px;
   }
 }
+
+.card-catalog-extra__button {
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 20px;
+  min-width: 280px;
+  min-height: 40px;
+  padding: 10px 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 0;
+    min-width: 244px;
+  }
+}

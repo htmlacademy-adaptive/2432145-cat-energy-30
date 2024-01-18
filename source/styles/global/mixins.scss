@@ -8,30 +8,21 @@
   }
 }
 
-@mixin button ($font-size: 16px, $line-height: 20px, $color: #ffffff, $background-color: $basic-green) {
+@mixin button {
   display: inline-block;
   font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
   border: 1px solid transparent;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  background-color: $background-color;
-  color: $color;
   cursor: pointer;
-}
-
-@mixin button-primary-states ($background-color: $basic-green-2) {
   transition: background-color 0.3s ease;
 
-  &:hover,
-  &:focus-visible {
-    background-color: $background-color;
-  }
-
-  &:active {
-    .button__text-mark {
-      opacity: 0.3;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 

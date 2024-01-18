@@ -153,6 +153,47 @@
   }
 }
 
+.card-catalog__button {
+  grid-column: 1/-1;
+  font-size: 16px;
+  line-height: 20px;
+  min-width: 280px;
+  min-height: 40px;
+  padding: 10px 20px;
+  margin-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/4;
+    grid-row: 6/7;
+    min-width: 250px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 169px;
+    padding: 10px 53px;
+    margin-top: 29px;
+  }
+}
+
+.catalog-button-more {
+  grid-column: 1/-1;
+  font-size: 16px;
+  line-height: 20px;
+  min-width: 280px;
+  min-height: 40px;
+  padding: 10px 15px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: auto;
+    min-width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 169px;
+  }
+}
+
 
 .card-catalog__plus {
   grid-column: 1/-1;
