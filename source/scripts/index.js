@@ -1,12 +1,12 @@
 /* в этот файл добавляет скрипты*/
-/* const navToggle = document.querySelector('.nav__toggle');
+/* const pageBody = document.querySelector('.page__body');
+const navToggle = document.querySelector('.nav__toggle');
 const navWrapper = document.querySelector('.nav__wrapper');
 
 //Если js не работает.
-navWrapper.classList.remove('nav__wrapper--phone-menu-nojs');
+pageBody.classList.remove('page__body--nojs');
 
 //Открытие/зактрытие бургер-меню.
-navToggle.classList.remove('nav__toggle--nojs');
 navToggle.classList.toggle('nav__toggle--close-burger');
 navToggle.classList.toggle('nav__toggle--open-burger');
 navToggle.onclick = function () {

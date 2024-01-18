@@ -8,9 +8,28 @@
       max-width: 100%;
       min-width: 100%;
     }
+  }
 
-    .nav__list {
+  .nav__list {
+    @media (max-width: $pre-tablet) {
       width: 100%;
+    }
+  }
+
+  .nav__toggle {
+    @media (max-width: $pre-tablet) {
+      position: absolute;
+      top: -31px;
+      right: 0;
+      z-index: 4;
+    }
+  }
+
+  .nav__wrapper {
+    @media (max-width: $pre-tablet) {
+      display: block;
+      position: static;
+      margin: 0 -20px;
     }
   }
 }

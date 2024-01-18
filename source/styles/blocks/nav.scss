@@ -61,15 +61,6 @@
   }
 }
 
-.nav__toggle--nojs {
-  @media (max-width: $pre-tablet) {
-    position: absolute;
-    top: -31px;
-    right: 0;
-    z-index: 4;
-  }
-}
-
 .nav__wrapper {
   display: none;
 
@@ -84,21 +75,12 @@
   }
 }
 
-
 .nav__wrapper--phone-menu-open {
   @media (max-width: $pre-tablet) {
     position: absolute;
     top: 46px;
     right: -20px;
     display: block;
-  }
-}
-
-.nav__wrapper--phone-menu-nojs {
-  @media (max-width: $pre-tablet) {
-    display: block;
-    position: static;
-    margin: 0 -20px;
   }
 }
 
