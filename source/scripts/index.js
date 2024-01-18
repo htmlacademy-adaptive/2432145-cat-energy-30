@@ -1,5 +1,5 @@
 /* в этот файл добавляет скрипты*/
-/* const pageBody = document.querySelector('.page__body');
+const pageBody = document.querySelector('.page__body');
 const navToggle = document.querySelector('.nav__toggle');
 const navWrapper = document.querySelector('.nav__wrapper');
 
@@ -17,4 +17,4 @@ navToggle.onclick = function () {
 
 //Скрипты карты.
 const addressImageWrapper = document.querySelector('.address__image-wrapper');
-addressImageWrapper.classList.remove('address__image-wrapper--no-js'); */
+addressImageWrapper.classList.remove('address__image-wrapper--no-js');
