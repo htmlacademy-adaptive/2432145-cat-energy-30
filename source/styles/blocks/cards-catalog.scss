@@ -65,7 +65,6 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: start;
     gap: 60px 47px;
     margin-bottom: 52px;
   }
@@ -74,7 +73,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 66px 80px;
-    margin-bottom: 54px;
+    margin-bottom: 61px;
   }
 }
 
@@ -97,11 +96,18 @@
 
   @media (min-width: $tablet-width) {
     max-width: 324px;
-    min-height: 511px;
+
+    &:last-child {
+      margin-top: 71px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     max-width: 245px;
+
+    &:last-child {
+      margin-top: 58px;
+    }
   }
 
   @media (max-width: $pre-tablet) {

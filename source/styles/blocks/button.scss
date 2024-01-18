@@ -82,6 +82,7 @@
   padding: 10px 95px;
 
   @media (min-width: $tablet-width) {
+    grid-row: auto;
     min-width: 250px;
     padding: 10px 80px;
   }
