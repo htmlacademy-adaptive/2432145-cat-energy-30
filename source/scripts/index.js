@@ -14,7 +14,3 @@ navToggle.onclick = function () {
   navToggle.classList.toggle('nav__toggle--close-burger');
   navWrapper.classList.toggle('nav__wrapper--phone-menu-open');
 };
-
-//Скрипты карты.
-const addressImageWrapper = document.querySelector('.address__image-wrapper');
-addressImageWrapper.classList.remove('address__image-wrapper--no-js');
