@@ -110,12 +110,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  grid-column: 2/-1;
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $special-grey;
     margin-bottom: 12px;
-    grid-column: 1/-1;
   }
 }
 
