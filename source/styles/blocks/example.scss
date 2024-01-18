@@ -277,10 +277,6 @@
     .slider-mark-image {
       color: $basic-green;
       //Покраска стрелочек кнопки слайдера при hover.
-
-      &:focus {
-        outline: 1px solid transparent;
-      }
     }
   }
 
@@ -293,11 +289,7 @@
 
     .slider-mark-image {
       color: $basic-green-2;
-      //Покраска стрелочек кнопки слайдера при hover.
-
-      &:focus {
-        outline: 1px solid transparent;
-      }
+      //Покраска стрелочек кнопки слайдера при active.
     }
   }
 
@@ -319,15 +311,4 @@
   width: 40px;
   height: 40px;
   cursor: grab;
-
-  /* &::before {
-    position: absolute;
-    content: "";
-    mask-image: url("../../images/icons/stack.svg#slider-mark");
-    mask-repeat: no-repeat;
-    mask-size: 24px 18px;
-    background-color: $special-grey-2;
-    width: 24px;
-    height: 18px;
-  } */
 }
