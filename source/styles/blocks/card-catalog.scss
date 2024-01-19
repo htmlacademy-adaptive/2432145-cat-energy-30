@@ -129,7 +129,6 @@
 
 .card-catalog__description--more {
   grid-column: 1/-1;
-  grid-row: 3/4;
   margin-bottom: 23px;
 
   & br {
@@ -137,7 +136,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    grid-row: auto;
     text-align: center;
     margin-bottom: 80px;
 
@@ -161,7 +159,6 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/4;
-    grid-row: 6/7;
     min-width: 250px;
     margin-top: 20px;
   }
@@ -176,12 +173,11 @@
   grid-column: 1/-1;
   font-size: 16px;
   line-height: 20px;
-  min-width: 280px;
+  min-width: 100%;
   min-height: 40px;
   padding: 10px 15px;
 
   @media (min-width: $tablet-width) {
-    grid-row: auto;
     min-width: 250px;
   }
 
@@ -193,12 +189,10 @@
 
 .card-catalog__plus {
   grid-column: 1/-1;
-  grid-row: 1/2;
   margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
-    grid-row: auto;
     margin-bottom: 45px;
     margin-top: 29px;
   }
