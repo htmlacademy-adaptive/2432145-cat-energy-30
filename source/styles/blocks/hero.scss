@@ -122,7 +122,6 @@
 }
 
 .hero__picture {
-  z-index: 1;
   width: 100%;
   margin-bottom: 3px;
 
@@ -133,7 +132,6 @@
     width: 92.3%;
     min-width: 709px;
     margin-bottom: 0;
-    z-index: 0;
   }
 
   @media (min-width: $desktop-width) {

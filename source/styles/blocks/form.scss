@@ -559,7 +559,6 @@
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    grid-row: 1/2;
     margin-bottom: 87px;
   }
 
@@ -577,7 +576,6 @@
 }
 
 .form__comment-area {
-  grid-row: 2/-1;
   resize: none;
   min-width: 280px;
   height: 150px;
@@ -620,7 +618,6 @@
 .form__button {
   min-width: 100%;
   min-height: 40px;
-  padding: 10px 44px;
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
@@ -628,7 +625,6 @@
     min-width: auto;
     max-width: 284px;
     min-height: 54px;
-    padding: 14px 45px;
     margin-bottom: 0;
   }
 
