@@ -47,6 +47,7 @@
 .hero__wrapper {
   min-width: $min-width-container;
   max-width: $max-width-container;
+  padding-bottom: 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -56,6 +57,7 @@
     align-items: start;
     padding-top: 65px;
     padding-left: 30px;
+    padding-bottom: 538px;
     background-image: none;
     background-color: #ffffff;
   }
@@ -66,6 +68,7 @@
     grid-template-columns: 505px 1fr;
     grid-template-rows: min-content min-content 1fr;
     padding-top: 110px;
+    padding-bottom: 54px;
   }
 }
 
@@ -147,18 +150,15 @@
 .hero__button-container {
   padding-left: $horizontal-phone-padding;
   padding-right: $horizontal-phone-padding;
-  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     margin-left: 89px;
-    margin-bottom: 539px;
     z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
-    margin-bottom: 266px;
     z-index: 0;
   }
 }
