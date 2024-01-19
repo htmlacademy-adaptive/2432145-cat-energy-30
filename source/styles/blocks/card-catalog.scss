@@ -54,8 +54,6 @@
   }
 }
 
-.card-catalog__image {}
-
 .card-catalog__title {
   @include secondary-decoration-text (16px, 20px);
   grid-column: 2/3;

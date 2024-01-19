@@ -1,5 +1,3 @@
-.header {}
-
 .header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -29,7 +27,7 @@
 }
 
 .header__logo-text-wrapper {
-  @media (max-width: $pre-tablet){
+  @media (max-width: $pre-tablet) {
     position: absolute;
     left: 50vw;
     transform: translate(-50%, -28px);
@@ -42,8 +40,6 @@
     height: 21px;
   }
 }
-
-.header__nav-wrapper {}
 
 .header__nav-wrapper--substrate {
   @media (min-width: $desktop-width) {
