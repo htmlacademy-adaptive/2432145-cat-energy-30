@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <title>Магазин питания для кошек Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/styles.css" media="all">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
+<body class="page__body page__body--nojs">
   <header class="header">
     <div class="header__wrapper container">
       <a class="header__logo header-logo" href="index.html">
@@ -30,13 +30,10 @@
       </a>
       <div class="header__nav-wrapper header__nav-wrapper--substrate">
         <nav class="nav">
-          <button class="nav__toggle nav__toggle--close-burger nav__toggle--nojs" type="button">
+          <button class="nav__toggle nav__toggle--close-burger" type="button">
             <span class="visually-hidden">Открыть меню или закрыть меню.</span>
           </button>
-          <!--  Поменять модификатор с nav__toggle-open-burger на nav__toggle-close-burger для отображения кнопки закрытия меню. -->
-          <div class="nav__wrapper nav__wrapper--phone-menu-nojs">
-            <!-- Для открытия мобильной версии меню навигации поставить модификатор nav__wrapper-phone-menu-open на div nav__wrapper. -->
-            <!-- За нерабочий js отвечает класс nav__wrapper-phone-menu-nojs. -->
+          <div class="nav__wrapper">
             <ul class="nav__list nav__list--index-desktop">
               <li class="nav__item">
                 <a class="nav__link nav__link--current nav__link--index-desktop" href="index.html"
@@ -73,13 +70,15 @@
             <source type="image/jpeg" media="(min-width: 768px)"
               srcset="images/supplies-hero-tablet@1x.jpg 1x, images/supplies-hero-tablet@2x.jpg 2x" width="709"
               height="609">
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="images/supplies-hero-phone@1x.webp 1x, images/supplies-hero-phone@2x.webp 2x" width="280"
+              height="270">
             <img class="hero__image" src="images/supplies-hero-phone@1x.png"
               srcset="images/supplies-hero-phone@2x.png 2x" width="280" height="270" alt="Cat Energy со вкусом курицы.">
           </picture>
         </div>
         <div class="hero__button-container">
-          <a class="button button--pick-up" href="form.html">
-            <span class="button__text-mark">Подобрать программу</span>
+          <a class="hero__button button button--primary" href="form.html">Подобрать программу
           </a>
         </div>
       </div>
@@ -96,7 +95,7 @@
               Energy
               Slim
               поможет <br>вашему питомцу сбросить лишний вес.</p>
-            <a class="services-item__link services-item__link--states" href="#">
+            <a class="services-item__link services-item__link--arrow" href="#">
               <span class="services-item__link-text">Каталог slim</span>
             </a>
           </li>
@@ -108,7 +107,7 @@
               нарастить
               необходимые <br>мышцы!
             </p>
-            <a class="services-item__link services-item__link--states" href="#">
+            <a class="services-item__link services-item__link--arrow" href="#">
               <span class="services-item__link-text">Каталог pro</span>
             </a>
           </li>
@@ -142,7 +141,7 @@
         </ol>
       </div>
     </section>
-    <article class="example">
+    <section class="example">
       <div class="example__wrapper container">
         <h2 class="visually-hidden">Классная история кота Бориса.</h2>
         <p class="example__title title-h3">Живой пример</p>
@@ -178,6 +177,9 @@
               <source type="image/png" media="(min-width: 768px)"
                 srcset="images/slider/slider-tablet-cat-before@1x.png 1x, images/slider/slider-tablet-cat-before@1x.png 2x"
                 width="560" height="512">
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="images/slider/slider-phone-cat-before@1x.webp 1x, images/slider/slider-phone-cat-before@2x.webp 2x"
+                width="280" height="256">
               <img class="example__slider-cat-image" src="images/slider/slider-phone-cat-before@1x.png"
                 srcset="images/slider/slider-phone-cat-before@2x.png 2x" width="280" height="256"
                 alt="Кот Борис до программы.">
@@ -191,6 +193,9 @@
               <source type="image/png" media="(min-width: 768px)"
                 srcset="images/slider/slider-tablet-cat-after@1x.png 1x, images/slider/slider-tablet-cat-after@1x.png 2x"
                 width="560" height="512">
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="images/slider/slider-phone-cat-after@1x.webp 1x, images/slider/slider-phone-cat-after@2x.webp 2x"
+                width="280" height="256">
               <img class="example__slider-cat-image" src="images/slider/slider-phone-cat-after@1x.png"
                 srcset="images/slider/slider-phone-cat-after@2x.png 2x" width="280" height="256"
                 alt="Кот Борис после программы.">
@@ -200,7 +205,8 @@
             <div class="example__slider-toggle">
               <button class="example__slider-button" type="button">
                 <span class="visually-hidden">Колесико слайдера.</span>
-                <svg class="slider-mark-image" width="40" height="40" aria-hidden="true" focusable="false" tabindex="0">
+                <svg class="slider-mark-image" width="40" height="40" aria-hidden="true" focusable="false"
+                  tabindex="-1">
                   <use href="images/icons/stack.svg#slider-mark"></use>
                 </svg>
               </button>
@@ -209,7 +215,7 @@
         </div>
         <!-- Слайдер End -->
       </div>
-    </article>
+    </section>
     <section class="address">
       <div class="address__invite-wrapper address__invite-wrapper--index container-greater">
         <h2 class="visually-hidden">Адрес</h2>
@@ -225,21 +231,24 @@
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Adca516ac240b64172494a206f76ca188a9072a7dbe88e24936ac2b327371f711&amp;source=constructor"
           width="320" height="362" allowfullscreen=""></iframe>
       </div>
-      <div class="address__image-wrapper address__image-wrapper--no-js">
-        <!-- Для включения отображения изображения-подложки в случае не рабочего js-повесить модификатор address__image-wrapper-no-js. -->
-        <picture>
-          <source type="image/webp" media="(min-width: 1220px)"
-            srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="1440" height="400">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x" width="768" height="400">
-          <source type="image/png" media="(min-width: 1220px)"
-            srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="1440" height="400">
-          <source type="image/png" media="(min-width: 768px)"
-            srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="768" height="400">
-          <img class="address__map-image" src="images/map/map-phone@1x.png" srcset="images/map/map-phone@2x.png 2x"
-            width="320" height="362" alt="Карта с адресом Cat Energy.">
-        </picture>
-      </div>
+      <noscript>
+        <div class="address__image-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1220px)"
+              srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="1440" height="400">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x" width="768" height="400">
+            <source type="image/png" media="(min-width: 1220px)"
+              srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="1440" height="400">
+            <source type="image/png" media="(min-width: 768px)"
+              srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="768" height="400">
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="320" height="362">
+            <img class="address__map-image" src="images/map/map-phone@1x.png" srcset="images/map/map-phone@2x.png 2x"
+              width="320" height="362" alt="Карта с адресом Cat Energy.">
+          </picture>
+        </div>
+      </noscript>
       <!-- Карта End -->
     </section>
   </main>

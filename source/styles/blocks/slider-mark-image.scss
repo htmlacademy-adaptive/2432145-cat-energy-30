@@ -1,3 +1,7 @@
 .slider-mark-image {
-  color: $special-grey-2;
+  color: $special-brown-2;
+
+  &:focus {
+    outline: 1px solid transparent;
+  }
 }

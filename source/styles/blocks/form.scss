@@ -1,21 +1,22 @@
-.form {}
-
 .form__wrapper {
   min-width: 320px;
   max-width: 1280px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 41px;
+  padding-bottom: 31px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding-top: 65px;
     padding-left: 70px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 30px;
     padding-top: 74px;
+    padding-bottom: 82px;
   }
 }
 
@@ -99,7 +100,7 @@
 .form__textarea-wrapper {
   display: grid;
   grid-template-rows: min-content 1fr;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
@@ -121,7 +122,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    white-space: nowrap;
+    .form__fieldset--contacts & {
+      white-space: nowrap;
+    }
   }
 }
 
@@ -171,6 +174,7 @@
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
   padding: 15px 14px;
   border: 1px solid #e7e7e7;
 
@@ -187,7 +191,8 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
-    color: $secondary-text-color;
+    color: $primary-text-color;
+    opacity: 0.7;
     white-space: nowrap;
 
     @media (min-width: $tablet-width) {
@@ -211,9 +216,6 @@
   background-color: $error-color;
 }
 
-
-.form__radio-label {}
-
 .form__input-radio {
   position: absolute;
   left: 0;
@@ -233,12 +235,6 @@
     transform: translateY(12px);
   }
 }
-
-.form__input-radio--services {}
-
-.form-checkbox {}
-
-.form__checkbox-label {}
 
 .form__input-checkbox {
   position: absolute;
@@ -299,8 +295,6 @@
     }
   }
 }
-
-.form__input-checkbox--extra {}
 
 .form__input--name {
   min-width: 228px;
@@ -423,7 +417,7 @@
 }
 
 .form__fieldset--contacts {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
@@ -506,8 +500,6 @@
   }
 }
 
-.form__item {}
-
 .form__item--sweetener {
   @media (min-width: $tablet-width) {
     margin-right: 123px;
@@ -567,7 +559,6 @@
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    grid-row: 1/2;
     margin-bottom: 87px;
   }
 
@@ -585,7 +576,6 @@
 }
 
 .form__comment-area {
-  grid-row: 2/-1;
   resize: none;
   min-width: 280px;
   height: 150px;
@@ -612,20 +602,34 @@
 }
 
 .form__button-note-container {
-  margin-bottom: 32px;
-
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
     grid-column: 1/-1;
     gap: 12px;
-    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
     gap: 32px;
-    margin-bottom: 82px;
+  }
+}
+
+.form__button {
+  min-width: 100%;
+  min-height: 40px;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    min-width: auto;
+    max-width: 284px;
+    min-height: 54px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
   }
 }
 

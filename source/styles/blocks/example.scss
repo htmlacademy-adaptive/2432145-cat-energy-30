@@ -2,7 +2,7 @@
   background-color: $basic-grey-2;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to bottom, #ffffff calc(62% + 2px), #ffffff 48%, #eaeaea 150px);
+    background-image: linear-gradient(to bottom, #ffffff calc(55% + 5px), #ffffff 48%, #eaeaea 150px);
   }
 
   @media (min-width: $desktop-width) {
@@ -12,7 +12,7 @@
 }
 
 .example__wrapper {
-  padding-top: 12px;
+  padding-top: 25px;
   padding-right: 10px;
   padding-bottom: 41px;
   padding-left: 20px;
@@ -48,7 +48,6 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
-    grid-row: 1/2;
     margin: 0 0 146px;
   }
 }
@@ -70,7 +69,6 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
-    grid-row: 2/3;
     margin-bottom: 66px;
     padding: 0;
 
@@ -263,7 +261,7 @@
   position: relative;
   width: 256px;
   height: 4px;
-  background-color: $special-grey-2;
+  background-color: $special-brown-2;
   transition: background-color 0.3 ease;
   cursor: grab;
 
@@ -289,7 +287,7 @@
 
     .slider-mark-image {
       color: $basic-green-2;
-      //Покраска стрелочек кнопки слайдера при hover.
+      //Покраска стрелочек кнопки слайдера при active.
     }
   }
 
@@ -305,21 +303,10 @@
   transform: translate(-50%, 50%) rotate(90deg);
   display: flex;
   align-items: center;
-  border: 2px solid $special-grey-2;
+  border: 2px solid $special-brown-2;
   border-radius: 50%;
   background-color: #ffffff;
   width: 40px;
   height: 40px;
   cursor: grab;
-
-  /* &::before {
-    position: absolute;
-    content: "";
-    mask-image: url("../../images/icons/stack.svg#slider-mark");
-    mask-repeat: no-repeat;
-    mask-size: 24px 18px;
-    background-color: $special-grey-2;
-    width: 24px;
-    height: 18px;
-  } */
 }

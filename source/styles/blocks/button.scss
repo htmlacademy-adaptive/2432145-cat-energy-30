@@ -2,112 +2,35 @@
   @include button;
 }
 
-.button--pick-up {
-  @include button-primary-states;
-  font-size: 16px;
-  line-height: 20px;
-  min-width: 100%;
-  padding: 10px 26px;
+.button--primary {
+  background-color: $basic-green;
+  color: #ffffff;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
-    max-width: 244px;
-    min-width: auto;
-    padding-top: 14px;
-    padding-bottom: 14px;
   }
 }
 
-.button--form {
-  @include button-primary-states;
-  font-size: 16px;
-  line-height: 20px;
-  min-width: 280px;
-  min-height: 40px;
-  padding: 10px 44px;
-  margin-bottom: 21px;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 1/2;
-    font-size: 20px;
-    line-height: 26px;
-    max-width: 284px;
-    min-height: 54px;
-    padding: 14px 45px;
-    margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 570px;
-  }
-}
-
-.button--order {
-  @include button-primary-states;
-  grid-column: 1/-1;
-  grid-row: 5/-1;
-  font-size: 16px;
-  line-height: 20px;
-  min-width: 280px;
-  min-height: 40px;
-  padding: 10px 20px;
-  margin-top: 21px;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 1/4;
-    grid-row: 6/7;
-    min-width: 250px;
-    margin-top: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 169px;
-    padding: 10px 53px;
-    margin-top: 29px;
-  }
-}
-
-.button--show-all {
-  @include button-primary-states (#ebebebeb);
-  grid-column: 1/-1;
-  grid-row: -2/-1;
-  font-size: 16px;
-  line-height: 20px;
-  white-space: nowrap;
+.button--secondary {
   background-color: $basic-grey;
   color: inherit;
-  min-width: 280px;
-  min-height: 40px;
-  padding: 10px 95px;
 
-  @media (min-width: $tablet-width) {
-    min-width: 250px;
-    padding: 10px 80px;
+  &:hover,
+  &:focus-visible {
+    background-color: $basic-grey-2;
   }
 
-  @media (min-width: $desktop-width) {
-    min-width: 169px;
-    padding: 10px 39px;
-  }
-}
-
-.button--extra {
-  @include button-primary-states;
-  flex-grow: 1;
-  font-size: 16px;
-  line-height: 20px;
-  min-width: 280px;
-  min-height: 40px;
-  padding: 10px 20px;
-
-  @media (min-width: $tablet-width) {
-    min-width: 100%;
-    max-width: 100%;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-grow: 0;
-    min-width: 244px;
+  &:active {
+    color: rgba($color: $special-dark-grey, $alpha: 0.3);
   }
 }

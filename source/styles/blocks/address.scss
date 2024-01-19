@@ -4,6 +4,7 @@
 
 .address__invite-wrapper {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 18px;
@@ -21,7 +22,6 @@
     left: calc(8% - 2px);
     gap: 87px;
     background-color: #ffffff;
-    max-width: 565px;
     min-height: 199px;
   }
 }
@@ -60,8 +60,6 @@
   }
 }
 
-.address__map-wrapper {}
-
 .address__map {
   display: block;
   border: none;
@@ -74,10 +72,6 @@
 
 .address__image-wrapper {
   display: none;
-}
-
-.address__image-wrapper--no-js {
-  display: block;
 }
 
 .address__map-image {

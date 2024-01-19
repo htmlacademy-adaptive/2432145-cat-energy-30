@@ -14,6 +14,18 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 
+  &:hover {
+    &::before {
+      background-color: $basic-green;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: $basic-green;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -32,18 +44,6 @@
     width: 24px;
     height: 24px;
   }
-
-  &:hover {
-    &::before {
-      background-color: $basic-green;
-    }
-  }
-
-  &:active {
-    &::before {
-      background-color: $basic-green;
-    }
-  }
 }
 
 .nav__toggle--close-burger {
@@ -58,27 +58,6 @@
     background-color: #000000;
     width: 18px;
     height: 18px;
-  }
-
-  &:hover {
-    &::before {
-      background-color: $basic-green;
-    }
-  }
-
-  &:active {
-    &::before {
-      background-color: $basic-green;
-    }
-  }
-}
-
-.nav__toggle--nojs {
-  @media (max-width: $pre-tablet) {
-    position: absolute;
-    top: -31px;
-    right: 0;
-    z-index: 4;
   }
 }
 
@@ -96,21 +75,12 @@
   }
 }
 
-
 .nav__wrapper--phone-menu-open {
   @media (max-width: $pre-tablet) {
     position: absolute;
     top: 46px;
     right: -20px;
     display: block;
-  }
-}
-
-.nav__wrapper--phone-menu-nojs {
-  @media (max-width: $pre-tablet) {
-    display: block;
-    position: static;
-    margin: 0 -20px;
   }
 }
 
@@ -134,12 +104,10 @@
     justify-content: start;
     gap: 0;
     background-color: #ffffff;
-    width: 320px;
+    width: 100vw;
     min-height: 198px;
   }
 }
-
-.nav__list--index-desktop {}
 
 .nav__item {
   @media (max-width: $pre-tablet) {
