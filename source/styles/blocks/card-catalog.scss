@@ -10,10 +10,10 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 206px max-content min-content min-content min-content max-content;
-    background-image: linear-gradient(to bottom, transparent 0%, transparent 13%, $basic-grey 0%, $basic-grey 97%, transparent 0%);
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 13%, $basic-grey 0%, $basic-grey 100%, transparent 0%);
     padding-right: 37px;
     padding-left: 37px;
-    padding-bottom: 54px;
+    padding-bottom: 37px;
     height: 100%;
   }
 
