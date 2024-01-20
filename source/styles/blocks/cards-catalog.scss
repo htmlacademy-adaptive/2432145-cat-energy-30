@@ -1,16 +1,19 @@
 .cards-catalog__wrapper {
-  margin: 0 auto;
   min-width: $min-width-container;
   max-width: $max-width-container;
   padding-top: 40px;
+  padding-bottom: 19px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding-top: 65px;
     padding-left: 30px;
+    padding-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 74px;
+    padding-bottom: 77px;
   }
 
   @media (max-width: $pre-tablet) {
@@ -58,20 +61,17 @@
 
 .cards-catalog__list {
   @include list-normalize;
-  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px 47px;
-    margin-bottom: 52px;
+    gap: 76px 47px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 66px 82px;
-    margin-bottom: 61px;
+    gap: 82px 82px;
   }
 }
 
