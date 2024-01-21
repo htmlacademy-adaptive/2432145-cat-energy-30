@@ -7,8 +7,6 @@ const navWrapper = document.querySelector('.nav__wrapper');
 pageBody.classList.remove('page__body--nojs');
 
 //Открытие/зактрытие бургер-меню.
-navToggle.classList.toggle('nav__toggle--close-burger');
-navToggle.classList.toggle('nav__toggle--open-burger');
 navToggle.onclick = function () {
   navToggle.classList.toggle('nav__toggle--open-burger');
   navToggle.classList.toggle('nav__toggle--close-burger');
