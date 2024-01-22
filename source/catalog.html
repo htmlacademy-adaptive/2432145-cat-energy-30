@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="styles/styles.css" media="all">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/svg+xml" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/lato-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswald-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -34,7 +34,7 @@
         </a>
         <div class="header__nav-wrapper">
           <nav class="nav">
-            <button class="nav__toggle nav__toggle--close-burger" type="button">
+            <button class="nav__toggle nav__toggle--open-burger" type="button">
               <span class="visually-hidden">Открыть меню или закрыть меню.</span>
             </button>
             <div class="nav__wrapper">
@@ -448,7 +448,7 @@
         <div class="address__map-wrapper">
           <iframe class="address__map"
             src="https://yandex.ru/map-widget/v1/?um=constructor%3Adca516ac240b64172494a206f76ca188a9072a7dbe88e24936ac2b327371f711&amp;source=constructor"
-            width="320" height="362" allowfullscreen=""></iframe>
+            width="320" height="362" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <noscript>
           <div class="address__image-wrapper">
@@ -496,7 +496,7 @@
             </a>
           </li>
         </ul>
-        <a class="developer-logo developer-logo--catalog" href="#">
+        <a class="developer-logo" href="#">
           <span class="developer-logo__text">HTML Academy</span>
         </a>
       </div>

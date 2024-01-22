@@ -5,9 +5,11 @@
 }
 
 .nav__toggle {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
   border: 1px solid transparent;
   text-decoration: none;
   background-color: transparent;
@@ -33,9 +35,6 @@
 
 .nav__toggle--open-burger {
   &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
     content: "";
     mask-image: url("../../images/icons/stack.svg#burger-open");
     mask-repeat: no-repeat;
@@ -48,9 +47,6 @@
 
 .nav__toggle--close-burger {
   &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
     content: "";
     mask-image: url("../../images/icons/stack.svg#burger-close");
     mask-repeat: no-repeat;
@@ -95,13 +91,13 @@
   z-index: 3;
 
   @media (min-width: $tablet-width) {
-    justify-content: start;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 
   @media (max-width: $pre-tablet) {
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 0;
     background-color: #ffffff;
     width: 100vw;
@@ -172,6 +168,8 @@
   &::after {
     @media (min-width: $desktop-width) {
       background-color: #ffffff;
+      top: auto;
+      bottom: -8px;
     }
   }
 }

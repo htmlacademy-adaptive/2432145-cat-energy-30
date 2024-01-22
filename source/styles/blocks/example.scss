@@ -21,7 +21,7 @@
     padding-top: 0;
     padding-bottom: 85px;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -181,20 +181,23 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: end;
     gap: 9px;
     margin: 0;
-    transform: translate(15px, 14px);
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     align-items: stretch;
     gap: 66px;
-    transform: translate(0, 0);
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $pre-desktop) {
+    padding-top: 14px;
   }
 }
+
 
 .example__total-text {
   @include secondary-decoration-text (14px, 20px);
@@ -222,7 +225,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    transform: translate(49px, 3px);
+    transform: translate(40px, 2px);
   }
 }
 
@@ -262,7 +265,7 @@
   width: 256px;
   height: 4px;
   background-color: $special-brown-2;
-  transition: background-color 0.3 ease;
+  transition: background-color 0.3s ease;
   cursor: grab;
 
   &:hover {
