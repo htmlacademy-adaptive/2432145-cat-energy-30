@@ -33,23 +33,24 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    gap: 23px;
     min-width: 168px;
 
     &::after {
-      display: block;
-      transform: translate(18px, -5px);
+      right: 2px;
     }
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 11px;
+
     &::after {
-      transform: translate(1px, 5px);
+      right: 18px;
+      top: 3px;
     }
   }
 }
 
-.developer-logo--catalog {
+/* .developer-logo--catalog {
   @media (max-width: $pre-tablet) {
     transform: translateX(-4px);
 
@@ -57,13 +58,4 @@
       right: -4px;
     }
   }
-}
-
-
-.developer-logo__text {
-  transform: translate(22px, -7px);
-
-  @media (min-width: $desktop-width) {
-    transform: translate(6px, 3px);
-  }
-}
+} */
