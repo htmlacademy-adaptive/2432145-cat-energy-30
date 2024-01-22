@@ -9,6 +9,10 @@
     padding-top: 25px;
   }
 
+  @media (min-width: $tablet-width) and (max-width: $pre-desktop) {
+    padding-right: 14px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-top: 55px;
   }
@@ -38,6 +42,12 @@
   @media (min-width: $desktop-width) {
     width: 118px;
     height: 21px;
+  }
+}
+
+.header__nav-wrapper {
+  @media (min-width: $tablet-width) and (max-width: $pre-desktop) {
+    width: 436px;
   }
 }
 
