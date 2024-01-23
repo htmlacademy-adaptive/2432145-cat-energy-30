@@ -19,3 +19,9 @@
     box-shadow: -40px 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
   }
 }
+
+.title-decoration--extra-tablet {
+  @media (min-width: $tablet-width) and (max-width: $pre-desktop) {
+    box-shadow: 0 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
+  }
+}

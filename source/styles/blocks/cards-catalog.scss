@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 30px;
-    padding-right: 20px;
+    padding-right: 30px;
     padding-top: 65px;
     padding-bottom: 74px;
   }
@@ -15,6 +15,8 @@
   @media (min-width: $desktop-width) {
     padding-top: 74px;
     padding-bottom: 77px;
+    padding-left: 29px;
+    padding-right: 29px;
   }
 
   @media (max-width: $pre-tablet) {
