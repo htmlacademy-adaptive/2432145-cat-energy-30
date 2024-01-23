@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 18px;
+  background-color: $basic_grey;
   padding-top: 26px;
   padding-bottom: 26px;
 
@@ -26,7 +27,13 @@
     min-height: 199px;
     background-color: #ffffff;
     padding-right: 76px;
-    padding-left: 79px;
+    padding-left: 86px;
+  }
+}
+
+.address__invite-wrapper--index {
+  @media (max-width: $pre-desktop) {
+    background-color: transparent;
   }
 }
 

@@ -34,6 +34,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     min-width: 168px;
+    padding-bottom: 14px;
+    margin-right: 16px;
 
     &::after {
       right: 2px;
@@ -41,11 +43,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 11px;
+    padding-top: 8px;
+    padding-bottom: 0;
+    margin-right: 12px;
 
     &::after {
-      right: 18px;
-      top: 3px;
+      right: 9px;
+      top: 1px;
     }
   }
 }
