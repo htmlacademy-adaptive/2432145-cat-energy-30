@@ -276,6 +276,27 @@
   }
 }
 
+.form__input-mark[type="radio"]:disabled ~ .form__input-radio {
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 13px;
+    height: 13px;
+    background-color: $basic-green;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    transform: translateY(-50%) translateX(-50%);
+    opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
 .form__input-mark[type="checkbox"]:checked ~ .form__input-checkbox,
 .form__input-mark[type="checkbox"]:hover ~ .form__input-checkbox {
   &::before {
@@ -288,6 +309,26 @@
     background-image: url("../../images/icons/stack.svg#icon-checkmark");
     background-repeat: no-repeat;
     transform: translateY(-50%) translateX(-50%);
+
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 19px;
+    }
+  }
+}
+
+.form__input-mark[type="checkbox"]:disabled ~ .form__input-checkbox {
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 14px;
+    background-image: url("../../images/icons/stack.svg#icon-checkmark");
+    background-repeat: no-repeat;
+    transform: translateY(-50%) translateX(-50%);
+    opacity: 0.3;
 
     @media (min-width: $tablet-width) {
       width: 24px;
