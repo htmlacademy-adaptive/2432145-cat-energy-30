@@ -178,7 +178,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: column;
     justify-content: flex-start;
-    align-items: end;
+    align-items: flex-end;
     gap: 9px;
     margin: 0;
   }
@@ -232,7 +232,7 @@
 
 .example__cat-after {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   overflow-x: hidden;
 }
 

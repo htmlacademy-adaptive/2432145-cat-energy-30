@@ -10,7 +10,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 65px;
     padding-left: 70px;
-    padding-bottom: 60px;
+    padding-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -653,7 +653,7 @@
     grid-template-columns: 50% 50%;
     align-items: center;
     grid-column: 1/-1;
-    gap: 12px;
+    gap: 5px;
   }
 
   @media (min-width: $desktop-width) {
