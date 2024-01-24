@@ -1,5 +1,3 @@
-@use "../global/variables.scss" as *;
-
 .page__body--nojs {
   .header__nav-wrapper {
     @media (max-width: $pre-tablet) {

@@ -1,5 +1,3 @@
-@use "./variables.scss" as *;
-
 @mixin font-face ($font-family, $font-weight, $font-style, $font-src) {
   @font-face {
     font-family: $font-family;
