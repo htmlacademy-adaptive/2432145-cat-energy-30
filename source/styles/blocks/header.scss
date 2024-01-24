@@ -42,8 +42,8 @@
 }
 
 .header__nav-wrapper {
-  @media (min-width: $tablet-width) and (max-width: $pre-desktop) {
-    width: 436px;
+  @media (max-width: $pre-tablet) {
+    margin-right: -8px;
   }
 }
 

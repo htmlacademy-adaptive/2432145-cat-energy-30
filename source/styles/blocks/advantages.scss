@@ -25,10 +25,6 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 126px;
   }
-
-  @media (max-width: $pre-tablet) {
-    padding-left: 18px;
-  }
 }
 
 .advantages__title {
@@ -93,7 +89,7 @@
     &::before {
       position: absolute;
       top: -40px;
-      right: 83px;
+      right: 100px;
       content: "1";
       z-index: -1;
       font-size: 280px;
@@ -117,7 +113,7 @@
     &::before {
       position: absolute;
       top: -40px;
-      right: 62px;
+      right: 79px;
       content: "2";
       z-index: -1;
       font-size: 280px;
@@ -141,7 +137,7 @@
     &::before {
       position: absolute;
       top: -40px;
-      right: 62px;
+      right: 77px;
       content: "3";
       z-index: -1;
       font-size: 280px;
@@ -165,7 +161,7 @@
     &::before {
       position: absolute;
       top: -40px;
-      right: 59px;
+      right: 75px;
       content: "4";
       z-index: -1;
       font-size: 280px;
