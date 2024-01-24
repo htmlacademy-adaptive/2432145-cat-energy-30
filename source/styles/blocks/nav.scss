@@ -61,9 +61,7 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    position: static;
     display: block;
-    margin-right: -11px;
   }
 
   @media (min-width: $desktop-width) {
@@ -93,6 +91,7 @@
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
     flex-wrap: wrap;
+    gap: 36px;
   }
 
   @media (max-width: $pre-tablet) {
@@ -160,6 +159,10 @@
       bottom: 0;
       height: 2px;
       background-color: $basic-green;
+
+      @media (min-width: $desktop-width) {
+        top: 37px;
+      }
     }
   }
 }

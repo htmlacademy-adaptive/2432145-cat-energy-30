@@ -56,16 +56,19 @@
     font-size: 16px;
     line-height: 20px;
     text-align: end;
+    padding-bottom: 22px;
+    margin-right: 16px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: initial;
+    margin-right: 0;
   }
 }
 
 .address__description-city {
   @media (min-width: $tablet-width) {
-    transform: translateY(12px);
+    transform: translateY(20px);
   }
 }
 
