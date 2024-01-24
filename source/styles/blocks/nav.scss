@@ -92,6 +92,11 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 36px;
+    width: 441px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 482px;
   }
 
   @media (max-width: $pre-tablet) {

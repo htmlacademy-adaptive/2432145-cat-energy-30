@@ -525,7 +525,9 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 80px;
+    width: 1230px;
   }
 }
 
@@ -542,7 +544,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 0;
+    gap: 20px 0;
   }
 }
 
