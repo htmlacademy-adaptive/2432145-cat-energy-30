@@ -1,3 +1,5 @@
+@use "../global/variables.scss" as *;
+
 .header__wrapper {
   display: flex;
   justify-content: space-between;

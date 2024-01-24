@@ -1,3 +1,5 @@
+@use "../global/variables.scss" as *;
+
 .social-list {
   @include list-normalize;
   display: flex;

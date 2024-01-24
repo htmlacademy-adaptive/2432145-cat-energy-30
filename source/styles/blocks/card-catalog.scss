@@ -1,3 +1,5 @@
+@use "../global/variables.scss" as *;
+
 .card-catalog {
   display: grid;
   grid-template-columns: 1fr 1fr;
