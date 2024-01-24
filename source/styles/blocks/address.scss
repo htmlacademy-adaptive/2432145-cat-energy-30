@@ -20,7 +20,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: calc(22% - -5px);
+    top: calc(22% + 5px);
     left: calc(7% + 3px);
     gap: 87px;
     width: 565px;
