@@ -1,3 +1,25 @@
+.page__body--nojs {
+  .nav__list {
+    @media (max-width: $pre-tablet) {
+      width: 100%;
+    }
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__wrapper {
+    @media (max-width: $pre-tablet) {
+      display: block;
+      position: static;
+      margin-top: 15px;
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+  }
+}
+
 .nav {
   @media (max-width: $pre-tablet) {
     position: relative;

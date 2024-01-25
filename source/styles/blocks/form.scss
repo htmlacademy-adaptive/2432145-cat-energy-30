@@ -155,16 +155,16 @@
 }
 
 /* Состояния для svg иконок в инпутах формы(передаем через инпут в спан). */
-.form__input ~ .envelope-icon {
+.form__input ~ .form__envelope-icon {
   mask-image: url("../../images/icons/stack.svg#envelope");
 }
 
-.form__input ~ .phone-icon {
+.form__input ~ .form__phone-icon {
   mask-image: url("../../images/icons/stack.svg#phone");
 }
 
-.form__input:focus-visible ~ .phone-icon,
-.form__input:focus-visible ~ .envelope-icon {
+.form__input:focus-visible ~ .form__phone-icon,
+.form__input:focus-visible ~ .form__envelope-icon {
   background-color: $basic-green;
   transition: background-color 0.3s ease;
 }
