@@ -26,10 +26,6 @@
       &:nth-child(2) .services-item__title {
         margin-left: -3px;
       }
-
-      &:nth-child(2) .services-item__link--arrow::after {
-        top: 12px;
-      }
     }
   }
 }
@@ -216,7 +212,7 @@
   }
 
   &:hover::after {
-    mask-position: 0;
+    mask-image: url("../../images/icons/stack.svg#arrow-right-greater");
   }
 
   &:active {
