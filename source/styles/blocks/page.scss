@@ -13,19 +13,16 @@
   }
 
   .nav__toggle {
-    @media (max-width: $pre-tablet) {
-      position: absolute;
-      top: -31px;
-      right: 0;
-      z-index: 4;
-    }
+    display: none;
   }
 
   .nav__wrapper {
     @media (max-width: $pre-tablet) {
       display: block;
       position: static;
-      margin: 0 -20px;
+      margin-top: 15px;
+      margin-left: -20px;
+      margin-right: -20px;
     }
   }
 

@@ -21,6 +21,8 @@
 
   @media (max-width: $pre-tablet) {
     position: relative;
+    padding-left: 0;
+    padding-right: 0;
 
     &::before {
       position: absolute;
@@ -59,6 +61,11 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 103px;
   }
+
+  @media (max-width: $pre-tablet) {
+    padding-left: $horizontal-phone-padding;
+    padding-right: $horizontal-phone-padding;
+  }
 }
 
 .cards-catalog__list {
@@ -73,7 +80,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 82px 82px;
+    gap: 82px 81px;
   }
 }
 
