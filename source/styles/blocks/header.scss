@@ -33,6 +33,10 @@
   &:active {
     opacity: 0.6;
   }
+
+  @media (min-width: $tablet-width) {
+    align-self: start;
+  }
 }
 
 .header__logo-text-wrapper {
