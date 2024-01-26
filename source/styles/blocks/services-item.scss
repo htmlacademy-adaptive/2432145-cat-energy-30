@@ -207,12 +207,12 @@
     background-color: #000000;
     width: 50px;
     height: 10px;
-    transition: 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     transform: translate(10px, -50%);
   }
 
   &:hover::after {
-    mask-image: url("../../images/icons/stack.svg#arrow-right-greater");
+    transform: scaleX(1.5) translate(10px, -5px);
   }
 
   &:active {
