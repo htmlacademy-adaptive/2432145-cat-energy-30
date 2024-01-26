@@ -97,6 +97,10 @@
   }
 }
 
+.form__input-mark:checked:focus-visible ~ .form__input-radio {
+  outline: 2px solid #000000;
+}
+
 .form__textarea-wrapper {
   display: grid;
   grid-template-rows: min-content 1fr;
@@ -151,16 +155,16 @@
 }
 
 /* Состояния для svg иконок в инпутах формы(передаем через инпут в спан). */
-.form__input ~ .envelope-icon {
+.form__input ~ .form__envelope-icon {
   mask-image: url("../../images/icons/stack.svg#envelope");
 }
 
-.form__input ~ .phone-icon {
+.form__input ~ .form__phone-icon {
   mask-image: url("../../images/icons/stack.svg#phone");
 }
 
-.form__input:focus-visible ~ .phone-icon,
-.form__input:focus-visible ~ .envelope-icon {
+.form__input:focus-visible ~ .form__phone-icon,
+.form__input:focus-visible ~ .form__envelope-icon {
   background-color: $basic-green;
   transition: background-color 0.3s ease;
 }
@@ -278,6 +282,10 @@
 }
 
 .form__input-mark[type="radio"]:disabled ~ .form__input-radio {
+  opacity: 0.3;
+}
+
+.form__input-mark[type="radio"]:disabled:checked ~ .form__input-radio {
   &::before {
     position: absolute;
     content: "";
@@ -298,8 +306,7 @@
   }
 }
 
-.form__input-mark[type="checkbox"]:checked ~ .form__input-checkbox,
-.form__input-mark[type="checkbox"]:hover ~ .form__input-checkbox {
+.form__input-mark[type="checkbox"]:checked ~ .form__input-checkbox {
   &::before {
     position: absolute;
     content: "";
@@ -319,6 +326,10 @@
 }
 
 .form__input-mark[type="checkbox"]:disabled ~ .form__input-checkbox {
+  opacity: 0.3;
+}
+
+.form__input-mark[type="checkbox"]:disabled:checked ~ .form__input-checkbox {
   &::before {
     position: absolute;
     content: "";
@@ -525,7 +536,9 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 80px;
+    width: 1230px;
   }
 }
 
@@ -542,7 +555,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 0;
+    gap: 20px 0;
   }
 }
 

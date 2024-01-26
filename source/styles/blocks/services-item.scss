@@ -26,10 +26,6 @@
       &:nth-child(2) .services-item__title {
         margin-left: -3px;
       }
-
-      &:nth-child(2) .services-item__link--arrow::after {
-        top: 12px;
-      }
     }
   }
 }
@@ -211,12 +207,12 @@
     background-color: #000000;
     width: 50px;
     height: 10px;
-    transition: 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     transform: translate(10px, -50%);
   }
 
   &:hover::after {
-    mask-position: 0;
+    transform: scaleX(1.5) translate(10px, -5px);
   }
 
   &:active {

@@ -24,6 +24,10 @@
   &:active {
     opacity: 0.6;
   }
+
+  @media (min-width: $tablet-width) {
+    align-self: start;
+  }
 }
 
 .header__logo-text-wrapper {
@@ -44,6 +48,11 @@
 .header__nav-wrapper {
   @media (max-width: $pre-tablet) {
     margin-right: -8px;
+
+    .page__body--nojs & {
+      max-width: 100%;
+      min-width: 100%;
+    }
   }
 }
 

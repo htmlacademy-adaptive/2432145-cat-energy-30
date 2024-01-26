@@ -22,32 +22,28 @@
 .footer__logo-link {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__logo {
-  margin-bottom: 40px;
   width: 128px;
   height: 24px;
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     color: #3e3e3e;
   }
 
   &:active {
     color: #6b6b6b;
-  }
-
-  &:focus-visible {
-    color: #3e3e3e;
-  }
-
-  @media (min-width: $tablet-width) {
-    transform: translateY(-6px);
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    transform: translateY(3px);
   }
 }
 
