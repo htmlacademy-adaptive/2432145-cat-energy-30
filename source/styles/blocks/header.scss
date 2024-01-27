@@ -14,6 +14,13 @@
   }
 }
 
+.header__wrapper--nojs {
+  & .header__nav-wrapper {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+
 .header__logo {
   transition: opacity 0.3s ease;
 
@@ -48,11 +55,6 @@
 .header__nav-wrapper {
   @media (max-width: $pre-tablet) {
     margin-right: -8px;
-
-    .page__body--nojs & {
-      max-width: 100%;
-      min-width: 100%;
-    }
   }
 }
 
