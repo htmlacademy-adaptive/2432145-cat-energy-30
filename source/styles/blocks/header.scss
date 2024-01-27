@@ -15,9 +15,11 @@
 }
 
 .header__wrapper--nojs {
-  & .header__nav-wrapper {
-    max-width: 100%;
-    min-width: 100%;
+  @media (max-width: $pre-tablet) {
+    & .header__nav-wrapper {
+      max-width: 100%;
+      min-width: 100%;
+    }
   }
 }
 

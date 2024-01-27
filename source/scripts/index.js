@@ -6,8 +6,8 @@ const navWrapper = document.querySelector('.nav__wrapper');
 const address = document.querySelector('.address');
 
 //Если js не работает.
-nav.classList.remove('nav--nojs');
 headerWrapper.classList.remove('header__wrapper--nojs');
+nav.classList.remove('nav--nojs');
 address.classList.remove('address--nojs');
 
 //Открытие/закрытие бургер-меню.
