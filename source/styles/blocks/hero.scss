@@ -1,5 +1,5 @@
 .hero {
-  position: relative;
+  //position: relative;
   padding-top: 14px;
 
   &::before {
@@ -24,7 +24,7 @@
     @media (min-width: $desktop-width) {
       display: block;
       position: absolute;
-      top: -114px;
+      top: 0;
       right: 0;
       background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/index-background-desktop@1x.webp");
       background-position-x: 14px;
